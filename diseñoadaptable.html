@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design </title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+    <link rel="icon" type="image/x-icon" href="imag-icono.png">
+
+</head>
+<body>
+    <header class="menu">
+
+        <div>
+          <h1 id="subir" class="header-titulo">Front-End</h1>
+          
+          </div>
+      
+          <div class="bars">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      
+      <nav class="nav-bars">
+        <ul>
+          
+          <li><a href="index.html" class="nav-menu-link">Inicio</a></li>
+          <li><a href="intro.html" class="nav-menu-link">Introducción Front-End. HTML/CSS/JavaScript</a></li>
+          <li ><a href="HTMLbasic.html" class="nav-menu-link">Conceptos básicos de HTML</a></li>
+          <li ><a href="elementos.html" class="nav-menu-link">TAGs (Elementos) HTML </a></li>
+          <li ><a href="formulario.html" class="nav-menu-link">Formulario Web</a></li>
+          <li ><a href="CSSframework.html" class="nav-menu-link">Extendiendo CSS y framework</a></li>
+          <li ><a href="diseñoadaptable.html" class="nav-menu-link">Responsive Web Design</a> </li>
+          <li ><a href="github.html" class="nav-menu-link">GIT/Github. Servidores/hosting/dominio.</a></li>
+          <li ><a href="programacion.html" class="nav-menu-link">Lógica de programación</a></li>
+          <li><a href="javaScript.html" class="nav-menu-link">JavaScript</a></li>
+      
+          
+      </ul>
+      
+      </nav>
+      
+      </header>
+
+      <main class="main">
+
+        <article class="articulos">
+          <img class="imag1" src="imag/growtika-9WnjxT1NCoY-unsplash.jpg" alt="Imagen de ilustración">
+
+            <h2>Diseño Web Responsivo</h2>
+
+            <p>El diseño web receptivo hace que su página web se vea bien en todos los dispositivos,  utiliza solo HTML, CSS y
+              no es un programa o un JavaScript.</p>
+            <p><b><u>Las páginas web se pueden ver usando muchos dispositivos diferentes:</u></b> computadoras de escritorio, tabletas y teléfonos.
+             Su página web debe verse bien y ser fácil de usar, independientemente del dispositivo, no deben dejar de lado información 
+             para adaptarse a dispositivos más pequeños, sino adaptar su contenido para adaptarse a cualquier dispositivo</p>
+
+            <p>Se llama diseño web receptivo cuando usa CSS y HTML para cambiar el tamaño, ocultar, reducir, ampliar o mover el
+               contenido para que se vea bien en cualquier pantalla.</p>
+
+            <img class="imag" src="imag/Imagen44.png" alt="Imagen de ilustración">
+
+            <p><b><u>Componentes de Diseño Web Responsivo</u></b> Ahora que sabe cómo se ve el diseño web receptivo, 
+            echemos un vistazo más de cerca al componente que usan los desarrolladores para maximizar la experiencia
+            del usuario en diferentes dispositivos. Esta descripción general es solo una guía, y la codificación real 
+            puede ser más compleja según la naturaleza del sitio web.</p>
+
+             <h3><u>El Viewport</u></h3>
+
+             <h4>¿Qué es el Viewport?</h4>
+
+             <p>El Viewport es la ventana gráfica, es el área visible del usuario de una página web, varía según el dispositivo
+               y será más pequeña en un teléfono móvil que en la pantalla de una computadora. </p>
+
+            <p>Antes de las tabletas y los teléfonos móviles, las páginas web estaban diseñadas solo para pantallas de computadora, 
+                y era común que las páginas web tuvieran un diseño estático y un tamaño fijo.</p>
+
+            <p>Luego, cuando comenzamos a navegar por Internet usando tabletas y teléfonos móviles, las páginas web de tamaño fijo
+               eran demasiado grandes para caber en la ventana gráfica. Para solucionar esto, los navegadores de esos dispositivos 
+               redujeron toda la página web para que se ajustara a la pantalla.</p>
+
+            <h4><u>Configuración de la ventana gráfica</u></h4>
+
+            <p>HTML5 introdujo un método para permitir que los diseñadores web tomen el control de la ventana gráfica a través de la
+             <b style="color: blue;">&lt;meta&gt;</b> etiqueta.</p>
+
+            <p>Debe incluir el siguiente elemento <b style="color: blue;">&lt;meta&gt;</b>,
+              de Ventana gráfica en todas tus páginas web:</p>
+
+            <div class="ejemplo-dos" >
+            <p><b style="color: blue;">&lt;meta</b> <b style="color: brown;">
+                name = "viewport" content = "width = device-width, initial-scale = 1.0"</b><b style="color: blue;">&gt;</b></p>
+            </div>
+
+           <p>Esto le da al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página.</p>
+
+           <p><b style="color: brown;">width = device-width</b>, establece el ancho de la página para seguir el ancho 
+            de pantalla del dispositivo (que variará según el dispositivo).</p>
+
+            <p><b style="color: brown;">initial-scale = 1.0</b>, establece el nivel de zoom inicial cuando el 
+            navegador carga la página por primera vez.</p>
+
+            <p><b>Ejemplo con la <b style="color: blue;">&lt;meta&gt;</b> etiqueta</b></p>
+
+            <img class="imag2" src="imag/Imagen45.png" alt="Ejemplo Viewport">
+
+            <p><b>Ejemplo sin la <b style="color: blue;">&lt;meta&gt;</b> etiqueta</b></p>
+
+            <img class="imag2" src="imag/Imagen46.png" alt="Ejemplo Viewport">
+
+            <h3><u>Ajustar el tamaño del contenido a la ventana gráfica</u></h3>
+
+            <p>Los usuarios están acostumbrados a desplazarse por los sitios web verticalmente en dispositivos móviles
+             y de escritorio, ¡pero no horizontalmente!. Por lo tanto, si el usuario se ve obligado a desplazarse
+              horizontalmente o alejarse para ver toda la página web, la experiencia del usuario será deficiente.</p>
+
+              <p><b><u>Algunas reglas adicionales a seguir:</u></b></p>
+
+              <ul id="lista-main">
+                <li><b>NO use elementos grandes de ancho fijo:</b>  por ejemplo, si una imagen se muestra con un ancho mayor
+                    que la ventana gráfica, puede hacer que la ventana gráfica se desplace horizontalmente. Recuerde ajustar
+                    este contenido para que se ajuste al ancho de la ventana gráfica.</li>
+
+                <li><b> NO permita que el contenido dependa de un ancho de ventana en particular para mostrarse bien : </b>
+                    dado que las dimensiones de la pantalla y el ancho en píxeles CSS varían ampliamente entre dispositivos, 
+                    el contenido no debe depender de un ancho de ventana en particular para mostrarse bien.</li>
+
+                <li><b>Use consultas de medios CSS para aplicar diferentes estilos para pantallas pequeñas y grandes:</b> 
+                    establecer anchos CSS absolutos grandes para elementos de página hará que el elemento sea demasiado ancho
+                    para la ventana gráfica en un dispositivo más pequeño. En su lugar, considere usar valores de ancho relativo, 
+                    como ancho: 100%. Además, tenga cuidado al usar valores de posicionamiento absolutos grandes. Puede hacer que 
+                    el elemento quede fuera de la ventana gráfica en dispositivos pequeños.
+
+                </li>
+
+              </ul>
+
+              <h3><u>Diseño flexible</u></h3>
+              <p>Hay muchas dimensiones disponibles en diferentes dispositivos. No puede depender de ninguna configuración de ventana
+                 gráfica. CSS le permite codificar diseños utilizando cuadrículas flexibles definidas en porcentajes en lugar de píxeles
+                 Estos conservan el espaciado del contenido incluso cuando cambia la ventana gráfica.</p>
+
+              <p>Se puede usar un diseño de cuadrícula flexible, por ejemplo, para dirigir tres columnas de texto para colapsar en una o 
+                dos a medida que se reduce la ventana gráfica. Los bloques de contenido y las imágenes también se pueden realinear 
+                verticalmente en lugar de horizontalmente. Estas estrategias son cruciales por dos razones: aseguran que el contenido 
+                clave esté visible y alineado jerárquicamente y mantengan la proporción adecuada de contenido a espacios en blanco.</p>
+
+             <p>Los diseños flexibles también se pueden usar para ocultar contenido estratégicamente. Se requiere pensamiento de diseño 
+                para determinar qué contenido debe ocultarse. Un ejemplo común es ocultar su navegación principal y reemplazarla con un 
+                menú de hamburguesas. Esta es una buena opción ya que la mayoría de los usuarios de dispositivos móviles reconocerán el
+                menú de hamburguesas y los menús completos pueden ocupar un valioso espacio en la pantalla.</p>
+
+            <h4><u>Creación de una vista de cuadrícula receptiva</u></h4>
+
+            <p>El uso de una vista de cuadrícula es muy útil al diseñar páginas web. Facilita la colocación de elementos en la página.</p>
+            <p>Una vista de cuadrícula receptiva a menudo tiene 12 columnas y tiene un ancho total del 100%, y se reducirá y expandirá a
+               medida que cambia el tamaño de la ventana del navegador.</p>
+
+            <p>Primero asegúrese de que todos los elementos HTML tengan la <b>box-sizing</b>  propiedad establecida en <b>border-box</b>.
+              Esto asegura que el relleno y el borde estén incluidos en el ancho y alto total de los elementos.</p>
+
+              <p><b><u>Agregue el siguiente código en su CSS:</u></b></p>
+
+              <div class="ejemplo">
+              
+                <ul >
+                  <li style="color: blueviolet;">estilo.css </li><br>
+                  <li><b style="color: green; "> * { </b> </li><br>
+                  <li><b style="color: brown; "> box-sizing: border-box; </b></li><br>
+                  <li><b style="color: green; "> } </b></li>
+                  
+                </ul>
+              </div>
+
+              <p><b> El siguiente ejemplo muestra una página web receptiva simple, con tres columnas:</b></p>
+
+              <img class="imag2" src="imag/Imagen47.png" alt="Imagen de ilustración">
+
+              <p><b> Ejemplo como quedaría el  archivo estilo.css y documento index.html para formar tres columnas</b></p>
+
+              <div class="ejemplo">
+              <ul >
+                <li>Puedes copiar y pegar los códigos</li><br>
+                <li style="color: blueviolet;">estilo.css</li><br>
+                <li><b style="color: green; "> * { </b> </li><br>
+                <li><b style="color: brown; ">  font-family: Verdana, Geneva, Tahoma, sans-serif; </b></li><br>
+                <li><b style="color: brown; "> box-sizing: border-box;</b></li><br>
+                <li><b style="color: green; "> } </b></li><br>
+
+                <li><b style="color: green; "> body { </b> </li><br>
+                <li><b style="color: brown; "> margin: 0; </b></li><br>
+                <li><b style="color: green; "> } </b></li><br>
+
+                <li><b style="color: green; "> .menu { </b> Esta es columna 1</li><br>
+                <li><b style="color: brown; "> width: 25%; </b></li><br>
+                <li><b style="color: brown; "> float: left; </b></li><br>
+                <li><b style="color: brown; "> padding: 15px; </b></li><br>
+                <li><b style="color: brown; "> border: 1px solid blueviolet; </b></li><br>
+                <li><b style="color: green; "> } </b></li><br>
+
+                <li><b style="color: green; "> .main { </b> columna 2</li><br>
+                <li><b style="color: brown; "> width: 60%; </b></li><br>
+                <li><b style="color: brown; "> float: left; </b></li><br>
+                <li><b style="color: brown; "> padding: 15px; </b></li><br>
+                <li><b style="color: brown; "> border: 1px solid blueviolet; </b></li><br>
+                <li><b style="color: green; "> } </b></li><br>
+
+                <li><b style="color: green; "> .aside { </b> columna 3</li><br>
+                <li><b style="color: brown; "> width: 15%; </b></li><br>
+                <li><b style="color: brown; "> float: left; </b></li><br>
+                <li><b style="color: brown; "> padding: 15px; </b></li><br>
+                <li><b style="color: brown; "> border: 1px solid blueviolet; </b></li><br>
+                <li><b style="color: green; "> } </b></li><br>
+                
+              </ul>
+            </div>
+
+            <div class="resultado">
+
+              <p style="color: blueviolet;">index.html</p>
+              <p><b style="color: blue; font-size: 18px;">&lt; div </b><b style="color: brown; ">class ="header" </b>
+                <b style="color: blue; font-size: 18px;">&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;h1&gt;</b> Front-End <b style="color: blue; font-size: 18px;">&lt;/h1&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p>
+
+              <p><b style="color: blue; font-size: 18px;">&lt; div</b> <b style="color: brown; "> class="menu" </b>
+                <b style="color: blue; font-size: 18px;">&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;ul&gt;</b><br>
+              <b style="color: blue; font-size: 18px;">&lt;li&gt;</b>
+              ¿Qué es el front-end? <b style="color: blue; font-size: 18px;">&lt;/li&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;li&gt;</b> Estructura de un proyecto web
+              <b style="color: blue; font-size: 18px;">&lt;/li&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;/ul&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p> 
+
+              <p><b style="color: blue; font-size: 18px;">&lt; div</b> <b style="color: brown; "> class="main" </b>
+                <b style="color: blue; font-size: 18px;">&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;h4&gt;</b>Un desarrollador Front End
+              <b style="color: blue; font-size: 18px;">&lt;/h4&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;p&gt;</b>Debe tener conocimiento sobre HTML, CSS y JavaScript
+               y ser capaz de utilizar algunos frameworks o librerías para crear todo tipo de interfaces de usuarios.
+               React, Redux, Angular, Bootstrap, Foundation, LESS, Sass, Stylus y PostCSS son algunos de ellos.
+              <b style="color: blue; font-size: 18px;">&lt;/p&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p>
+
+              <p><b style="color: blue; font-size: 18px;">&lt; div</b> <b style="color: brown; "> class="aside" </b>
+                <b style="color: blue; font-size: 18px;">&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;h4&gt;</b>¿Qué es aside en HTML ?
+              <b style="color: blue; font-size: 18px;">&lt;/h4&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;p&gt;</b>La etiqueta aside en HTML5 es un contenedor
+               para contenido secundario o lateral relacionado con el 
+               contenido principal de una página web. Es comúnmente utilizada para incluir contenido adicional, 
+               como barras laterales, widgets, menús de navegación, biografías de autor, etc.
+              <b style="color: blue; font-size: 18px;">&lt;/p&gt;</b></p>
+              <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p>
+
+            </div>
+            <p>La propiedad CSS float especifica cómo debe flotar un elemento, <b>left:</b>
+               El elemento flota a la izquierda de su contenedor
+               si usamos <b>float: left </b> podemos dejar que los elementos floten uno al 
+               lado del otro, en este caso las columnas. </p>
+
+            <p><b>El resultado seria</b></p>
+
+            <img class="imag" src="imag/Imagen48.png" alt="imagen de columnas">
+
+            <p>Tenga en cuenta que la página web del ejemplo no se ve bien cuando cambia el tamaño 
+               de la ventana del navegador a un ancho muy pequeño, ya aprenderá cómo solucionarlo.</p>
+
+               <img class="imag" src="imag/Imagen49.png" alt="imagen de columnas">
+
+               <h3><u>Consultas de Medios</u></h3>
+
+            <p>Media query es una técnica CSS introducida en CSS3.
+                 Utiliza la @mediaregla para incluir un bloque de propiedades CSS solo si se cumple una determinada condición.</p>
+
+            <p>Las consultas de medios permiten cambios de diseño extensos para adaptarse a diferentes ventanas gráficas.
+               Estas son solo algunas de las condiciones para las que se pueden usar las consultas de medios:</p>
+
+                  <ul id="lista-main">
+                    <li><b>Dimensiones:</b> la altura y el ancho de la ventana gráfica de su dispositivo.</li>
+                    <li><b>Orientación:</b> paisaje o retrato (generalmente se usa para identificar a los usuarios de tabletas).</li>
+                    <li><b>La relación de aspecto</b> es la relación ancho-alto para la ventana gráfica.</li>
+                    <li><b>Al pasar el mouse:</b> la capacidad de pasar el mouse sobre cualquier elemento
+                       (solo aplicable con un cursor y no con una pantalla táctil).</li>
+                    <li><b>Resolución:</b> la densidad de píxeles del dispositivo.</li>
+                  </ul>
+
+            <p>Estas condiciones, y muchas otras, pueden usarse por separado o combinarse para crear instrucciones
+               precisas. Solo se puede aplicar un diseño correspondiente si se cumplen todas las condiciones.</p>
+            <p>Utiliza la <b>@mediaregla </b> para incluir un bloque de propiedades CSS solo si se cumple una determinada condición.</p>
+
+            <p>Anteriormente creamos una página web con 3 columnas, y respondía,
+               pero no se veía bien en una pantalla pequeña. Las consultas de los medios pueden ayudar con eso.
+               Podemos agregar un punto de ruptura donde ciertas partes del diseño se comportarán
+               de manera diferente en cada lado del punto de ruptura.</p>
+
+            <p><b>Ejemplo:</b> Use una consulta de medios para agregar un punto de interrupción en 768px:
+              Cuando la pantalla (ventana del navegador) se vuelve más pequeña que 768 px, cada columna debe tener un ancho del 100 %:</p>
+
+              <div class="ejemplo-dos">
+                <ul >
+                  <li style="color: blueviolet;">estilo.css</li><br>
+                  <li><b style="color: rebeccapurple "> @media only screen and (max-width: 768px) { </b></li><br>
+                  <li><b style="color: green; "> /* Para teléfonos móviles: */ </b></li><br>
+                  <li><b style="color: brown; "> .menu { </b></li>
+                  <li><b style="color: green; "> width: 100%; </b></li>
+                  <li><b style="color: brown "> } </b></li><br>
+                  <li><b style="color: brown; "> .main { </b> </li>
+                  <li><b style="color: green; "> width: 100%; </b></li>
+                  <li><b style="color: brown "> } </b></li><br>
+                  <li><b style="color: brown; "> .aside { </b> </li>
+                  <li><b style="color: green; "> width: 100%; </b></li>
+                  <li><b style="color: brown "> } </b></li><br>
+                  <li><b style="color: rebeccapurple "> } </b></li><br>
+               </ul>
+              </div>
+
+              <p>Resultado final, <b>estilo.css / index.html</b> copiar y pegar, abrir con <b>open with live server.</b> 
+                Luego en Google Chrome, vaya a Inspeccionar y en tableta / teléfono dimensions Responsive, verifiqué con menos 768 px.</p>
+
+             <p>Va observar, como hemos dicho antes, las consultas de medios permiten cambios de diseño extensos para adaptarse a 
+              diferentes ventanas gráficas.</p>
+
+              <div class="ejemplo">
+                <ul >
+                  <li style="color: blueviolet;">estilo.css</li><br>
+                  <li><b style="color: green; "> * { </b> </li><br>
+                  <li><b style="color: brown; ">  font-family: Verdana, Geneva, Tahoma, sans-serif; </b></li><br>
+                  <li><b style="color: brown; "> box-sizing: border-box;</b></li><br>
+                  <li><b style="color: green; "> } </b></li><br>
+  
+                  <li><b style="color: green; "> body { </b> </li><br>
+                  <li><b style="color: brown; "> margin: 0; </b></li><br>
+                  <li><b style="color: green; "> } </b></li><br>
+  
+                  <li><b style="color: green; "> .menu { </b> </li><br>
+                  <li><b style="color: brown; "> width: 25%; </b></li><br>
+                  <li><b style="color: brown; "> float: left; </b></li><br>
+                  <li><b style="color: brown; "> padding: 15px; </b></li><br>
+                  <li><b style="color: brown; "> border: 1px solid blueviolet; </b></li><br>
+                  <li><b style="color: green; "> } </b></li><br>
+  
+                  <li><b style="color: green; "> .main { </b> </li><br>
+                  <li><b style="color: brown; "> width: 60%; </b></li><br>
+                  <li><b style="color: brown; "> float: left; </b></li><br>
+                  <li><b style="color: brown; "> padding: 15px; </b></li><br>
+                  <li><b style="color: brown; "> border: 1px solid blueviolet; </b></li><br>
+                  <li><b style="color: green; "> } </b></li><br>
+  
+                  <li><b style="color: green; "> .aside { </b> </li><br>
+                  <li><b style="color: brown; "> width: 15%; </b></li><br>
+                  <li><b style="color: brown; "> float: left; </b></li><br>
+                  <li><b style="color: brown; "> padding: 15px; </b></li><br>
+                  <li><b style="color: brown; "> border: 1px solid blueviolet; </b></li><br>
+                  <li><b style="color: green; "> } </b></li><br>
+
+                  <li><b style="color: brown; "> @media only screen and (max-width: 768px) { </b> </li><br>
+                    <li><b style="color: green; "> /* Para teléfonos móviles: */ </b></li><br>
+                    <li><b style="color: brown; "> .menu { </b></li><br>
+                    <li><b style="color: green; "> width: 100%; </b></li><br>
+                    <li><b style="color: green; "> } </b></li><br>
+                    <li><b style="color: brown; "> .main { </b></li><br>
+                    <li><b style="color: green; "> width: 100%; </b></li><br>
+                    <li><b style="color: green; "> } </b></li><br>
+                    <li><b style="color: brown; "> .aside { </b></li><br>
+                    <li><b style="color: green; "> width: 100%; </b></li><br>
+                    <li><b style="color: green; "> } </b></li><br>
+                    <li><b style="color: brown; "> } </b></li><br>
+                   </ul>
+                </div>
+
+              <div class="resultado"> 
+                <p style="color: blueviolet;">index.html</p>
+                <p><b style="color: blue; font-size: 18px;">&lt; div </b><b style="color: brown; ">class ="header" </b>
+                  <b style="color: blue; font-size: 18px;">&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;h1&gt;</b> Front-End <b style="color: blue; font-size: 18px;">&lt;/h1&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p>
+  
+                <p><b style="color: blue; font-size: 18px;">&lt; div</b> <b style="color: brown; "> class="menu" </b>
+                  <b style="color: blue; font-size: 18px;">&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;ul&gt;</b><br>
+                <b style="color: blue; font-size: 18px;">&lt;li&gt;</b>
+                ¿Qué es el front-end? <b style="color: blue; font-size: 18px;">&lt;/li&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;li&gt;</b> Estructura de un proyecto web
+                <b style="color: blue; font-size: 18px;">&lt;/li&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;/ul&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p> 
+  
+                <p><b style="color: blue; font-size: 18px;">&lt; div</b> <b style="color: brown; "> class="main" </b>
+                  <b style="color: blue; font-size: 18px;">&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;h4&gt;</b>Un desarrollador Front End
+                <b style="color: blue; font-size: 18px;">&lt;/h4&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;p&gt;</b>Debe tener conocimiento sobre HTML, CSS y JavaScript
+                 y ser capaz de utilizar algunos frameworks o librerías para crear todo tipo de interfaces de usuarios.
+                 React, Redux, Angular, Bootstrap, Foundation, LESS, Sass, Stylus y PostCSS son algunos de ellos.
+                <b style="color: blue; font-size: 18px;">&lt;/p&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p>
+  
+                <p><b style="color: blue; font-size: 18px;">&lt; div</b> <b style="color: brown; "> class="aside" </b>
+                  <b style="color: blue; font-size: 18px;">&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;h4&gt;</b>¿Qué es aside en HTML ?
+                <b style="color: blue; font-size: 18px;">&lt;/h4&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;p&gt;</b>La etiqueta aside en HTML5 es un contenedor
+                 para contenido secundario o lateral relacionado con el 
+                 contenido principal de una página web. Es comúnmente utilizada para incluir contenido adicional, 
+                 como barras laterales, widgets, menús de navegación, biografías de autor, etc.
+                <b style="color: blue; font-size: 18px;">&lt;/p&gt;</b></p>
+                <p><b style="color: blue; font-size: 18px;">&lt;/div&gt;</b></p><br><br><br><br><br><br><br><br>
+            </div>
+
+            <p style="text-align: center;"><b>Ejemplo con  769px</b> </p>
+
+            <img class="imag" src="imag/Imagen52.png" alt="Imagen de ilustración">
+
+            <p style="text-align: center;"><b>Ejemplo con  768px y menos </b> </p>
+
+            <img class="imag" src="imag/Imagen53.png" alt="Imagen de ilustración">
+
+          
+
+            <h3><u>Framework Introducción</u></h3>
+
+           <p>Un framework es un marco o esquema de trabajo generalmente utilizado por programadores para realizar el desarrollo 
+            de software. Utilizar un framework permite agilizar los procesos de desarrollo ya que evita tener que escribir código 
+            de forma repetitiva, asegura unas buenas prácticas y la consistencia del código.</p>
+
+           <h4>Los mejores Frameworks CSS responsive</h4>
+
+           <ul id="lista-main">
+            <li>Bootstrap, el rey del CSS. Si hay un framework CSS famoso, ese es Bootstrap.</li>
+            <li>Foundation, avanzado y veterano.</li>
+            <li>Pure CSS, ligero y rápido.</li>
+            <li>Milligram, minimista hasta en el tamaño.</li>
+            <li>Materialize, framework CSS para material design.</li>
+            <li>Skeleton, por lo viejos tiempos!</li>
+           </ul>
+
+           <p>En el siguiente link, pueden seguir aprendiendo de web responsive, y framework Bootstrap.
+             Sigan aprendiendo por su cuenta. Gracias. ¡Feliz Programación.  </p>
+
+             <div  style="background-color: grey; color: white; 
+             border: 2px solid blueviolet; font-size: 20px; text-align: center;" >
+             <a href="https://www.w3schools.com/bootstrap4/default.asp" target="_blank">
+               Visit w3schools/Bootstrap4</a> </div><br>
+            <div  style="background-color: grey; color: white; 
+             border: 2px solid blueviolet; font-size: 20px; text-align: center;" >
+             <a href="https://www.w3schools.com/css/css_rwd_grid.asp" target="_blank">
+               Visit w3schools/Responsive</a> </div>
+
+        </article>
+
+    </main>
+    
+    <footer><p> 2023 <a href="index.html" > Front-End </a> Author: Juan A.Q. [N/E.R./Arg.] <a href="#subir">Subir</a></p> </footer>
+
+    <script src="JS/menu.js">  </script>
+</body>
+</html>

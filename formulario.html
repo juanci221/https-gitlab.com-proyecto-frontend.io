@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario HTML</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+    <link rel="icon" type="image/x-icon" href="imag-icono.png">
+</head>
+<body>
+    
+    <header class="menu">
+
+        <div>
+          <h1 id="subir" class="header-titulo">Front-End</h1>
+          
+          </div>
+      
+          <div class="bars">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      
+      <nav class="nav-bars">
+        <ul>
+          
+          <li><a href="index.html" class="nav-menu-link">Inicio</a></li>
+          <li><a href="intro.html" class="nav-menu-link">Introducción Front-End. HTML/CSS/JavaScript</a></li>
+          <li ><a href="HTMLbasic.html" class="nav-menu-link">Conceptos básicos de HTML</a></li>
+          <li ><a href="elementos.html" class="nav-menu-link">TAGs (Elementos) HTML </a></li>
+          <li ><a href="formulario.html" class="nav-menu-link">Formulario Web</a></li>
+          <li ><a href="CSSframework.html" class="nav-menu-link">Extendiendo CSS y framework</a></li>
+          <li ><a href="diseñoadaptable.html" class="nav-menu-link">Responsive Web Design</a> </li>
+          <li ><a href="github.html" class="nav-menu-link">GIT/Github. Servidores/hosting/dominio.</a></li>
+          <li ><a href="programacion.html" class="nav-menu-link">Lógica de programación</a></li>
+          <li><a href="javaScript.html" class="nav-menu-link">JavaScript</a></li>
+          
+          
+      </ul>
+      </nav>
+      
+      </header>
+
+
+    
+
+         <main class="main">
+
+          <article class="articulos">
+            <img class="imag1" src="imag/growtika-9WnjxT1NCoY-unsplash.jpg" alt="imagen de ilustracion">
+
+            <h2>Tu primer formulario</h2>
+            
+          <p>Este artículo le proporciona su primera experiencia en la creación de un formulario web, incluido
+            el diseño de un formulario simple, implementándolo utilizando los controles de formulario HTML
+            correctos y otros elementos HTML.</p>
+
+          <h3>¿Qué son los formularios web?</h3>
+
+          <p>Formularios web son uno de los principales puntos de interacción entre un usuario y un sitio web o aplicación.
+            Los formularios permiten a los usuarios ingresar datos, que generalmente se envían a un servidor web para su
+            procesamiento y almacenamiento o usado en el lado del cliente para actualizar inmediatamente la interfaz de
+           alguna manera, (por ejemplo, agregar otro elemento a una lista, o mostrar u ocultar una función de interfaz de usuario).</p>
+
+          <p><b>El HTML</b> de un formulario web está compuesto por uno o más controles de formulario ( a veces llamado widgets), más algunos
+            elementos adicionales para ayudar a estructurar la forma general — a los que a menudo se les conoce como Formularios HTML. <br>
+            Los <b>controles</b> pueden ser campos de texto de una o varias líneas, cuadros desplegables, botones, casillas de verificación
+            o botones de radio, y se crean principalmente utilizando el <b style="color: blue;">&lt;input&gt;</b> elemento, aunque 
+            también hay otros elementos sobre los que aprender. <b>Los controles</b> de formulario también se pueden programar
+            para aplicar formatos o valores específicos que se ingresarán (validación de formulario), y emparejado con etiquetas
+            de texto que describen su propósito tanto para usuarios videntes como para discapacitados visuales.</p>  
+
+            <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+            <h3>Diseñando tu formulario</h3>
+
+          <p>Antes de comenzar a codificar, siempre es mejor dar un paso atrás y tomarse el tiempo para pensar en su formulario. Diseñar
+            una maqueta rápida (en papel) lo ayudará a definir el conjunto correcto de datos que desea pedirle a su usuario que ingrese. Desde el 
+            punto de vista de la experiencia del usuario, es importante recordar que cuanto mayor sea su forma, más se arriesgará 
+            a frustrar a las personas y perder usuarios. Manténgalo simple y manténgase enfocado: solicite solo los datos que necesita 
+            absolutamente.</p>
+
+            <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+          <h3>Aprendizaje activo: implementación de nuestro formulario HTML</h3>
+
+          <p style="text-align: center;"><b>Utilizaremos los siguientes elementos HTML:</b>
+          <b style="color: blue;">&lt;form&gt;,</b> <b style="color: blue;">&lt;label&gt;, </b>
+          <b style="color: blue;">&lt;input&gt;.</b></p>
+
+          <h3><u> El elemento <b style="color: blue;">&lt;form&gt;</b></u></h3>
+          <p>Todos los formularios comienzan con un elemento como este:<b style="color: blue;">&lt;form&gt;,</b></p>
+
+            <p style="background-color: lightgray; text-align: center;">
+              <b style="color: blue;">&lt;form <b style="color: black;">action = ".."</b> 
+            <b style="color: black;"> method ="post"</b> &gt;,</b>.......<b style="color: blue;">&lt;/form&gt;,</b>
+          </p>
+
+          <p>Este elemento define formalmente un formulario. Es un elemento contenedor, pero específicamente para contener
+           formularios; También admite algunos atributos específicos para configurar la forma en que se comporta el formulario.
+           Todos sus atributos son opcionales, pero es una práctica estándar establecer siempre al
+           menos el <b style="color: black;">action = ".."</b> y <b style="color: black;"> method = ".."</b> atributos:</p>
+
+          <p><b>El atributo action:</b> indica la ubicación del programa que procesará la información enviada por el navegador,
+             cuando el formulario sea despachado. Este programa está escrito en cualquier lenguaje del lado servidor y 
+             se supone que esté preparado para recibir y procesar los datos del formulario.</p>
+
+          <p><b>Por otra parte, el atributo method:</b> indica cómo debe el navegador adjuntar los datos del formulario a
+             la petición. Es recomendable usar el método "POST" debido a que éste oculta la información enviada y permite
+             la transmisión de datos binarios. Sin embargo, algunas situaciones específicas pueden requerir el uso del método GET.</p>
+
+          <p><b><u>Nota:</u></b> Le voy colocar un link para que investiguen cómo funcionan esos atributos al final del artículo.</p>
+
+          <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+              <h3>Siguiendo con el formulario</h3>
+
+              <p>Por ahora, agregue lo anterior el elemento <b style="color: blue;">&lt;form&gt;</b>
+               en tu HTML <b style="color: blue;">&lt;body&gt;</b>.
+               Vamos agregar un elemento <b style="color: blue;">&lt;ul&gt;</b>dentro del elemento 
+               <b style="color: blue;">&lt;form&gt;</b>. Como no tiene estilo con CSS, la lista desordenada 
+               <b style="color: blue;">&lt;ul&gt;</b> lo va organizar mejor al formulario. 
+               Para mi tiene más sentido utilizar las listas UL que las etiqueta <b style="color: blue;">&lt;br&gt;</b>,
+               en los formularios.</p>
+
+               <div class="ejemplotres">
+                <ul>
+                  <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+
+                  <li style="background-color: lightsteelblue;"><b style="color: blue;">&lt;form</b> <b style="color: black;">action =".."</b>
+                  <b style="color: black;"> method ="post"</b> &gt;</b></li><br>
+
+                  <li style="background-color: lightgray"><b style="color: blue;">&lt;ul&gt;</b></li><br>
+
+                  <li><b style="color: brown;">&lt;li&gt;</b>
+                  ..........................<b style="color: brown;">&lt;/li&gt;</b></li><br>
+                 
+                  <li style="background-color: lightgray"><b style="color: blue;">&lt;/ul&gt;</b></li><br>
+
+                  <li style="background-color: lightsteelblue;"><b style="color: blue;">&lt;/form&gt;</b></li><br>
+
+                  <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                </ul>
+                 </div>
+
+             
+
+             <p>Agreguemos los elementos <b style="color: blue;">&lt;label&gt;</b>, dentro del elemento 
+              <b style="color: blue;">&lt;form&gt;</b>, vamos agregar 4 label.
+              El primero para el nombre, el segundo apellido, el tercero el e-mail y cuarto password.
+              El <b style="color: blue;">&lt;label&gt;</b>, es un elemento utilizado para proveer una etiqueta 
+              a los controles del formulario.</p>
+
+
+              <div class="ejemplotres">
+                <ul>
+                  <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+
+                  <li><b style="color: blue;">&lt;form</b> <b style="color: black;">action = ".."</b>
+                  <b style="color: black;"> method = "post"</b> &gt;,</b></li><br>
+
+                  <li><b style="color: blue;">&lt;ul&gt;</b></li><br>
+
+                  <li style="background-color: lightgray"><b style="color: brown;">&lt;li&gt;</b>     
+                  <b style="color:blue;">&lt;label  for = ""&gt;</b> Nombre<b style="color: blue;">&lt;/label&gt;</b>
+                  <b style="color: brown;">&lt;li&gt;</b></li><br>
+                  
+                  <li style="background-color: lightgray" ><b style="color: brown;">&lt;li&gt;</b> 
+                  <b style="color: blue;">&lt;label  for =""&gt;</b> Apellido<b style="color: blue;">&lt;/label&gt;</b>
+                  <b style="color: brown;">&lt;li&gt;</b></li><br>
+                 
+                  <li style="background-color: lightgray" ><b style="color: brown;">&lt;li&gt;</b>
+                    <b style="color:blue;">&lt; label  for =""&gt;</b> e-mail<b style="color: blue;">&lt;/label&gt;</b>
+                    <b style="color: brown;">&lt;li&gt;</b>  </li><br>
+
+                  <li  style="background-color: lightgray"><b style="color: brown;">&lt;li&gt;</b>     
+                   <b style="color:blue;">&lt;label  for = ""&gt;</b> password<b style="color: blue;">&lt;/label&gt;</b>
+                   <b style="color: brown;">&lt;li&gt;</b></li><br>
+
+                  <li><b style="color: blue;">&lt;/ul&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;/form&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                 
+                </ul>
+              
+                 </div>
+
+              
+
+              <p>En el siguiente paso sería agregar el elemento <b style="color: blue;">&lt;input&gt;</b> para este formulario. <br>
+                Inputs, son el principal elemento, el más importante, específica que campo es
+                de entrada y permite que el usuario pueda ingresar datos. 
+              <br>
+              <b>Estos son algunos de los valores, al final del artículo le describo los demás.</b></p>
+
+              <p><b> &lt;input type = ”text”&gt;:</b> es el valor por defecto si no definimos un type que describa
+              el tipo de input que vamos a escribir. Especifica que el input aceptará valores de texto
+              (valen números, letras y caracteres especiales como “@”, “-“, etc.).</p> 
+
+              <p><b> &lt;input type = ”number”&gt;:</b>especifica un input que solamente aceptará valores numéricos.</p> 
+
+              <p><b> &lt;input type = ”password”&gt;:</b> especifica un input de password, los valores introducidos no se
+                mostrará por pantalla, en su lugar, se verán caracteres como: •••••.</p>
+
+                <div class="ejemplotres">
+              <ul>
+                <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;form</b> <b style="color: black;">action = ".."</b>
+                <b style="color: black;"> method = "post"</b> &gt;,</b></li><br>
+                <li><b style="color: blue;">&lt;ul&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b>     
+                <b style="color:blue;">&lt;label  for = ""&gt;</b> Nombre<b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li style="background-color: antiquewhite;"><b style="color: blue;">&lt;input</b> 
+                <b style="color: black;"> type ="text" name ="nombre" placeholder ="Ingrese su nombre"</b> 
+                <b style="color: blue;">&gt;</b><b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b> 
+                <b style="color: blue;">&lt;label  for =""&gt;</b> Apellido<b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li style="background-color: antiquewhite;"><b style="color: blue;">&lt;input</b><b style="color: black;"> type ="text" name ="apellido" placeholder ="Ingrese su apellido"</b> 
+                <b style="color: blue;">&gt;</b><b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b><b style="color:blue;">&lt; label  for =""&gt;</b> e-mail
+                <b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li style="background-color: antiquewhite;"><b style="color: blue;">&lt;input</b><b style="color: black;"> type ="text" name ="e-mail" placeholder ="Ingrese su e-mail"</b> 
+                <b style="color: blue;">&gt;</b><b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b>     
+                 <b style="color:blue;">&lt;label  for = ""&gt;</b> password<b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li style="background-color: antiquewhite;"><b style="color: blue;">&lt;input</b><b style="color: black;"> type = "password"</b> 
+                  <b style="color: blue;">&gt;</b> <b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/ul&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/form&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                <li>Un Placeholder es, ni más ni menos, que un elemento provisorio,
+                  también llamado dummy. Su función es «rellenar» un espacio que más adelante se reemplazará</li>
+              </ul>
+               </div>
+
+
+
+                  <p><b>El último paso sería Crea el input para enviar el formulario.</b><br>
+                 <b><u>input type = ”submit”:</u></b> hemos preparado varios input del formulario para su envío pero una vez están 
+                  todos completados ¿Cómo lo enviamos? Para ello, necesitamos crear el famoso input de envío de formulario.
+                  El botón de Submit que nos permitirá realizar el envío 
+                  (es muy común verlo bajo con el texto de “send” o “submit” en inglés o si es en Castellano como “enviar”).</p>
+
+                  
+            <div class="ejemplotres">
+              
+              <ul >
+                <li style="font-size: 20px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li>
+                <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li>
+                <li><b style="color: blue;">&lt;head&gt;</b></li>
+                <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li>
+                <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h1&gt;</b> Elemento &lt;form&gt;<b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;form</b> <b style="color: black;">action =".."</b>
+                <b style="color: black;"> method ="post"</b> &gt;,</b></li><br>
+                <li><b style="color: blue;">&lt;ul&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b>     
+                <b style="color:blue;">&lt;label  for = ""&gt;</b> Nombre<b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;input</b> 
+                <b style="color: black;">type ="text" name ="nombre" placeholder ="Ingrese su nombre"</b> 
+                <b style="color: blue;">&gt;</b><b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b> 
+                <b style="color: blue;">&lt;label  for =""&gt;</b> Apellido<b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;input</b><b style="color: black;">type ="text" name ="apellido" placeholder ="Ingrese su apellido"</b> 
+                <b style="color: blue;">&gt;</b><b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b><b style="color:blue;">&lt; label  for =""&gt;</b> e-mail
+                <b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;input</b><b style="color: black;">type ="text" name ="e-mail" placeholder ="Ingrese su e-mail"</b> 
+                <b style="color: blue;">&gt;</b><b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b>     
+                 <b style="color:blue;">&lt;label  for = ""&gt;</b> password<b style="color: blue;">&lt;/label&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;input</b><b style="color: black;"> type = "password"</b> 
+                  <b style="color: blue;">&gt;</b> <b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: brown;">&lt;li&gt;</b><b style="color: blue;">&lt;input</b> 
+                <b style="color: black;"> type ="submit" value = "enviar"</b><b style="color: blue;">&gt;</b>
+                <b style="color: brown;">&lt;/li&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/ul&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/form&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;html&gt;</b></li><br>
+                <li>Copia el código que está dentro de <b style="color: blue;">&lt;body&gt;</b> y pegar en Visual Studio Code</li>
+              </ul>
+
+              <img class="imag" src="imag/Imagen18.png" alt="">
+            </div>
+
+          
+
+                  
+
+
+                  <div style="text-align: center; color: brown; ">
+                    <p>El resultado final de mi primer formulario HTML es el siguiente.</p>
+
+                <form action="" method="" style="background-color: beige; border: 2px solid rgb(169, 117, 228);">
+                  <ul id="lista-main">
+                  <li><label for="">Nombre</label> <input type="text" name="nombre" placeholder="ingrese su nombre"></li>
+
+                  <li><label for="">Apellido </label> <input type="text" name="apellido" placeholder="ingrese su apellido" ></li>
+
+                  <li><label for="">e-mail.</label> <input type="text" name="E-mail" placeholder="ingrese su email"></li>
+
+                  <li><label for="">password</label> <input type="password"></li>
+                  
+                  <li><input type="submit" value="enviar"></li>
+
+                 </ul>
+
+                </form>
+                </div>
+
+                 <div>
+                  <p><b>Como mencionamos antes, el elemento <b style="color: blue;">&lt;form&gt;</b> 
+                   es simplemente un contenedor para muchos otros elementos,
+                   que en su mayoría representan una amplia gama de controles. Estos controles se listan a continuación:</b></p>
+
+                   
+                   <p><b style="color: blue;">&lt;button&gt;</b>: un botón que, cuando es presionado, puede llevar a cabo 
+                    diferentes acciones dependiendo de su atributo <b>type</b>. <br> <b>Sus variantes son: </b>
+                   </p>
+
+                    <ul id="lista-main">
+                      <li><b><u>submit:</u></b> envía el formulario al agente procesador.</li>
+                      <li><b><u>reset:</u></b> restaura todos los controles
+                        en el formulario a sus valores iniciales.</li>
+                      <li><b><u>menu:</u></b> muestra un menú.</p></li>
+                    </ul>
+                    
+                    <p><b style="color: blue;">&lt;fieldset&gt;</b>: agrupa temáticamente a un conjunto de controles.</p>
+
+                    <p><b style="color: blue;">&lt;keygen:&gt;</b>: un control usado para generar un par de llaves pública/privada.</p>
+
+                    <p><b style="color: blue;">&lt;label&gt;</b>: un elemento utilizado para proveer una etiqueta a los controles del
+                       formulario.</p>
+
+                    <p><b style="color: blue;">&lt;object&gt;</b>: un objeto que representa una imagen, que puede ser usado como un 
+                       mapa de imagen del lado cliente.</p>
+
+                    <p><b style="color: blue;">&lt;output&gt;</b>: un elemento usado para mostrar el resultado de un cálculo llevado
+                       a cabo por la página, o el resultado de la acción de un usuario, basada en los controles del formulario.</p>
+
+                    <p><b style="color: blue;">&lt;select&gt;</b>: un control usado para seleccionar una o más opciones de una lista.</p>
+
+                    <p><b style="color: blue;">&lt;textarea&gt;</b>: un control usado para ingresar un trozo de texto que consta de una
+                       o más líneas.</p>
+
+                    <p><b style="color: blue;">&lt;img&gt;</b>: una imagen que puede ser usada como un mapa de imagen del lado cliente.</p>
+                    <p><b style="color: blue;">&lt;input&gt;</b>: uno de muchos controles de acuerdo al valor del atributo type. <br>
+                      <b>Éstos son: type = valor</b></p>
+
+                       <ul id="lista-main">
+                        <li><b><u>text:</u></b> un control usado para la entrada de una sola línea de texto.</li>
+                        <li><b><u>hidden:</u></b> un control oculto utilizado para enviar información al servidor,
+                           típicamente manejado por programas.</li>
+                        <li><b><u>search:</u></b> igaul a text pero con fines de búsqueda.</li>
+                        <li><b><u>tel:</u></b> un control usado para proveer un número de teléfono.</li>
+                        <li><b><u>url:</u></b> una caja de texto usada para el ingreso de un único URL absoluto.</li>
+                        <li><b><u>email:</u></b> un control diseñado para editar una o más direcciones de e-mail.</li>
+                        <li><b><u>password: </u></b> una caja de texto para la edición de contraseñas, donde los
+                           caracteres son representados por puntos.</li>
+                        <li><b><u>datetime:</u></b> un control para ingresar una fecha y hora global específica.</li>
+                        <li><b><u>date:</u></b> un control para ingresar una fecha específica.</li>
+                        <li><b><u>month:</u></b> un control para ingresar un mes específico.</li>
+                        <li><b><u>week:</u></b> un control para ingresar una semana específica.</li>
+                        <li><b><u>time</u></b> un control para ingresar una hora específica.</li>
+                        <li><b><u>number:</u></b> un control para ingresar un número.</li>
+                        <li><b><u>range:</u></b> un control para ingresar uno o dos números dentro de un rango.</li>
+                        <li><b><u>color: </u></b> un control para ingresar un color.</li>
+                        <li><b><u>checkbox: </u></b> un control para ingresar un valor booleano (verdadero/falso).</li>
+                        <li><b><u>radio: </u></b> un control para elegir una única opción entre varias.</li>
+                        <li><b><u>file:</u></b> un control usado para subir archivos al servidor.</li>
+                        <li><b><u>submit:</u></b> un botón usado para enviar el formulario.</li>
+                        <li><b><u>image:</u></b> igual a submit pero con la habilidad de verse como una imagen en 
+                          lugar de usar la apariencia predeterminada de los botone</li>
+                        <li><b><u>reset:</u></b> un botón usado para reiniciar los controles del formulario a sus valores iniciales.</li>
+                        <li><b><u>button: </u></b> un botón sin una acción predeterminada asociada.</li>
+                    </ul>
+                  </div>
+
+                  <p>Cuando se utilizan apropiadamente, en especial desde que HTML5 comenzó a ser adoptado, los formularios son una herramienta
+                     poderosa que permiten a los autores no solamente recolectar información muy valiosa de los usuarios, sino también desarrollar
+                      complejas aplicaciones, capaces de recolectar y procesar información muy específica en muchas formas diferentes.</p>
+
+                      <h4>Para finalizar este articulo también le mencionare, el
+                        Atributos target del elemento <b style="color: blue;">&lt;form&gt;</b></h4>
+
+                  <p><b>Target:</b> nos permite especificarle al navegador dónde mostrará el resultado del proceso /
+                     la respuesta que se recibe después
+                     de enviar el formulario. Tenemos varias opciones, las principales son:</p>
+                        
+
+                      <ul id="lista-main">
+                      <li><b> _blank:</b> Abrirá otra pestaña del navegador con el resultado del envío.     </li>
+
+                      <li><b>_self:</b> mostrará el resultado del envío del formulario en la actual pestaña
+                         del navegador. Por tanto, el resultado será el mismo que con _blank pero en la 
+                         pestaña actual (No abrirá otra).</li>
+
+                      <li><b>_parent: </b> muestrá el resultado en el FRAMESET padre, actualmente ya no se
+                         recomienda trabajar con FRAMESET por lo que están OBSOLETOS.</li>
+
+                      <li><b>_top: </b> Es el valor que usaremos al cargar una página externa.
+                         Utiliza todo el espacio de la ventana del navegador destruyendo
+                         toda la estructura de FRAMESETS (OBSOLETO ya que como con _parent, los FRAMESET están obsoletos).</li>
+                      </ul>
+                      
+                      <p><b>Conclusión:</b> Conclusión Muchas gracias a todos por leer el artículo. En el siguiente link van
+                        a obtener el conocimientos  para el envío de datos del formulario. Te animo fuertemente a leer más artículos
+                        relacionados. Espero que este artículo te haya ayudado. Gracias. ¡Feliz Programación.</p>
+
+                      <div  style="background-color: grey; color: white; 
+                      border: 2px solid blueviolet; font-size: 20px; text-align: center;" >
+                      <a href="https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retrieving_form_data" target="_blank">
+                        Visit developer.mozilla.org</a> </div>
+
+
+                      </div>
+
+               
+                  </article>
+
+                  </main>
+
+                  <footer><p> 2023 <a href="index.html" > Front-End </a>  Author: Juan A.Q. [N/E.R./Arg.] <a href="#subir">Subir</a></p> </footer>
+
+   <script src="JS/menu.js">  </script>
+
+</body>
+</html>

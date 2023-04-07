@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extendiendo CSS y framework </title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+    <link rel="icon" type="image/x-icon" href="imag-icono.png">
+
+   
+
+</head>
+<body>
+
+    <header class="menu">
+
+        <div>
+          <h1 id="subir" class="header-titulo">Front-End</h1>
+          
+          </div>
+      
+          <div class="bars">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      
+      <nav class="nav-bars">
+        <ul>
+          
+          <li><a href="index.html" class="nav-menu-link">Inicio</a></li>
+    <li><a href="intro.html" class="nav-menu-link">Introducción Front-End. HTML/CSS/JavaScript</a></li>
+    <li ><a href="HTMLbasic.html" class="nav-menu-link">Conceptos básicos de HTML</a></li>
+    <li ><a href="elementos.html" class="nav-menu-link">TAGs (Elementos) HTML </a></li>
+    <li ><a href="formulario.html" class="nav-menu-link">Formulario Web</a></li>
+    <li ><a href="CSSframework.html" class="nav-menu-link">Extendiendo CSS</a></li>
+    <li ><a href="diseñoadaptable.html" class="nav-menu-link">Responsive Web Design</a></li>
+    <li ><a href="github.html" class="nav-menu-link">GIT/Github. Servidores/hosting/dominio.</a></li>
+    <li ><a href="programacion.html" class="nav-menu-link">Lógica de programación</a></li>
+    <li><a href="javaScript.html" class="nav-menu-link">JavaScript</a></li>
+         
+      </ul>
+      </nav>
+      
+      </header>
+
+     
+
+      <main class="main">
+        <img class="imag1" src="imag/growtika-9WnjxT1NCoY-unsplash.jpg" alt="Imagen de ilustración">
+  
+         <article class="articulos">
+
+          <h2> CSS ¿qué es, realmente? </h2>
+
+          <p>CSS, Hojas de estilo en cascada, no es realmente un lenguaje de programación, tampoco es un lenguaje de marcado. 
+             Es un lenguaje de hojas de estilo, es decir, te permite aplicar estilos de manera 
+             selectiva a elementos en los documentos HTML.</p>
+          <p>Por ejemplo, para seleccionar todos los elementos, párrafo en una página HTML 
+            y poner el texto o fuente de color azul, aplicamos lo siguiente.</p>
+  
+             
+              <div class="ejemplo">
+                <ul>
+                  <li><b style="color: green; font-size: 18px;"> p { </b> </li><br>
+                  <li><b style="color: brown; font-size: 18px;"> color: blue ;</b> color azul</li><br>
+                  <li><b style="color: green; font-size: 18px;"> }</b></li><br>
+                  <li> Pero antes de seguir avanzado en el tema hay, cosas que aprender.</li>
+                 
+                </ul>
+                 </div>
+
+                 <h3 style ="color: white ; background-color: grey; " >
+                  Una regla CSS consta de un selector y un bloque de declaración.</h3>
+
+                 <img class="imag" src="imag/Imagen17.png" alt="Css">
+
+              <p><b style="font-size: 18px;"><u>Declaración,</u></b> es la unidad básica de CSS, 
+               Cada declaración incluye un nombre de <b> propiedad CSS y un valor</b>, separados por dos puntos 
+              <b style="color:blue; font-size: 18px;"> " : "</b></p>
+
+              <p>En otras palabras, una declaración es la respuesta a una pregunta. 
+                 ¿De qué color debería ser este fondo? ¿Qué tan grande la fuente en este párrafo? etc.
+                  Y es exactamente así cómo defines el aspecto de tu documento, estableciendo declaraciones, una para cada 
+                  propiedad que necesitas definir.</p>
+
+              <p> Cuando se provee más de una declaración en el mismo bloque, cada declaración debe ser separada, por un punto y coma
+                <b style="color: blue; font-size: 18px;"> " ; "</b> y ​​los bloques de declaración están rodeados por llaves.
+                 Este es el motivo por el cual los autores normalmente usan un punto y coma al final de cada declaración.</p>
+
+              <p><b>En el siguiente ejemplo, un conjunto de declaraciones, son presentadas utilizando este formato.</b> </p>
+
+                  <div class="ejemplo">
+                   <p><b style="color: brown; font-size: 18px;"> {</b>
+                   <b style="color: brown; font-size: 18px;"> background-color: bisque;</b>  <span>(color de fondo)</span><br>
+                   <b style="color: brown; font-size: 18px;"> color: brown ;</b> <span>(color de fuente)</span> <br>
+                   <b style="color: brown; font-size: 18px;"> width: 50%; </b> <span>(ancho)</span><br>
+                   <b style="color: brown; font-size: 18px;"> height: auto; </b> <span>altura</span>
+                   <b style="color: brown; font-size: 18px;"> }</b></p>
+                  </div>
+                   
+
+                  
+
+                  <p style ="color: white ; background-color: grey; text-align: center;" > HTML-CSS-JavaScript </p>
+  
+                  <h3>¿Qué es un selector?</h3>
+                  
+  
+                  <p>Como su mismo nombre indica, un selector CSS es una referencia a uno o varios elementos HTML, escrito generalmente 
+                    desde código CSS (también pueden utilizarse desde ciertos lugares en JavaScript). Es una forma rápida y cómoda de hacer
+                    referencia a elementos individuales o grupos de elementos, para posteriormente darle estilo. </p>
+  
+                  <p>Cuando estamos en una fase de aprendizaje muy inicial con CSS, es habitual dar estilo con selectores muy sencillos,
+                    con el tiempo aprendemos a utilizar selectores más complejos que nos permitirán hacer más cosas y escribir menos.</p>
+  
+                  <p>Existe un amplio conjunto de selectores disponibles. <u>En las secciones siguientes,</u> veremos algunos de los selectores
+                     más básicos, ya que éstos presentarán las ideas sobre las cuales otros selectores se constituirán.</p>
+
+  
+                  <h4><u>EL SELECTOR UNIVERSAL</u></h4>
+                  
+
+                  <p>El selector universal, usa el carácter asterisco<b style="color: blue; font-size: 30px;" >*</b> selecciona todos los elementos
+                     HTML de la página.</p>
+  
+                  <p>Ejemplo: La siguiente regla CSS afectará a todos los elementos HTML de la página: </p>
+  
+                   <div class="ejemplo">
+                  <ul  >
+                    <li>Selector universal</li><br>
+                    <li><b style="color: green; font-size: 18px;">* { </b> </li><br>
+                    <li><b style="color: brown; font-size: 18px;"> font-size: 18px ; </b> Tamaño de fuente 18 px</li>
+                    <li><b style="color: brown; font-size: 18px;"> text-align: center ;</b> texto alineado centro</li>
+                    <li><b style="color: brown; font-size: 18px;"> color: blue ;</b> color azul</li><br>
+                    <li><b style="color: green; font-size: 18px;"> }</b></li>
+                   
+                  </ul>
+                   </div>
+
+                   <div class="resultado">
+
+                    <p><b style="color: blue; font-size: 14px;"></b>Página, Google Chrome</p>
+                    <p><b style="color: blue; font-size: 16px;">Titulo 2</b></p>
+                    <p><b style="color: blue; font-size: 16px;">Mi párrafo</b></p>
+                    <p><b style="color: blue; font-size: 16px;">Mi primer párrafo</b></p>
+                    <p><b style="color: blue; font-size: 16px;">Mi segundo párrafo</b></p>
+                    <p><b style="color: blue; font-size: 16px;">La siguiente regla CSS afectará a todos los elementos HTML de la página</b></p>
+                  
+                  </div>
+                   
+                  <p style ="color: white ; background-color: grey; text-align: center;" > HTML-CSS-JavaScript </p>
+  
+                   <h4><u>SELECTORES DE ELEMENTO</u></h4>
+                   
+  
+                   <p>El selector de elemento selecciona todos los elementos HTML con las mismas definiciones de estilo.</p>
+                   <p>Con este selector puedes aplicar declaraciones, por ejemplo, a todos los párrafos (elementos p), 
+                    todos los ítems de listas (elemento li) o todos los vínculos (elementos a) de un documento. El siguiente 
+                    ejemplo provee declaraciones para todos los elementos h2, p, y una lista desordenada ul del documento.</p>
+  
+                    <div class="ejemplo">
+                     
+                      <ul  >
+                        <li>Selectores de elemento</li><br><br>
+                        <li><b style="color: green; font-size: 18px;">h2 { </b> </li><br>
+                        <li><b style="color: brown; font-size: 18px;"> color: brown ; </b></li>
+                        <li><b style="color: brown; font-size: 18px;"> text-align: center ;</b> </li>
+                        <li><b style="color: green; font-size: 18px;"> }</b></li><br>
+  
+                        <li><b style="color: green; font-size: 18px;">p { </b> </li><br>
+                        <li><b style="color: brown; font-size: 18px;"> color: black ;</b></li>
+                        <li><b style="color: brown; font-size: 18px;"> text-align: center ;</b> </li>
+                        <li><b style="color: green; font-size: 18px;"> }</b></li><br>
+  
+                        
+                        <li><b style="color: green; font-size: 18px;">ul { </b> </li><br>
+                        <li><b style="color: brown; font-size: 18px;"> list-style: none ; </b> estilo de lista: ninguno</li>
+                        <li><b style="color: brown; font-size: 18px;"> margin: 0 ; </b >margen 0</li>
+                        <li><b style="color: brown; font-size: 18px;"> padding: 0 ; </b> relleno 0</li>
+                        <li><b style="color: green; font-size: 18px;"> }</b></li>
+                      </ul>
+                       </div>
+                      
+                       <div class="resultado">
+
+                        <p><b style="color: blue; font-size: 14px;"></b>Página, Google Chrome</p>
+                        <p><b style="color: blue; font-size: 30px;">Titulo 1</b></p>
+                        <p><b style="color: brown; font-size: 25px;">Titulo 2</b></p>
+                        <p><b style="color: black; ">Mi párrafo</b></p>
+                        <p><b style="color: black; ">Mi primer párrafo</b></p>
+                        <p><b style="color: black; ">Mi segundo párrafo</b></p><br>
+                        <ul>
+                        <li>Hola mundo</li>
+                        <li>Hola mundo</li>
+                        <li>Hola mundo</li>
+                        <li>Hola mi mundo</li>
+                        <li>Hola mi mundo</li>
+                        <li>Hola mi mundo</li>
+                        </ul>
+                      </div>
+
+                      <p style ="color: white ; background-color: grey; text-align: center;" > HTML-CSS-JavaScript </p>
+
+                       <h4><u>SELECTORES DE ID</u></h4>
+                       
+  
+                       <p>El selector de id usa el atributo id de un elemento HTML para seleccionar un elemento específico.</p>
+                       <p>La identificación de un elemento es única dentro de una página, por lo que el selector de identificación
+                         se usa para seleccionar un elemento único. Ejemplo</p>
+  
+                       <div class="ejemplo">
+  
+                        <p><b style="color: blue;">&lt;h2 <b style="color: brown; font-size: 18px;"> id ="subtítulos" </b> &gt;</b>
+                            Titulo 2 <b style="color: blue;">&lt;/h2&gt;</b><br><br>
+  
+                        <b style="color: blue;">&lt;p <b style="color: brown;font-size: 18px;"> id = "comentario" </b> &gt;</b>
+                           Mi párrafo <b style="color: blue;">&lt;/p&gt;</b><br><br>
+  
+                        <b style="color: blue;">&lt;footer <b style="color: brown; font-size: 18px;"> id = "pie" </b> &gt;</b> 
+                           Fin de la historia<b style="color: blue;">&lt;/footer&gt;</b></p> 
+                        </div>
+  
+                       <p>Para seleccionar un elemento con una identificación específica, escriba un carácter hash
+                        <b style="color: blue; font-size: 30px;" >#</b>, seguido de la identificación del elemento.
+                        Ejemplo: La siguiente regla CSS se aplicará al elemento HTML con <b>id="subtítulos": </b></p>
+  
+                        <div class="ejemplo">
+  
+                        <ul >
+                          <li>Selectores id</li><br>
+                          <li><b style="color: green; font-size: 18px;"> #subtítulos { </b> </li><br>
+                          <li><b style="color: brown; font-size: 18px;"> text-align: center; </b></li>
+                          <li><b style="color: brown; font-size: 18px;"> color: green ;</b> </li>
+                          <li><b style="color: brown; font-size: 18px;"> font-size: 30px ;  </b> </li>
+                          <li><b style="color: green; font-size: 18px;"> }</b></li>
+                        </ul>
+                        </div>
+
+                        <div class="resultado">
+
+                          <p><b style="color: blue; font-size: 14px;"></b>Página, Google Chrome</p>
+                          <p><b style="color: green; font-size: 25px;">Titulo 2</b></p>
+                          <p>Mi párrafo</p>
+                          <p>Mi primer párrafo</p>
+                        </div>
+
+                        <p style ="color: white ; background-color: grey; text-align: center;" > HTML-CSS-JavaScript </p>
+
+                        <h4><u>SELECTORES DE CLASE</u></h4>
+                        
+  
+                        <p>Una clase es un concepto introducido por CSS con el propósito de agrupar declaraciones y aplicarlas 
+                          a un conjunto personalizado de elementos, independientemente de su tipo o naturaleza.</p>
+                        <p>El selector de clase selecciona elementos HTML con un atributo de clase específico. 
+                          Ejemplo.</p>
+  
+                        <div class="ejemplo">
+                        <p><b style="color: blue;">&lt;h1 <b style="color: brown; font-size: 18px;">
+                           class = "encabezado" </b> &gt;</b> Titulo 1<b style="color: blue;">&lt;/h1&gt;</b><br><br>
+    
+                        <b style="color: blue;">&lt;div <b style="color: brown; font-size: 18px;"> class = "menu" </b> &gt;</b> 
+                          <b style="color: blue;">&lt;/div&gt;</b><br><br>
+    
+                        <b style="color: blue;">&lt;main <b style="color: brown; font-size: 18px;"> class = "contenedor" </b> &gt;</b>
+                          <b style="color: blue;">&lt;/main&gt;</b></p> 
+                          </div>
+                          
+
+                          <div class="resultado">
+                          <p>
+                            <b style="color: blue;">&lt;div <b style="color: brown; font-size: 17px;"> class = "menu" </b> &gt;</b><br> 
+
+                            <b style="color: blue;">&lt;h1&gt;</b> Titulo 1 
+                            <b style="color: blue;">&lt;/h1&gt;</b><br>
+
+                            <b style="color: blue;">&lt;p</b> &gt;</b> Mi párrafo 
+                            <b style="color: blue;">&lt;/p&gt;</b><br>
+
+                            <b style="color: blue;">&lt;h2</b> &gt;</b> Titulo 2  
+                            <b style="color: blue;">&lt;/h2&gt;</b><br>
+
+                            <b style="color: blue;">&lt;p&gt;</b> &gt;</b> Mi primer párrafo 
+                            <b style="color: blue;">&lt;/p&gt;</b><br>
+
+                            <b style="color: blue;">&lt;/div&gt;</b><br>
+                            <b>A la class menu, la usaremos para los ejemplos</b>
+                          </p>
+                          </div>
+  
+  
+                        <p>Para seleccionar elementos con una class, escriba un carácter de punto, 
+                        <b style="color: blue; font-size: 30px;" >( . )</b> seguido del nombre de la class.</p>
+  
+                        <div class="ejemplo">
+  
+                          <ul >
+                            <li><b style="color: green; font-size: 18px;"> .menu { </b> </li><br>
+                              <li><b style="color: brown; font-size: 18px;"> background-color: green ; </b></li>
+                              <li><b style="color: brown; font-size: 18px;"> width: 50%; </b> </li>
+                              <li><b style="color: brown; font-size: 18px;"> border: 2px solid blue; </b> </li>
+                              <li><b style="color: brown; font-size: 18px;"> height: auto ; </b> </li>
+                              <li><b style="color: green; font-size: 18px;"> }</b></li>
+                          </ul>
+                          </div>
+
+                          <div class="resultado">
+                            Página, Google Chrome
+                            <p style="background-color: green; width: 50%; border: 2px solid blue;">
+                              
+                              <b style=" font-size: 30px;"> Titulo 1 </b><br>
+                              <b> Mi párrafo </b><br>
+                              <b style="font-size: 25px; "> Titulo 2 </b><br>
+                              <b> Mi primer párrafo </b><br>
+                            </p>
+                            </div>
+  
+                          <p>También puede especificar qué elementos, pueden ser afectados por una class.</p>
+  
+                          
+                          <div class="ejemplo">
+                          <ul >
+                            <li><b style="color: green; font-size: 18px;"> .menu p{ </b> </li><br>
+                              <li><b style="color: brown; font-size: 18px;"> color: white ; </b></li>
+                              <li><b style="color: green; font-size: 18px;"> }</b></li><br>
+                              <li><b style="color: green; font-size: 18px;"> .menu h2{ </b> </li><br>
+                                <li><b style="color: brown; font-size: 18px;"> color: white ; </b></li>
+                                <li><b style="color: brown; font-size: 18px;"> font-size: 30px; ;  </b></li>
+                                <li><b style="color: green; font-size: 18px;"> }</b></li>
+                          </ul>
+                          </div>
+
+                          <div class="resultado">
+                            Página, Google Chrome
+                            <p style="background-color: green; width: 50%; border: 2px solid blue;">
+                              <b style=" font-size: 30px;"> Titulo 1 </b><br>
+                              <b style="color: white;"> Mi párrafo </b><br>
+                              <b style="font-size: 30px; color: white;"> Titulo 2 </b><br>
+                              <b style="color: white;"> Mi primer párrafo </b><br>
+                            </p>
+                            </div>
+
+                          
+                          <p>Los elementos HTML también pueden referirse a más de una class. <br>
+                            En este ejemplo, el elemento <b style="color: blue;">&lt;h2&gt;</b> 
+                            se diseñará de acuerdo con class="titulo" y class = "subtítulos":</p>
+  
+  
+                            <div class="ejemplo">
+  
+                            <p><b style="color: blue;">&lt;h2</b> <b style="color: brown;"> class = "título subtítulos" </b>
+                               <b style="color: blue;">&gt;</b> Hola mundo <b style="color: blue;">&lt;/h2&gt;</b></p>
+                            </div>
+
+                           
+  
+                          <h4><u>SELECTORES AVANZADOS</u></h4>
+                          
+  
+                <p>CSS permite realizar combinaciones con los cuatro selectores básicos descriptos arriba,
+                 haciendo referencia a las relaciones entre padres, hijos, hermanos, descendientes y más.
+                 Con algunas de estas herramientas podrías, por ejemplo, aplicar declaraciones a todos los
+                 párrafos que son hijos directos del cuerpo (body). Además, provee otros selectores basados 
+                 en la composición de los atributos o los estados que un elemento presenta, permitiendo a los 
+                 autores aplicar declaraciones a, por ejemplo, todos los elementos input que son de tipo "radio" (atributo type).</p>
+  
+                <p>A pesar de que algunos de los más nuevos son pobremente soportados, estos selectores
+                   avanzados son extremadamente útiles en el desarrollo de sitios web complejos. Sin embargo,
+                   no serán tratados en este tutorial debido a su alcance. Esta sección es meramente informativa.</p>
+
+              <p style ="color: white ; background-color: grey; text-align: center;" > HTML-CSS-JavaScript </p>
+
+
+              <h3 style ="color: white ; background-color: grey; ">Hay tres formas de aplicar estilos CSS en un documento HTML</h3>
+
+             
+              
+              <h3>(1) Agregando estilos en línea a elementos HTML.</h3>
+
+              <h4><u> EL ATRIBUTO STYLE</u></h4>
+
+              <p>El uso del atributo style es la forma más fácil y directa de aplicar declaraciones de estilo a un elemento. 
+                Este atributo puede tener como contenido, cualquier número de declaraciones de estilo, separadas unas de otras
+                 por un punto y coma <b style="color: brown; font-size: 18px;"> " ; "</b>. Como style es un atributo global,
+                  puede ser usado en cualquier elemento de HTML.</p>
+                 
+          
+
+                 <p>En el primer ejemplo, las propiedades de estilo son aplicadas a un elemento 
+                  <b style="color: blue;">&lt;h1&gt;</b>, mediante el atributo style. 
+                  Puedes comprobarlo copiando el código y pegando en <b style="color: blueviolet;">Visual Studio Code</b></p><br>
+
+                <div class="ejemplo-dos" >
+                  
+                 <p><b style="color: blue;">&lt;h1</b> <b style="color: brown; font-size: 18px;"> 
+                  style ="color: green ; font-size: 50px ;" </b>
+                  <b style="color: blue;">&gt;</b> Hola mundo <b style="color: blue;">&lt;/h1&gt;</b></p>
+
+                 <p> Lo que le  indica atreves del atributo  style, es quiero la fuente de color verde y 
+                    el tamaño de fuente de 50 px.</p>
+                </div>
+
+                  <img class="imag" src="imag/Imagen22.png" alt="Imagen de ilustración">
+
+                  <p>En el segundo ejemplo algunas propiedades de estilo son aplicadas a un par de elementos, 
+                    <b style="color: blue;">&lt;p&gt;</b> <b style="color: blue;">&lt;b&gt;</b> mediante el atributo style.
+                    </p>
+
+                  <div class="ejemplo-dos" >
+
+                  <p><b style="color: blue;">&lt;p</b> <b style="color: brown; font-size: 18px;"> style ="color: white ; background-color: grey;"
+                  </b><b style="color: blue;">&gt;</b>Aplicando en HTML<b style ="color: blue;">&lt;b</b> <b style="color: brown; font-size: 18px;">
+                   style ="font-size: 40px;"</b><b style="color: blue;">&gt;</b> Estilo, CSS 
+                   <b style="color: blue;">&lt;/b&gt;</b> con el atributo style.
+                  <b style="color: blue;">&lt;/p&gt;</b></p>
+                  </div>
+
+                  <img class="imag" src="imag/Imagen23.png" alt="Imagen de ilustración">
+
+                <p>A pesar de toda su simplicidad e inmediatez, el uso de este método rompe de alguna manera uno de los principales
+                   beneficios de CSS: la posibilidad de crear declaraciones de estilo que pueden ser reutilizadas en tantos elementos
+                   como sea posible, algo que se traduce en flexibilidad y portabilidad. Solo imagínate teniendo que aplicar este
+                   mismo estilo a cientos de elementos en tus documentos.</p>
+
+                   <p>Esto no significa que no sea útil. De hecho, puede ser muy pertinente usarlo cuando necesitas
+                     aplicar un estilo a un solo elemento y por única vez. De cualquier modo, las alternativas siguientes resolverán
+                     el problema mencionado en el párrafo anterior.</p>
+
+                     <p style ="color: white ; background-color: grey; text-align: center;" > HTML-CSS-JavaScript </p>
+
+               <h3>(2) Incrustando CSS en una etiqueta de estilo.</h3> 
+
+                <h4><u> EL ELEMENTO STYLE</u></h4>
+
+                <p>El elemento <b style="color: blue;">&lt;style&gt;</b> es un contenedor para declaraciones de estilo.
+                   Dentro de este elemento podemos arrojar cualquier
+                   número de declaraciones de estilo, siempre y cuando estén correctamente organizadas en grupos de selectores.
+                   En otras palabras, todos los ejemplos vistos en la sección sobre selectores, pueden ser ubicados en medio de las 
+                   etiquetas de este elemento. Sólo puede ser declarado en la sección del encabezado
+                   <b style="color: blue;">&lt;head&gt;</b> del documento.</p>
+
+                <p>El siguiente ejemplo muestra un extracto de un documento donde el elemento style está siendo utilizado para
+                   proveer atributos a algunos elementos en el cuerpo <b style="color: blue;">&lt;body&gt;</b>. Más específicamente,
+                   dos selectores de tipo proveen reglas de estilo para los elementos <b style="color: blue;">&lt;h2&gt;</b> y
+                   <b style="color: blue;">&lt;p&gt;</b>. Puedes comprobarlo copiando el código y pegando en 
+                   <b style="color: blueviolet;">Visual Studio Code</b></p>
+
+
+               <div class="ejemplo">
+              
+                <ul >
+                  <li style="color: blueviolet;">Visual Studio Code </li><br>
+                  <li><b style="color: blue;">&lt;head&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;title&gt;</b>HTML-CSS-JavaScript<b style="color: blue;">&lt;title&gt;</b></li><br>
+                  <li><span><b style="color: blue;">&lt;style&gt;</b></li><br>
+                  <li><b style="color: green; ;"> h2{ </b> </li><br>
+                  <li><b style="color: brown;"> background-color: grey ; </b></li>
+                  <li><b style="color: brown; "> color: white ; </b></li>
+                  <li><b style="color: brown; "> text-align: center ; </b></li>
+                  <li><b style="color: brown; "> margin: 0 ;  </b></li>
+                  <li><b style="color: green; "> }</b></li><br>
+                  <li><b style="color: green; "> p{ </b> </li><br>
+                  <li><b style="color: brown; "> background-color: green ; </b></li>
+                  <li><b style="color: brown; "> color: white ; </b></li>
+                  <li><b style="color: brown; "> text-align: center ;  </b></li>
+                  <li><b style="color: brown; "> margin: 0 ;  </b></li>
+                  <li><b style="color: green; "> }</b></li><br>
+                  <li><span><b style="color: blue;">&lt;/style&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                  <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;h2&gt;</b> Css style <b style="color: blue;">&lt;h2&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;p&gt;</b> Aplicando estilo a documentos html <b style="color: blue;">&lt;p&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;/body&gt;</b></li>
+                </ul>
+              </div>
+
+              <div class="resultado" >
+                      
+                <h2 style="background-color: grey; color: white; text-align: center; margin: 0;">Css style </h2>
+                <p b style="background-color: green; color: white; text-align: center; margin: 0;">Aplicando estilo a documentos html</p>
+                <p> Página, Google Chrome</p><br><br><br><br><br><br><br><br>
+                <ul>
+                <li>Elemento <b style="color: blue ;">h2</b>, le estamos aplicando</li>
+                  <li><b>color</b> de fondo gris</li>
+                  <li><b>color de fuente</b> blanco</li>
+                  <li><b> texto alineado</b> al centro </li>
+                  <li><b>margen</b>  0</li>
+                </ul>
+                <br><br><br><br><br><br>
+
+                <ul>
+                  <li>Elemento <b style="color: blue;">p</b>, le estamos aplicando</li>
+                    <li><b>color</b> de fondo verde</li>
+                    <li><b>color de fuente</b> blanco</li>
+                    <li><b> texto alineado</b> al centro </li>
+                    <li><b>margen</b>  0</li>
+                  </ul><br><br>
+                </div>
+
+               <img class="imag" src="imag/Imagen24.png" alt="Imagen de ilustración">
+
+               <p>Ahora, con este método podemos compartir declaraciones entre los muchos elementos presentes en una misma página.
+                  Pero, ¿es posible tener declaraciones de estilo inter-documentos?
+                  Esto es algo que sólo se puede lograr con nuestro último enfoque.</p>
+
+               <p style ="color: white ; background-color: grey; text-align: center;" > HTML-CSS-JavaScript </p>
+
+               <h3>3-Vinculando a un archivo de hoja de estilo separado.</h3>
+
+               <h4><u>ARCHIVOS EXTERNOS</u></h4>
+
+               <p>La ventaja de utilizar un archivo externo para almacenar información de estilo reside en la posibilidad 
+                de compartir ese archivo entre un gran número de documentos. Cuando un documento es cargado, el navegador 
+                detecta la referencia al archivo de hojas de estilo, cargando y aplicando
+                los estilos como si fueran parte del documento.</p>
+
+                <p>Un archivo externo de hojas de estilo puede ser insertando en el documento con el elemento
+                <b style="color: blue;">&lt;link&gt;</b>, con en el atributo <b>type</b>, con el valor de <b>"text/css"</b> 
+                 y el URI del archivo de hojas de estilo en el atributo <b>href </b>. Ten presente que el elemento
+                <b style="color: blue;">&lt;link&gt;</b> solo puede estar ubicado en el bloque del elemento
+                <b style="color: blue;">&lt;head&gt;</b>, del documento.</p>
+
+                <div class="ejemplo-dos">
+                
+                  <p><b style="color: blue;">&lt;head&gt;</b></p>
+                  <p><b style="color: blue;">&lt;title&gt;</b>HTML-CSS-JavaScript<b style="color: blue;">&lt;title&gt;</b></p>
+                  <p><b style="color: blue;">&lt;link</b>
+                  <b style="color: brown; font-size: 18px;" > rel ="stylesheet"  type = "text/css" href = "estilo.css"</b>
+                  <b style="color: blue;">&gt;</b></p>
+                  <p><b style="color: blue;">&lt;/head&gt;</b><br> 
+                  <b style="color: blue;">&lt;body&gt;</b></p>
+               
+              </div>
+
+
+
+
+              <h4><b><u>Pasos para crear un archivo css externo</u></b></h4>
+              <p style="text-align: center;">Para más organización  vamos a crear primero, una
+                 carpeta nueva, en este caso la voy a llamar CSS.</p>
+
+              <img class="imag2" src="imag/Imagen20.png" alt="imagen ilustracion">  
+
+              <p>Dentro de la carpeta CSS vamos a crear el archivo css externo, lo pueden llamar como ustedes
+                 deseen, el que le sea más conveniente para su organización de trabajo.</p>
+
+              <img class="imag2" src="imag/Imagen21.png" alt="imagen ilustracion">
+
+              <p>Ya creado el archivo css, lo insertamos con el elemento <b style="color: blue;">&lt;link&gt;</b> 
+                en el documento HTML. Si observan en <b> href </b> van a observar que tiene la ruta de ubicación,
+                la carpeta CSS que creamos y el archivo externo estilo.css. 
+                De esta manera ya creamos el archivo css externo para poder dar Style a nuestros documentos HTML.
+              </p>
+
+              <img class="imag2" src="imag/link.png" alt="imagen ilustracion">
+
+              <p style="text-align: center; font-size: 18px;"><u>Ejemplo: aplicando Style con archivo css externo</u></p>
+
+              <img class="imag2" src="imag/tipo2.png" alt="imagen ilustracion" >
+
+              <img class="imag2" src="imag/tipo1.png" alt="imagen ilustracion" >
+
+
+              <h3>¿Qué es el box model y para qué se utiliza?</h3>
+
+              <p>El modelo de cajas o "box model" es seguramente la característica más importante del lenguaje de hojas 
+                de estilos CSS, ya que condiciona el diseño de todas las páginas web. El modelo de cajas es el comportamiento
+                de CSS que hace que todos los elementos de las páginas se representen mediante cajas rectangulares.</p>
+               
+                <h3><u> El modelo de caja CSS</u></h3>
+
+                <p>En CSS, el término "modelo de caja" se usa cuando se habla de diseño y diseño.
+                  El modelo de caja CSS es esencialmente una caja que envuelve cada elemento HTML.
+                  Consiste en: márgenes, bordes, relleno y el contenido real. La siguiente imagen ilustra el modelo de caja:</p>
+
+                  <img class="imag2" src="imag/Imagen25.png" alt="El modelo de caja CSS">
+
+                  <h4><u>Explicación de las diferentes partes:</u></h4>
+
+                  <ul id="lista-main">
+                    <li><b>Content-</b> Contenido: el contenido del cuadro, donde aparecen el texto y las imágenes.</li>
+                    <li><b>Padding-</b> Relleno: borra un área alrededor del contenido. El relleno es transparente.</li>
+                    <li><b>Border-</b> Borde: un borde que rodea el relleno y el contenido.</li>
+                    <li><b>Margin-</b> Margen: borra un área fuera del borde. El margen es transparente.</li>
+
+                  </ul>
+                  <p>El modelo de caja nos permite agregar un borde alrededor de los elementos
+                     y definir el espacio entre los elementos. </p>
+
+                  <p><u>Ejemplo del modelo de una caja:</u> </p>
+
+                  <img class="imag" src="imag/Imagen26.png" alt="Imagen de ilustración">
+
+                  <h4><u>Ancho y alto de un elemento</u></h4>
+
+                  <p>Para establecer correctamente el ancho y el alto de un elemento en todos los navegadores,
+                     deben saber cómo funciona el modelo de caja.</p>
+
+                  <p><b>Importante:</b> cuando establece las propiedades de ancho y alto de un elemento con CSS, 
+                    simplemente establece el ancho y el alto del área de contenido . Para calcular el tamaño
+                     completo de un elemento, también debe agregar relleno, bordes y márgenes.</p>
+
+                  <img class="imag2" src="imag/Imagen27.png" alt="Imagen de ilustración">
+
+                     <p><b> El ancho total y la altura total de un elemento deben calcularse de la siguiente manera:</b></p>
+
+                  <p><b><u>Ancho total del elemento =</u></b> ancho + relleno izquierdo + relleno derecho +
+                  borde izquierdo + borde derecho + margen izquierdo + margen derecho.</p>
+
+                  <p><b><u>Altura total del elemento =</u></b> altura + relleno superior + relleno inferior +
+                   borde superior + borde inferior + margen superior + margen inferior.</p>
+
+                   <img class="imag2" src="imag/Imagen28.png" alt="Imagen de ilustración">
+
+                   <h3><u>Cajas en bloque y en línea</u></h3>
+                    <p>En CSS, en general, hay dos tipos de cajas: cajas en bloque y cajas en línea. Estas características se refieren al modo
+                       comó se comporta la caja en términos de flujo de página y en relación con otras cajas de la página:</p>
+
+
+                  <h5 style="font-size: 18px;"><u>Si una caja se define como un <u>bloque</u>, 
+                    se comportará de las maneras siguientes:</u></h5>
+
+                  <ul id="lista-main">
+
+                  <li>La caja fuerza un salto de línea al llegar al final de la línea.</li>
+                  <li>La caja se extenderá en la dirección de la línea para llenar todo el espacio disponible que haya en su contenedor. 
+                    En la mayoría de los casos, esto significa que la caja será tan ancha como su contenedor, y llenará el 100% del espacio disponible.</li>
+                  <li>Se respetan las propiedades <b> width y height.</b></li>
+                  <li>El relleno, el margen y el borde mantienen a los otros elementos alejados de la caja.</li>
+                  </ul>
+
+                  <p>A menos que decidamos cambiar el tipo de visualización a en línea, elementos como los encabezados 
+                    (por ejemplo, <b style="color: blue;">&lt;h1&gt;</b>) y todos los elementos <b style="color: blue;">&lt;p&gt;</b>
+                    usan por defecto block como tipo de visualización externa.</p>
+
+                    <h5 style="font-size: 18px;"><u>Si una caja tiene una visualización externa de tipo <u>inline</u>, entonces:</u></h5>
+
+                    <ul id="lista-main">
+                    <li>La caja no fuerza ningún salto de línea al llegar al final de la línea.</li>
+                    <li>Las propiedades <b>width y height</b> no se aplican.</li>
+                    <li>Se aplican relleno, margen y bordes verticales, pero no mantienen alejadas otras cajas en línea.</li>
+                    <li>Se aplican relleno, margen y bordes horizontales, y mantienen alejadas otras cajas en línea.</li>
+                    </ul>
+
+                    <p>El elemento,<b style="color: blue;">&lt;a&gt;</b>  que se utiliza para los enlaces, 
+                      y los elementos <b style="color: blue;">&lt;span&gt;</b>,
+                      <b style="color: blue;">&lt;em&gt;</b> y <b style="color: blue;">&lt;strong&gt;</b> son ejemplos
+                       de elementos que se muestran en línea por defecto.</p>
+
+                    <p><u> Etiquetas Inline - Block</u></p>
+
+                    <img class="imag2" src="imag/Imagen29.png" alt="Imagen de ilustración">
+
+                    <p><b><u>Nota:</u> Le voy colocar un link para que investiguen más de box model y 
+                      las propiedades al final del artículo. </b></p>
+
+                      <h3><u>Fuentes CSS</u></h3>
+
+                    <h4>La selección de fuentes es importante</h4>
+                    <p>Elegir la fuente correcta tiene un gran impacto en cómo los lectores experimentan un sitio web,
+                         puede crear una fuerte identidad para su marca, agrega valor a su texto, es importante usar 
+                         una fuente que sea fácil de leer. También es importante elegir el color y el tamaño de texto
+                         correctos para la fuente.</p>
+
+                     <h4><u> Familias de fuentes genéricas</u> </h4>
+                     <ul id="lista-main">
+                     <li><b><u>En CSS hay cinco familias de fuentes genéricas:</u></b></li>
+                     <li><b><u>Las fuentes Serif: </u></b> tienen un pequeño trazo en los bordes de cada letra.
+                       Crean una sensación de formalidad y elegancia.</li>
+                     <li><b><u>Las fuentes sans-serif: </u></b>  tienen líneas limpias (sin pequeños trazos adjuntos).
+                       Crean un aspecto moderno y minimalista.</li>
+                     <li><b><u>Fuentes monoespaciadas:</u></b>  aquí todas las letras tienen el mismo ancho fijo. Crean un aspecto mecánico. </li>
+                     <li><b><u>Las fuentes cursivas:</u></b> imitan la escritura humana.</li>
+                     <li><b><u>Las fuentes de fantasía:</u></b> son fuentes decorativas/divertidas.</li>
+
+                     </ul>
+                     <p>Todos los diferentes nombres de fuentes pertenecen a una de las familias de fuentes genéricas.</p>
+                     <p><b><u>Nota:</u></b> En las pantallas de las computadoras, las fuentes sans-serif se consideran más fáciles de
+                       leer que las fuentes serif.</p>
+
+                     <p>En CSS, usamos la <b>font-family </b> propiedad para especificar la fuente de un texto.
+                        Si el nombre de la fuente es más de una palabra, debe estar entre comillas, como: "Times New Roman".</p>
+
+                     <p><b><u> Sugerencia:</u></b> La font-family propiedad debe contener varios nombres de fuentes como un sistema "alterno",
+                       para garantizar la máxima compatibilidad entre navegadores y sistemas operativos. Comience con la fuente que desee
+                       y termine con una familia genérica (para permitir que el navegador elija una fuente similar en la familia genérica,
+                       si no hay otras fuentes disponibles). Los nombres de las fuentes deben estar separados por comas.</p>
+
+                       <div class="ejemplo">
+                        <ul>
+                       <li><b style="color: green; "> p{ </b> </li><br>
+                        <li><b style="color: brown; font-size: 18px;"> font-family: "Times New Roman", Times, serif;</b></li><br>
+                        <li><b style="color: green; "> }</b></li>
+                      </ul>
+                    </div>
+
+                    <h3><u>Fuentes CSS de Google</u></h3>
+
+                    <p>Si no desea utilizar ninguna de las fuentes estándar en HTML, puede utilizar Google Fonts,
+                      es de uso gratuito y tiene más de 1000 fuentes para elegir.</p>
+
+                    <p><b>Cómo usar las fuentes de Google</b> Simplemente agregue un enlace de hoja de estilo especial en la sección
+                      <b style="color: blue; ">head</b> y luego consulte la fuente en el CSS.</p>
+                      
+                     <p>El siguiente link lo redirige a Google Fonts. <a href="https://fonts.google.com/" 
+                      style="background-color: grey; color: white; border: 2px solid blueviolet; font-size: 18px;" >Google Fonts</a></p> 
+                     
+                    
+                      
+                     <p><b>Ejemplo, si nos fijamos vamos a visualizar el link extraído de Google Fonts. 
+                      En el siguiente ejemplo, explico cómo hacerlo. </b></p>
+                    
+
+                    <img class="imag2" src="imag/Imagen34.png" alt="Imagen de ilustración" >
+
+                    <p><b>Una vez que estemos en Google Fonts en la página principal,  
+                      vamos a tener seleccionar que tipo de fuente vamos a usar, luego nos 
+                      redirige a lo que sería la, siguiente imagen.</b></p>
+
+                    <img  class="imag2" src="imag/Imagen35.png" alt="Imagen de ilustración" >
+
+                 <p style="text-align: center;">Espero que este artículo te haya ayudado. Gracias. ¡ Feliz Programación !.</p>
+                  
+        </article>
+
+     </main>
+
+     <footer><p> 2023 <a href="index.html" > Front-End </a> Author: Juan A.Q. [ N/E.R./Arg. ] <a href="#subir">Subir</a></p> </footer>
+
+      <script src="JS/menu.js">  </script>
+</body>
+</html>

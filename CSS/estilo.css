@@ -1,0 +1,453 @@
+
+        *{
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-sizing: border-box;
+        }
+    body{
+    background: #346c3e;
+    margin: 0;  
+   
+  }
+
+    
+   .menu{
+    width: 25%;
+    float: left;
+    border: 1px ;
+    border-radius: 12px;
+    }
+
+footer{
+  text-align: center;
+  padding: 3px;
+  color: white;
+  width: 100%;
+  bottom: 0%;
+  clear: both;
+  padding-top: 20px;
+  letter-spacing: 5px;
+ 
+}
+
+  .header-titulo{
+    text-align: center;
+    font-weight: bold;
+    padding: 40px;
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+  }
+  
+   .nav-bars{
+    display: block;
+    border: 1px ;
+   }
+
+   .nav-bars ul li a{
+    display: block;
+   color: #fff; 
+   font-size: 16px;
+   padding: 10px 8px;
+   transition: 0.2s;
+   margin: 20px;
+   text-align: center;
+   
+   
+  }
+ul{
+  list-style: none;
+  padding: 0;
+}
+  li{
+    text-decoration: none
+  }
+a{
+  text-decoration: none
+}
+
+.nav-menu-link:hover{
+ font-size: 150%;
+ color: #202788;
+}
+
+.bars{
+  display: none;
+}
+
+
+
+.main {
+    width: 60%;
+    float: left;
+    padding: 30px;
+    background-color: white;
+   }
+
+
+ 
+   .articulos h2{
+    font-size: 40px;
+     text-align: center;
+     margin: 40px;
+     line-height: 1.2;
+     color:  rgb(171 155 46) ;
+    }
+    .articulos h3{
+      font-size: 30px;
+     text-align: center;
+     line-height: 1.2;
+     margin-top: 40px;
+     color: hsl(131deg 3% 39%);
+    }
+    .articulos h4 {
+      font-size: 23px;
+     text-align: center;
+     line-height: 1.2;
+     margin-top: 40px;
+     color: hsl(131deg 3% 39%);
+    }
+
+     .articulos p{
+      line-height: 1.7;
+     margin: 1em 0;
+     font-size: 16px;
+     color: black;
+    }
+    
+    
+
+
+   
+   #lista-main{
+   line-height: 1.8;
+   margin: 1em 0;
+   font-size: 16px;
+     color: black;
+   }
+
+   #texto-imag{
+   text-align: center;
+   }
+
+   .imag{
+   margin-left: auto;
+   margin-right: auto;
+   height: auto;
+   max-width: 100%;
+   display: block;
+   }
+   .imag1{
+    
+    height: 200px;
+    width: 100%;
+    display: flex;
+    }
+    .imag2{
+      margin-left: auto;
+      margin-right: auto;
+      height: auto;
+      width: 85%;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      }
+  
+   
+   .texto_ingresado{
+    width: 90%;
+    border: 4px solid black;
+    margin-top: 2px;
+    text-decoration: none;
+    margin-left: 10px;
+    background-color: white;
+    padding: 0;
+    outline: none;
+    margin: 0;
+    box-sizing: border-box;
+    height: 90vh;
+    font-size: 17px;
+    color: black;
+    }
+    .texto_ingresado::placeholder{
+        position: relative;
+        top: 10px;
+        left: 10px;
+    }
+    .editor{
+    margin-left: 18px;
+    width: 90%;
+    border: 4px solid black;
+    margin-top: 10px;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 90vh;
+    font-size: 17px;
+    color: black;
+    }
+
+    .ejemplo p{
+      background-color: beige;
+      border: 2px solid rgb(169, 117, 228);
+      text-align: center; 
+    }
+    .ejemplo ul{
+      background-color: beige;
+      border: 2px solid rgb(169, 117, 228);
+    }
+    .ejemplo{
+      display: inline-block;
+      width: 49%;
+    
+    }
+    .resultado{
+      display: inline-block;
+      width: 49%;
+      background-color: white;
+      border: 2px solid rgb(169, 117, 228);
+      text-align: center;
+    }
+
+    .resultado ul{
+      text-align: left;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      width: 49%;
+    }
+
+
+
+    .ejemplo-dos{
+      width: 100%;
+      height: auto;
+      background-color: beige;
+      border: 2px solid rgb(169, 117, 228);
+      text-align: center;
+     }
+
+     .ejemplotres{
+      display: inline-block;
+      width: 100%;
+     
+    }
+    .ejemplotres ul{
+      background-color: beige;
+      border: 2px solid rgb(169, 117, 228);
+    }
+
+    .drag-container {
+      display: flex;
+      min-height: 100vh;
+    }
+    
+    [class^="panel"] {
+      padding: 60px 24px;
+      background-color: whitesmoke;
+    }
+    
+    .panel-uno {
+      width: 40%;
+    }
+    
+    .panel-dos {
+      flex: 1;
+      width: 60%;
+    }
+    
+    .barra {
+      padding: 6px;
+      cursor: col-resize;
+      background-color: silver;
+    }
+  
+
+
+@media only screen and (max-width: 768px) {
+.menu{
+  width: 100%;
+  padding: 0 30px;
+}
+.main {
+      
+  width: 100%;
+  margin: 6px 0;
+}
+.bars{
+  display: block;
+  cursor: pointer;
+}
+body{
+  padding-top: 30px;
+}
+
+.bars .line{
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 6px 8px;
+}
+.nav-bars{
+  height: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background-color: #36373a;
+  overflow: hidden;
+overflow-y: auto;
+transition: top 0.4s;
+
+}
+.nav-bars a{
+  background-color: #d7d23b;
+  border-radius: 8px ;
+}
+
+.nav-bars.nav-menu-link{
+  height: 550px;
+  margin-top: 110px;
+  
+
+}
+.nav-menu-link:hover{
+  font-size: 100%;
+  color: hsl(125, 62%, 33%);
+ }
+
+.nav-bars ul{
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  
+
+}
+
+.nav-bars.active{
+  height: 450px;
+}
+.nav-bars.active ul{
+ opacity: 1;
+
+}
+.nav-bars ul li a{
+  margin-bottom: 20px;
+  
+}
+.articulos h2{
+  font-size: 28px;
+
+  }
+
+ 
+
+
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .main {
+      width: 100%;
+    }
+    .menu{
+        width: 100%;
+        margin: 6px 0;
+    }
+   
+
+    .bars{
+      display: block;
+      cursor: pointer;
+    }
+    
+    .bars .line{
+      width: 30px;
+      height: 3px;
+      background-color: white;
+      margin: 6px 8px;
+    }
+    .nav-bars{
+      height: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100vw;
+      background-color: #36373a;
+      transition: 0.5s;
+      overflow: hidden;
+      overflow-y: auto;
+      transition: top 0.4s;
+    }
+    
+    .nav-bars.nav-menu-link{
+      height: 550px;
+      margin-top: 110px;
+      
+    
+    }
+    
+    .nav-bars ul{
+      display: block;
+      width: fit-content;
+      margin: 30px auto 0 auto;
+      text-align: center;
+      transition: 0.5s;
+      padding: 10px 0;
+    
+    }
+
+    .nav-bars.active{
+      height: 450px;
+    }
+    .nav-bars.active ul{
+     opacity: 1;
+    
+    }
+    .nav-bars ul li a{
+      margin-bottom: 20px;
+      
+    }
+    .header-titulo{
+      font-size: 35px;
+  }
+  .articulos h2{
+    font-size: 28px;
+   
+    }
+    .articulos h3{
+      font-size: 25px;
+    
+    }
+    .articulos h4 {
+      font-size: 20px;
+  
+    }
+  
+     .articulos p{
+    font-size: 13px;
+     
+    }
+    li {
+      font-size: 13px;
+    }
+  
+  
+  .ejemplo{
+    width: 100%;
+  
+  }
+  .resultado{
+    
+    width: 100%;
+  
+  }
+  
+  
+  .ejemplotres {
+   width: 100%;
+  }
+
+  }

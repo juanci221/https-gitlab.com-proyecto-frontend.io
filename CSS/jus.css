@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Sassy+Frass&display=swap');
+        *{
+          font-family: 'Source Sans Pro', sans-serif;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+
+        }
+    
+
+
+  header{
+    width: 100%;
+    height: 80px;
+    background-color: hsl(0, 1%, 17%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+  }
+
+  .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #ecf0ed;
+  }
+  .bars{
+    display: none;
+  }
+  .nav-menu ul{
+    display: flex;
+    
+}
+
+  .nav-bars ul li a{
+    display: block;
+   color: hsl(120, 12%, 97%);
+   font-size: 18px;
+   padding: 18px 25px;
+   border-radius: 15px;
+   transition: 0.2s;
+   margin: 0 5px;
+
+  }
+  .nav-bars ul li a:hover{
+    color: blueviolet;
+    background-color: #f0f008;
+
+  }
+
+  form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+
+  @media only screen and (max-width: 700px) {
+   
+    header{
+       
+        padding: 0 30px;
+      }
+    
+      
+      .bars{
+        display: block;
+        cursor: pointer;
+      }
+      .bars .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 8px;
+      }
+    
+      .nav-bars{
+       height: 0;
+       position: absolute;
+       top: 88px;
+       left: 0;
+       right: 0;
+       width: 100vw;
+       background-color: gray;
+       transition: 0.5s;
+       overflow: hidden;
+    
+}
+.nav-bars.active{
+    height: 550px;
+
+}
+.nav-bars ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+.nav-bars.active ul{
+   opacity: 1;
+
+}
+.nav-bars ul li a{
+    margin-bottom: 20px;
+}
+
+
+
+  }

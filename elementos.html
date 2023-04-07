@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos básicos de HTML </title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+    <link rel="icon" type="image/x-icon" href="imag-icono.png">
+    
+
+
+
+</head>
+<body>
+
+    <header class="menu">
+
+        <div>
+          <h1 id="subir" class="header-titulo">Front-End</h1>
+          
+          </div>
+      
+          <div class="bars">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      
+      <nav class="nav-bars">
+        <ul>
+          
+    <li><a href="index.html" class="nav-menu-link">Inicio</a></li>
+    <li><a href="intro.html" class="nav-menu-link">Introducción Front-End. HTML/CSS/JavaScript</a></li>
+    <li ><a href="HTMLbasic.html" class="nav-menu-link">Conceptos básicos de HTML</a></li>
+    <li ><a href="elementos.html" class="nav-menu-link">TAGs (Elementos) HTML </a></li>
+    <li ><a href="formulario.html" class="nav-menu-link">Formulario Web</a></li>
+    <li ><a href="CSSframework.html" class="nav-menu-link">Extendiendo CSS y framework</a></li>
+    <li ><a href="diseñoadaptable.html" class="nav-menu-link">Responsive Web Design</a> </li>
+    <li ><a href="github.html" class="nav-menu-link">GIT/Github. Servidores/hosting/dominio.</a></li>
+    <li ><a href="programacion.html" class="nav-menu-link">Lógica de programación</a></li>
+    <li><a href="javaScript.html" class="nav-menu-link">JavaScript</a></li>
+          
+         
+      </ul>
+      </nav>
+      
+      </header>
+     <main class="main" >
+  
+      
+         <img  class="imag" src="imag/Imagen16.png" alt="html tags" width="700" height="200">
+
+         
+
+  <article class="articulos">
+    
+    <h2>TAGs Elementos, básicos </h2>
+      
+      <p>Haciendo repaso, como ya vimos, la gran mayoría de las etiquetas que veremos se ubicarán en el body 
+      (el cuerpo) de nuestro documento HTML. Aunque existen muchos TAGS de HTML, en este artículo, vamos a analizar
+       solamente una selección de etiquetas básicas, las elementales que tenemos que conocer si o si y su funcionamiento.
+        </p>
+
+     <h3><u> HTML Bloque  y elementos en Línea</u> </h3>
+
+  <p>Cada elemento HTML tiene un valor de visualización predeterminado, según el tipo de elemento que sea. <br>
+  Hay dos valores de visualización: <b> bloque y en línea.</b></p><br>
+
+        <h3><u> Elementos a nivel de bloque HTML:</u></h3>
+
+        <p>Un elemento a nivel de bloque siempre comienza en una nueva línea y los navegadores automáticamente agregan
+           algo de espacio (un margen) antes y después del elemento.</p>
+
+        <p>Un elemento a nivel de bloque siempre ocupa todo el ancho disponible (se extiende hacia la izquierda y
+             hacia la derecha tanto como puede).</p>
+
+        <p>Dos elementos de bloque de uso común son: &lt;p&gt; y &lt;div&gt;.</p>
+
+        <p>El &lt;p&gt; elemento define un párrafo en un documento HTML.</p>
+
+        <p>El &lt;div&gt; elemento define una división o una sección en un documento HTML.</p>
+
+        <img class="imag" src="imag/Diapositiva1.jpg" alt="Elemento en bloque">
+      
+       
+
+
+        <div style="text-align: center;"> 
+          <p ><u> Estos son los elementos de nivel de bloque en HTML:</u></p>
+          <p><b style="color: blue ;"> &lt;address&gt;,</b> <b style="color: blue ;"> &lt;aside&gt;,</b> 
+             <b style="color: blue ;"> &lt;canvas&gt;,</b> <b style="color: blue ;"> &lt;div&gt;,</b> 
+             <b style="color: blue ;"> &lt;dt&gt;,</b> <b style="color: blue ;"> &lt;figcaption&gt;,</b>
+             <b style="color: blue ;"> &lt;footer&gt;,</b> <b style="color: blue ;"> &lt;h1&gt;-&lt;h6&gt;,</b>
+            <b style="color: blue ;" > &lt;hr&gt;.</b> </p>
+
+            <p><b style="color: blue ;"> &lt;main&gt;,</b>
+            <b style="color: blue ;"> &lt;noscrip&gt;,</b> <b style="color: blue ;"> &lt;ol&gt;,</b> 
+            <b style="color: blue ;" > &lt;pre&gt;,</b> <b style="color: blue ;"> &lt;table&gt;,</b>
+            <b style="color: blue ;"> &lt;ul&gt;,</b> <b style="color: blue ;"> &lt;article&gt;,</b>
+            <b style="color: blue ;"> &lt;blockquote&gt;,</b> <b style="color: blue ;"> &lt;dd&gt;.</b></p>
+
+            <p><b style="color: blue ;"> &lt;dl&gt;,</b> <b style="color: blue ;"> &lt;fieldset&gt;,</b>
+            <b style="color: blue ;"> &lt;figure&gt;,</b> <b style="color: blue ;"> &lt;form&gt;,</b>
+            <b style="color: blue ;"> &lt;header&gt;,</b> <b style="color: blue ;"> &lt;li&gt;,</b>
+            <b style="color: blue ;"> &lt;p&gt;,</b> <b style="color: blue ;"> &lt;nav&gt;,</b>
+            <b style="color: blue ;"> &lt;section&gt&gt;,</b> <b style="color: blue ;"> &lt;tfoot&gt;,</b>
+            <b style="color: blue ;"> &lt;video&gt;.</b></p>
+           <p>
+
+        </div>
+
+        <h3><u> Elementos en línea HTML:</u></h3>
+
+        <div style="text-align: center;">
+        <p>Un elemento en línea no comienza en una nueva línea.</p>
+        <p>Un elemento en línea solo ocupa el ancho necesario.</p> 
+        <p>Este es <span style="border: 1px solid black"> un elemento &lt;span&gt;  dentro de</span> un párrafo.</p>
+      </div>
+
+        <img class="imag" src="imag/Diapositiva2.jpg" alt="elemento en línea">
+
+
+        <div  style="text-align: center;"> 
+
+          <p ><u> Estos son los elementos en línea HTML:</u></p>
+          <p><b style="color: blue ;"> &lt;a&gt;,</b> <b style="color: blue ;"> &lt;abbr&gt;,</b>
+            <b style="color: blue ;"> &lt;acronym&gt;,</b> <b style="color: blue ;"> &lt;b&gt;,</b>
+            <b style="color: blue ;"> &lt;bdo&gt;,</b> <b style="color: blue ;"> &lt;big&gt;,</b> 
+            <b style="color: blue ;"> &lt;br&gt;,</b> <b style="color: blue ;"> &lt;buttom&gt;,</b>
+            <b style="color: blue ;" > &lt;cite&gt;.</b></p>
+
+            <p><b style="color: blue ;"> &lt;code&gt;,</b>
+            <b style="color: blue ;"> &lt;dfn&gt;,</b> <b style="color: blue ;"> &lt;em&gt;,</b>
+            <b style="color: blue ;"> &lt;i&gt;,</b> <b style="color: blue ;"> &lt;img&gt;,</b>
+            <b style="color: blue ;"> &lt;input&gt;,</b> <b style="color: blue ;"> &lt;kbd&gt;,</b>
+            <b style="color: blue ;"> &lt;label&gt;,</b> <b style="color: blue ;"> &lt;map&gt;.</b></p>
+
+            <p><b style="color: blue ;"> &lt;object&gt;,</b> <b style="color: blue ;"> &lt;output&gt;,</b>
+            <b style="color: blue ;"> &lt;q&gt;,</b> <b style="color: blue ;"> &lt;samp&gt;,</b>
+            <b style="color: blue ;"> &lt;script&gt;,</b> <b style="color: blue ;"> &lt;select&gt;,</b>
+            <b style="color: blue ;"> &lt;small&gt;.</b></p>
+
+            <p><b style="color: blue ;"> &lt;span&gt;,</b>
+            <b style="color: blue ;"> &lt;strong&gt;,</b> <b style="color: blue ;"> &lt;sub&gt;,</b>
+            <b style="color: blue ;"> &lt;sup&gt;,</b> <b style="color: blue ;"> &lt;textarea&gt;,</b>
+            <b style="color: blue ;"> &lt;time&gt;,</b> <b style="color: blue ;"> &lt;tt&gt;,</b>
+            <b style="color: blue ;"> &lt;var&gt;.</b> </p>
+    
+         </div>
+         <br>
+         <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+         
+         <h3 ><u> Etiquetas básicas: Las fundamentales</u></h3>
+
+         <h4><u>Etiquetas HTML<b style="color: blue ;"> &lt;h1&gt; a &lt;h6&gt;</b> Definición y uso</u> </h4>
+
+         <p>Las etiquetas <b style="color: blue ;"> &lt;h1&gt; a &lt;h6&gt;</b> 
+          se utilizan para definir encabezados (también conocidos bajo el nombre de títulos) HTML.</p>
+
+         <p><b style="color: blue ;">&lt;h1&gt;</b> define el encabezado más importante. <b style="color: blue ;">&lt;h6&gt;</b>
+           define el encabezado menos importante. Los mismo  por defecto tienen un tamaño de fuente mayor que el resto 
+           del texto con el fin de diferenciarlo. Son muy importantes para el SEO (posicionamiento en los buscadores).</p>
+
+         <p><b>Nota:</b> Solo use uno <b style="color: blue ;">&lt;h1&gt;</b>por página; esto debería representar el encabezado/tema principal
+           de toda la página. Además, no se salte los niveles de encabezado: comience con <b style="color: blue ;">&lt;h1&gt;</b>,
+           luego use <b style="color: blue ;">&lt;h2&gt;</b>, y así sucesivamente.</p>
+
+            <p>Vamos a ver un ejemplo:</p>
+
+            
+            <div class="ejemplo">
+              
+              <ul >
+                <li style="font-size: 18px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li>
+                <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li>
+                <li><b style="color: blue;">&lt;head&gt;</b></li>
+                <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li>
+                <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h1&gt;</b> Titulo 1 <b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h2&gt;</b> Titulo 2<b style="color: blue;">&lt;/h2&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h3&gt;</b> Titulo 3 <b style="color: blue;">&lt;/h3&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h4&gt;</b> Titulo 4 <b style="color: blue;">&lt;/h4&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h5&gt;</b> Titulo 5<b style="color: blue;">&lt;/h5&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h6&gt;</b> Titulo 6 <b style="color: blue;">&lt;/h6&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;p&gt;</b> Desde mi primera página web <b style="color: blue;">&lt;/p&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;html&gt;</b></li><br>
+                <li>Copia el código que está dentro de <b style="color: blue;">&lt;body&gt;</b> y pegar en Visual Studio Code</li>
+              </ul>
+            </div>
+
+            <div class="resultado" >
+              <p>Página, Google Chrome </p>
+              <p style="font-size: 30px; text-align: left;"><b>Titulo 1</b></p>
+              <p style="font-size: 25px; text-align: left;"><b>Titulo 2</b></p>
+              <p style="font-size: 20px; text-align: left;"><b>Titulo 3</b></p>
+              <p style="font-size: 18px; text-align: left;"><b>Titulo 4</b></p>
+              <p style="font-size: 15px; text-align: left;"><b>Titulo 5</b></p>
+              <p style="font-size: 13px; text-align: left;"><b>Titulo 6</b></p>
+              <p style=" text-align: left;">Desde mi primera página web</p><br>
+             
+            </div>
+
+            <p><b>Sugerencia</b> Use los elemento <b style="color: blue;">&lt;h1&gt;</b> a <b style="color: blue;">&lt;h6&gt;</b>
+            solo para encabezados. No lo use solo para poner el texto en negrita o grande, usa otra etiqueta para eso.
+            </p>
+
+            <img class="imag2" src="imag/Imagen38.png" alt="ELEMENTO HTML5">
+
+            <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+           
+
+            
+
+            <h3><u>Etiquetas HTML<b style="color: blue ;"> &lt;p&gt;</b> Definición y uso</u></h3>
+
+            <p>La <b style="color: blue ;">&lt;p&gt;</b> etiqueta define un párrafo.</p>
+            <p>Los navegadores agregan automáticamente una sola línea en blanco antes y después de cada 
+              <b style="color: blue ;">&lt;p&gt;</b> elemento.</p>
+            <p><b>Ejemplo:</b> Un párrafo se marca de la siguiente manera:</p>
+            <p><b style="color: blue ;">&lt;p&gt;</b> Esto es un párrafo <b style="color: blue ;">&lt;/p&gt;</b></p>
+
+            <div class="ejemplo">
+              
+              <ul >
+                <li style="font-size: 18px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li>
+                <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li>
+                <li><b style="color: blue;">&lt;head&gt;</b></li>
+                <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li>
+                <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h1&gt;</b> Elemento &lt;p&gt;<b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;p&gt;</b>  Desde mi primera página web  <b style="color: blue;">&lt;/p&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;p&gt;</b> Esto es un párrafo<b style="color: blue;">&lt;/p&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;p&gt;</b> Esto es otro párrafo<b style="color: blue;">&lt;/p&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;html&gt;</b></li><br>
+                <li>•	Copia el código que está dentro de  <b style="color: blue;">&lt;body&gt;</b> y pegar en Visual Studio Code</li>
+              </ul>
+            </div>
+
+            <div class="resultado" >
+              <p>Página, Google Chrome </p><br><br><br>
+              <p style="font-size: 20px; text-align: left;"><b> Elemento <b style="color: blue;">&lt;p&gt;</b></b></p>
+              <p style=" text-align: left;"> Desde mi primera página web</p>
+              <p style=" text-align: left;"> Esto es un párrafo</p>
+              <p style=" text-align: left;"> Esto es otro párrafo</p><br><br><br><br>
+             
+            </div>
+
+
+
+            <img class="imag" src="imag/Imagen39.png" alt="ELEMENTO HTML5">
+
+          <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+            
+            <h3><u>Etiquetas HTML<b style="color: blue ;"> &lt;a&gt;</b> Definición y uso</u> </h3>
+
+            <p>La<b style="color: blue ;"> &lt;a&gt;</b>  etiqueta define un hipervínculo, 
+              que se utiliza para enlazar de una página a otra.(página, direcciones de correo, o cualquier otra URL)</p>
+
+            <p>El atributo más importante de <b style="color: blue ;"> &lt;a&gt;</b>
+               elemento es el <b style="color: blue ;">href</b> atributo, que indica el destino del enlace.
+               Esta ruta de destino puede apuntar hacía un documento o fichero de
+                internet o bien otro documento/fichero situado en nuestro equipo (local).</p>
+
+                <p><b>Vamos a ver un ejemplo de ambas: Destino local y de internet</b></p>
+
+                <p>Para ello, es necesario crear dentro del directorio del proyecto 
+                  (donde tenemos el documento index.html) otro documento HTML llamado por ejemplo destinolocal.html:</p>
+
+                  <img class="imag" src="imag/d6.JPG" alt="elemento a">
+                  <br>
+
+                  <div class="ejemplo">
+              
+                    <ul >
+                      <li style="font-size: 18px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                      <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li>
+                      <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li>
+                      <li><b style="color: blue;">&lt;head&gt;</b></li>
+                      <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li>
+                      <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                      <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                      <li><b style="color: blue;">&lt;h1&gt;</b> Elemento &lt;a&gt;<b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                      <li><b style="color: blue;">&lt;a</b><b style="color: brown;"> href = "https://www.google.com.ar"</b>
+                      <b style="color: blue;">&gt;</b> visitar a Google <b style="color: blue;">&lt;/a&gt;</b></li><br>
+                      <li><b style="color: blue;">&lt;a</b><b style="color: brown;"> href = "destinolocal.html"</b>
+                      <b style="color: blue;">&gt;</b> Inicio <b style="color: blue;">&lt;/a&gt;</b></li><br>
+                      <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                      <li><b style="color: blue;">&lt;html&gt;</b></li><br>
+                      <li>Copia el código que está dentro de <b style="color: blue;">&lt;body&gt;</b> y pegar en Visual Studio Code</li>
+                    </ul>
+                  </div>
+      
+                  <div class="resultado" >
+                    <p> Página, Google Chrome</p>
+                    <p style="font-size: 20px; text-align: left;"><b> Elemento <b style="color: blue;">&lt;a&gt;</b></b></p>
+                    <p>Por defecto aparecen unos al lado del otro. Sin  CSS.  <u style="color: blue;">Visitar a GoogleInicio </u></p>
+                    <a href="https://www.google.com.ar"><u style="color: blue; font-size: 25px;"> Visitar a Google </u> </a><br>
+                    <a href="index.html"><u style="color: blue; font-size: 25px;"> Inicio </u></a>
+                    <p>Pero para que se entiendan le puse estilo con CSS, y si hacemos clic lo va enlazar uno a google
+                     y el otro al destino local, en este caso es inicio. CSS se ve más adelante.</p><br>
+                   
+                  </div>
+
+
+                  
+
+                  
+            <div style="text-align: center;">
+              <p >En el Video, en V.S.C estamos usando. Elemento ancla, con destino local y de internet. 
+               <b style="color: blue ;"> &lt;a&gt;</b></p>
+             
+             <video width="80%" height="400" controls>
+               <source src="video/v2.mp4" type="video/mp4">
+               
+             </video>
+           </div><br>
+            
+            <p><b><u>De forma predeterminada, los enlaces aparecerán de la siguiente manera en todos los navegadores:</u></b></p>
+
+              <ul id="lista-main">
+               <li>Un enlace no visitado está subrayado y azul</li>
+               <li>Un enlace visitado está subrayado y morado</li>
+               <li>Un enlace activo está subrayado y rojo.</li>
+             </ul>
+
+              <p><b><u>Consejos y notas</u></b></p>
+              <p><b>Sugerencia:</b> si la <b style="color: blue ;"> &lt;a&gt;</b> etiqueta no tiene ningún
+                <b style="color: blue ;">href</b> atributo, 
+                es solo un marcador de posición para un hipervínculo.</p>
+
+              <p><b>Sugerencia:</b> una página vinculada normalmente se muestra en la
+                 ventana actual del navegador, a menos que especifique otro destino. </p>
+
+              <p><b>Sugerencia:</b> usé CSS para diseñar enlaces: enlaces CSS y botones CSS .</p>
+              <br>
+
+              <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+              <h3><b><u>Etiquetas HTML<b style="color: blue ;"> &lt;img&gt;</b> Definición y uso</u></b> </h3>
+
+              <p>La <b style="color: blue ;"> &lt;img&gt;</b> etiqueta se utiliza para incrustar una imagen en una página HTML.</p>
+              <p>Técnicamente, las imágenes no se insertan en una página web; las imágenes están vinculadas a páginas web.
+                La <b style="color: blue ;"> &lt;img&gt;</b> etiqueta crea un espacio de espera para la imagen de referencia.
+              </p>
+              <p>La <b style="color: blue ;"> &lt;img&gt;</b> etiqueta tiene dos atributos obligatorios:</p>
+
+              <ul id="lista-main">
+                <li><b>src:</b> especifica la ruta a la imagen. NO OLVIDARSE LA EXTENSIÓN (por ejemplo .png o .jpg).
+                   Esta ruta puede apuntar hacía: Una imagen ubicada en local y  una imagen enlazada de internet</li>
+                <li><b>alt:</b> especifica un texto alternativo para la imagen, si la imagen por algún motivo no se puede mostrar</li>
+              </ul>
+
+              <p><b>Vamos a ver un ejemplo.</b> Para ello, vamos a añadir la siguiente imagen con <b><u>casa.jpg</u></b>
+                 dentro de la carpeta del proyecto, donde tenemos nuestros documentos HTML:</p>
+
+                 <img class="imag" src="imag/d9.JPG" alt="casa">
+
+                 <div class="resultado" >
+                  <p style="font-size: 18px;">Visual Studio Code</p>
+                  <p><b style="color: blue;">&lt;body&gt;</b></p>
+                  <p style="font-size: 18px;"><b style="color: blue;">&lt;img</b><b style="color: brown;">
+                     src = "imag/casa.jpg" alt = "casa" </b>
+                  <b style="color: blue;">&gt;</b></p> 
+                  <p><b style="color: blue;">&lt;/body&gt;</b></p>
+                 
+                </div>
+
+                 <p><b><u>El resultado del documento HTML, será:</u></b></p>
+
+                 <p>Si abrimos el documento junto al inspector de navegación. El resultado será el siguiente:</p>
+
+                 <img class="imag" src="imag/d10.JPG" alt="casa">
+
+                 <p>Ahora vamos a modificar la ruta de la imagen hacía otra enlazada desde internet. Para ello, vamos a ir a Google y buscamos por ejemplo flores, 
+                  una vez dentro, vamos al apartado de imágenes y hacemos clic sobre cualquiera de las imágenes:</p>
+
+                  <img class="imag" src="imag/d12.JPG" alt="flores">
+
+                  <p>Una vez en la imagen, hacemos clic en copiar dirección de imagen:</p>
+
+                  <img class="imag" src="imag/D13.JPG" alt="flores">
+
+                  <p>Nos dará una url que apunta a esa imagen:</p>
+
+                  <img class="imag" src="imag/Imagen50.png" alt="Imagen de ilustración">
+
+                  <p>Si la pegamos en la propiedad src de una etiqueta de <b style="color: blue ;"> &lt;img&gt;</b></p>
+
+                  <img class="imag" src="imag/Imagen51.png" alt="Imagen de ilustración">
+
+
+                  <p>El resultado será:</p>
+
+                  <img class="imag" src="imag/d14.JPG" alt="flores">
+
+                  <p>Podemos ver que la imagen sobrepasa los márgenes naturales de la pantalla esto es debido a sus dimensiones.
+                     Aunque esto se puede controlar mediante HTML, no lo haremos por HTML, 
+                     ya que lo correcto sería hacerlo con CSS, pero eso lo explicare más adelante.</p>
+                     <br>
+
+                            
+            <div style="text-align: center;">
+              <p >En el Video, en V.S.C estamos usando. Elemento <b style="color: blue ;"> &lt;img&gt;</b>,
+                 con destino local y de internet. 
+               
+             
+             <video width="80%" height="400" controls>
+               <source src="video/v3.mp4" type="video/mp4">
+               
+             </video>
+           </div>
+           <br>
+
+           <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+                  <h3><b><u>Etiquetas HTML<b style="color: blue ;"> &lt;ul&gt;</b> Definición y uso</u></b> </h3>
+
+                  <p>La <b style="color: blue ;"> &lt;ul&gt;</b> etiqueta define una lista desordenada (con viñetas).</p>
+                  <p>Usa la <b style="color: blue ;"> &lt;ul&gt;</b>etiqueta junto con la Etiqueta 
+                    <b style="color: blue ;"> &lt;li&gt;</b> para crear listas desordenadas.</p>
+
+                    <p>Vamos a ver un ejemplo:</p>
+
+                    <div class="ejemplo">
+              
+                      <ul >
+                        <li style="font-size: 18px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                        <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li>
+                        <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li>
+                        <li><b style="color: blue;">&lt;head&gt;</b></li>
+                        <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li>
+                        <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                        <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;h1&gt;</b> Elemento &lt;ul&gt; lista desordenada
+                        <b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;ul&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;li&gt;</b> Café<b style="color: blue;">&lt;/li&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;li&gt;</b> Te<b style="color: blue;">&lt;/li&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;li&gt;</b> Leche<b style="color: blue;">&lt;/li&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;/ul&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                        <li><b style="color: blue;">&lt;html&gt;</b></li><br>
+                        <li>Copia el código que está dentro de  <b style="color: blue;">&lt;body&gt;</b> y pegar en Visual Studio Code</li>
+                      </ul>
+                    </div>
+        
+                    <div class="resultado" >
+                      <p> Página, Google Chrome</p><br><br>
+                      <p style="font-size: 20px; text-align: left;"><b> Elemento <b style="color: blue;">&lt;ul&gt;</b>
+                      </b>lista desordenada</p>
+                      <ul>
+                        <li><b style="font-size: 20px;">.</b> Café</li><br>
+                        <li><b style="font-size: 20px;">.</b> Te</li><br>
+                        <li><b style="font-size: 20px;">.</b> Leche</li>
+                      </ul>
+                      <br>
+                    </div>
+
+                    <img class="imag2" src="imag/Imagen40.png" alt="Elemento lista desordenada">
+                    
+                    <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+                    <h3><b><u>Etiquetas HTML<b style="color: blue ;"> &lt;ol&gt;</b> Definición y uso</u></b> </h3>
+
+                    <p>La <b style="color: blue ;"> &lt;ol&gt;</b>
+                      etiqueta define una lista ordenada. Una lista ordenada puede ser numérica o alfabética.</p>
+
+                      <p>La etiqueta <b style="color: blue ;"> &lt;li&gt;</b> se utiliza para definir cada elemento de la lista.</p>
+
+                      <p>Vamos a ver un ejemplo:</p>
+
+                      <div class="ejemplo">
+              
+                        <ul >
+                          <li style="font-size: 20px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                          <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li>
+                          <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li>
+                          <li><b style="color: blue;">&lt;head&gt;</b></li>
+                          <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li>
+                          <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                          <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                          <li><b style="color: blue;">&lt;h1&gt;</b> Elemento &lt;ol&gt; lista ordenada
+                          <b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                          <li><b style="color: blue;">&lt;ol&gt;</b></li>
+                          <li><b style="color: blue;">&lt;li&gt;</b> Café<b style="color: blue;">&lt;/li&gt;</b></li>
+                          <li><b style="color: blue;">&lt;li&gt;</b> Te<b style="color: blue;">&lt;/li&gt;</b></li>
+                          <li><b style="color: blue;">&lt;li&gt;</b> Leche<b style="color: blue;">&lt;/li&gt;</b></li>
+                          <li><b style="color: blue;">&lt; /ol &gt;</b></li><br>
+                          <li><b style="color: blue;">&lt;ol start = "50"&gt;</b></li>
+                          <li><b style="color: blue;">&lt;li&gt;</b> Café<b style="color: blue;">&lt;/li&gt;</b></li>
+                          <li><b style="color: blue;">&lt;li&gt;</b> Te<b style="color: blue;">&lt;/li&gt;</b></li>
+                          <li><b style="color: blue;">&lt;li&gt;</b> Leche<b style="color: blue;">&lt;/li&gt;</b></li>
+                          <li><b style="color: blue;">&lt; /ol &gt;</b></li><br>
+                          <li><b style="color: blue;">&lt;/body&gt;</b></li>
+                          <li><b style="color: blue;">&lt;html&gt;</b></li><br>
+                          <li>Cópia el codigo que está dentro de <b style="color: blue;">&lt;body&gt;</b> y pegar en Visual Studio Code</li>
+                        </ul>
+                      </div>
+
+                      
+          
+                      <div class="resultado" >
+                        <p> Página, Google Chrome</p>
+                        <p style="font-size: 20px; text-align: left;"><b> Elemento <b style="color: blue;">&lt;ol&gt;</b>
+                        </b>lista ordenada</p>
+                        <ol>
+                          <li style="text-align: left;"> Café</li><br>
+                          <li style="text-align: left;"> Te</li><br>
+                          <li style="text-align: left;"> Leche</li><br>
+                        </ol>
+
+                        <ol start="50">
+                          <li style="text-align: left;"> Café</li><br>
+                          <li style="text-align: left;"> Te</li><br>
+                          <li style="text-align: left;"> Leche</li>
+                        </ol><br><br>
+
+                     </div>
+
+                     <img class="imag2" src="imag/Imagen41.png" alt="Elemento lista ordenada">
+
+                    
+           <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+
+           <h3><b><u>Etiquetas HTML<b style="color: blue ;"> &lt;video&gt;</b> Definición y uso</u></b> </h3>
+           <p>El <b style="color: blue ;"> &lt;video&gt;</b> elemento HTML se utiliza para mostrar un video en una página web.</p>
+
+           <p>El <b style="color: #92131d ;"> controls</b>
+             atributo: agrega controles de video, como reproducción, pausa y volumen.</p>
+
+             <p>El <b style="color: #92131d ;"> autoplay </b>atributo:
+              inicia un video automáticamente.
+              Agregue <b style="color: #92131d ;"> muted</b> después <b style="color: #92131d ;"> autoplay </b>
+              para permitir que su video comience a reproducirse automáticamente (pero silenciado):</p>
+
+            <p>Es una buena idea incluir siempre <b style="color: #92131d ;"> widthy/height </b>
+              Si no se configuran la altura y el ancho, la página puede parpadear mientras se carga el video.</p>
+
+              <p>El texto entre las etiquetas<b style="color: blue ;"> &lt;video&gt;</b><b style="color: blue ;"> &lt;/video&gt;</b>
+                solo se mostrará en el navegadores que no admitan el <b style="color: blue ;"> &lt;video&gt;</b> elemento.</p>
+
+
+            <p>Vamos a ver un ejemplo: De elemento video, con controls atributo</p>
+
+         
+            <div class="ejemplo">
+              
+              <ul >
+                <li style="font-size: 20px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li>
+                <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li>
+                <li><b style="color: blue;">&lt;head&gt;</b></li>
+                <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li>
+                <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;h1&gt;</b> Elemento &lt;video&gt; 
+                <b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;video</b> <b style="color: #92131d;"> width = "320" height = "240" controls</b>
+                <b style="color: blue;">&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;source</b> <b style="color: #92131d;"> src ="movie.mp4" type ="video/mp4"</b>
+                <b style="color: blue;">&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/video&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;/body&gt;</b></li><br>
+                <li><b style="color: blue;">&lt;html&gt;</b></li><br>
+                <li>Copia el código que está dentro de <b style="color: blue;">&lt;body&gt;</b> y pegar en Visual Studio Code</li>
+              </ul>
+            </div>
+
+            <div class="resultado" >
+              <p> Página, Google Chrome</p>
+              <p><b>src</b> especifica la ruta al video.</p>
+              <p><b>type</b> el tipo de video (mp4-ogg-etc.)</p>
+              <p style="font-size: 20px; text-align: left;"><b> Elemento <b style="color: blue;">&lt;video&gt;</b>
+              </b></p>
+              <video width="200" height="150" controls>
+                <source src="video/v3.mp4"  type="video/mp4"> 
+                Su navegador no soporta la etiqueta de vídeo.
+              </video>
+
+            </div>
+
+            <h3><u>Elementos semánticos en HTML</u> </h3>
+
+            <p>Un elemento semántico describe claramente su significado tanto para el navegador como para el desarrollador.</p>
+            <p>HTML semántico es el uso de marcas HTML para reforzar la semántica, o significado, de la información en las páginas web
+               y aplicaciones web en lugar de limitarse a definir su presentación o mirar.</p>
+            <p>HTML semántico es procesada por los navegadores web tradicionales, así como por muchos otros agentes de usuario.
+                 CSS se utiliza para sugerir su presentación a los usuarios humanos.</p>
+
+            <h4>¿Por qué elementos semánticos?</h4>
+
+            <p>Según el W3C: "Una Web semántica permite que los datos se compartan y reutilicen entre aplicaciones, empresas y comunidades".</p>
+
+            <h4>¿Cuáles son elementos semánticos?</h4>
+
+            <p><b><u>Elementos no semánticos:</u></b> Ejemplo, los <b style="color: blue;">&lt;div&gt;</b> 
+              y <b style="color: blue;">&lt;span&gt;</b> No dice nada sobre su contenido</p>
+
+            <p><b><u>Elementos semánticos:</u></b> <b style="color: blue;">&lt;table&gt;</b><b style="color: blue;">&lt;form&gt;</b>
+             y <b style="color: blue;">&lt;article&gt;</b> Define claramente su contenido.</p>
+
+             <p>HTML5 elementos semánticos son compatibles con todos los navegadores modernos.</p>
+
+             <h4><u> Nuevos elementos semánticos en HTML5</u></h4>
+
+             <p>Muchos sitios web contienen código HTML como: <b style="color: blue;">&lt;div id="nav"&gt;</b> 
+              <b style="color: blue;">&lt;div div class="header"&gt;</b>  <b style="color: blue;">&lt;div div id="footer"&gt;</b>
+              para indicar la navegación, encabezado y pie de página.</p>
+
+              <p><b><u>HTML5 ofrece nuevos elementos semánticos para definir diferentes partes de una página web:</u></b></p>
+
+              <p><b style="color: blue;">&lt;article&gt;</b>, <b style="color: blue;">&lt;aside&gt;</b>, 
+                 <b style="color: blue;">&lt;details&gt;</b>, <b style="color: blue;">&lt;figcaption&gt;</b>,
+                 <b style="color: blue;">&lt;figure&gt;</b>, <b style="color: blue;">&lt;footer&gt;</b>, 
+                 <b style="color: blue;">&lt;header&gt;</b>, <b style="color: blue;">&lt;main&gt;</b>
+                 <b style="color: blue;">&lt;mark&gt;</b>, <b style="color: blue;">&lt;nav&gt;</b>,
+                 <b style="color: blue;">&lt;section&gt;</b>, <b style="color: blue;">&lt;summary&gt;</b>, 
+                 <b style="color: blue;">&lt;time&gt;</b></p>
+
+
+         <img class="imag2" src="imag/Imagen37.png" alt="Imagen de ilustración">
+
+         <p><b><u> El elemento</b> <b style="color: blue;">&lt;header&gt;</b>: especifica una cabecera para un documento o sección.</u></p>
+
+         <p>Representa un contenedor de contenido introductorio o un conjunto de enlaces de navegación, normalmente contiene:</p>
+
+          <ul id="lista-main">
+            <li>Uno o más elementos de incrustado (<b style="color: blue;">&lt;h1&gt;</b>, <b style="color: blue;">&lt;h6&gt;</b>)</li>
+            <li>Logotipo o icono</li>
+            <li>Información de autoridad</li>
+          </ul>
+
+          <p><b><u>Nota:</u></b> Puedes tener varios<b style="color: blue;">&lt;header&gt;</b> en un documento HTML.
+          Sin embargo, no se puede colocar dentro de un <b style="color: blue;">&lt;footer&gt;</b> o otro 
+          <b style="color: blue;">&lt;header&gt;</b> </p>
+
+          <p><b><u>El elemento</b> <b style="color: blue;">&lt;nav&gt;</b>: define un conjunto de enlaces de navegación.</u> </p>
+
+          <p>Está destinado solo a los principales bloques de enlaces de navegación.. Sin embargo, no todos los enlaces
+             en un documento deben estar dentro de un elemento <b style="color: blue;">&lt;nav&gt;</b></p>
+
+          <p>Los navegadores, como los lectores de pantalla para usuarios discapacitados, pueden usar este elemento para
+             determinar si se omite la representación inicial de este contenido.</p>
+
+          <p><b><u>El elemento</b> <b style="color: blue;">&lt;section&gt;</b>: define una sección de un documento.</u></p> 
+
+          <p>De acuerdo con la documentación HTML de W3C: "Una sección es una agricultura temática de contenido, 
+            generalmente con un encabezado".</p>
+
+            <p>Ejemplos de dónde el elemento <b style="color: blue;">&lt;section&gt;</b> se puede utilizar:</p>
+
+            <ul id="lista-main">
+              <li>Capítulos</li>
+              <li>Introducción</li>
+              <li>Noticias</li>
+              <li>Información del contacto</li>
+            </ul>
+
+            <p>Normalmente, una página web se puede dividir en secciones para la introducción, el contenido y 
+              la información de contacto.</p>
+
+            <p><b><u>El elemento</b> <b style="color: blue;">&lt;article&gt;</b>: especifica el contenido independiente, autónomo.</u></p> 
+
+            <p>Un artículo debe tener sentido por sí mismo, y debe ser posible leer de forma independiente del resto del sitio web.</p>
+    
+            <p>Ejemplos de dónde el elemento <b style="color: blue;">&lt;article&gt;</b> se puede utilizar:</p>
+    
+           <ul id="lista-main">
+            <li>Mensaje de foro</li>
+            <li>Entrada de blog</li>
+            <li>Artículo de periódico</li>
+            <li>Tarjetas de productos</li>
+            <li>Comentarios del usuario</li>
+           </ul>
+
+           <p>Anidar <b style="color: blue;">&lt;article&gt;</b> en <b style="color: blue;">&lt;section&gt;</b> o viceversa</p>
+
+           <p>¿Podemos usar las definiciones para decidir cómo anidar esos elementos? ¡No podemos!</p>
+
+           <p>Por lo tanto, encontrará páginas HTML con elementos <b style="color: blue;">&lt;section&gt;</b> que contienen
+            elementos <b style="color: blue;">&lt;article&gt;</b> y elementos <b style="color: blue;">&lt;articles&gt;</b> 
+            que contienen elementos <b style="color: blue;">&lt;section&gt;</b></p>
+
+          <p><b><u>El elemento</b> <b style="color: blue;">&lt;footer&gt;</b>: define un pie de página para un documento o sección,
+            normalmente contiene.</u></p>
+
+            <ul id="lista-main">
+              <li>Información de autoría</li>
+              <li>Información del contacto</li>
+              <li>Información registrada</li>
+              <li>Mapa del sitio</li>
+              <li>Documentos relacionados</li>
+              <li>Volver a los enlaces superiores</li>
+             </ul>
+
+             <p><b><u>El elemento</b> <b style="color: blue;">&lt;aside&gt;</b>: define algún contenido además del
+               contenido en el que se coloca (como una barra lateral). </u></p>
+
+             <p>El <b style="color: blue;">&lt;aside&gt;</b> contenido debe estar indirectamente relacionado con el contenido circundante.</p>
+
+             <p><b>Investigar y practicar,</b> a continuación le dejo el siguientes link de, <b>(referencia de elementos HTML)</b></p>
+
+             <a href="https://www.w3schools.com/tags/default.asp" style="background-color: grey; color: white; 
+             border: 2px solid blueviolet; font-size: 20px;">w3schools</a>
+
+             <h4><u>¿Qué son los elementos anidados en HTML?</u></h4>
+
+           <p> Elementos anidados. Un elemento HTML funciona como
+               un contenedor en el que puedes guardar textos. Pero, si quieres añadir otro elemento HTML dentro
+               de él lo puedes hacer, estos se conocen como elementos anidados.</p>
+
+               <img class="imag" src="imag/imgen18.jpg" alt="Elemento anidados">
+
+
+             <h3><u> Favicon en HTML</u></h3> 
+
+             <p>Un favicon es una pequeña imagen que se muestra junto al título de la página en la pestaña del navegador.
+              Cómo agregar un Favicon en HTML. Puede usar cualquier imagen que desee como su favicon. 
+              Se muestra una imagen de favicon a la izquierda del título de la página en la pestaña del navegador, como esta:
+             </p>
+             <img class="imag2" src="imag/Imagen42.png" alt="favicon">
+             <p><b>Sugerencia:</b> un favicon es una imagen pequeña, por lo que debe ser una imagen simple con alto contraste.</p>
+
+             <p>Para agregar un favicon a su sitio web, guarde su imagen de favicon en el directorio raíz de su servidor web o 
+              cree una carpeta en el directorio raíz llamada imágenes y guarde su imagen de favicon en esta carpeta. Un nombre 
+              común para una imagen de favicon es "favicon.ico".</p>
+
+              <p>A continuación, agregue un elemento <b style="color: blue;">&lt;link&gt;</b> 
+               a su archivo "index.html", después del elemento <b style="color: blue;">&lt;title&gt;</b>, así:</p>
+
+                <img class="imag2" src="imag/Imagen43.png" alt="favicon">
+
+                <p>Ahora, guarde el archivo "index.html" y vuelva a cargarlo en su navegador. La pestaña de su
+                   navegador ahora debería mostrar su imagen de favicon a la izquierda del título de la página.</p>
+
+
+      </article>
+
+      </main>
+      
+      <footer><p> 2023 <a href="index.html" > Front-End </a> Author: Juan A.Q. [ N/E.R./Arg. ] <a href="#subir">Subir</a></p> </footer>
+
+      <script src="JS/menu.js">  </script>
+
+</body>
+</html>

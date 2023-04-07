@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End</title>
+    <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
+    <link rel="icon" type="image/x-icon" href="imag-icono.png">
+</head>
+<body>
+  
+  
+
+  <header class="menu">
+
+    <div>
+      <h1 id="subir" class="header-titulo">Front-End</h1>
+      </div>
+  
+      <div class="bars">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  
+  <nav class="nav-bars">
+    <ul>
+      
+    <li><a href="index.html" class="nav-menu-link">Inicio</a></li>
+    <li><a href="intro.html" class="nav-menu-link">Introducción Front-End. HTML/CSS/JavaScript</a></li>
+    <li ><a href="HTMLbasic.html" class="nav-menu-link">Conceptos básicos de HTML</a></li>
+    <li ><a href="elementos.html" class="nav-menu-link">TAGs (Elementos) HTML </a></li>
+    <li ><a href="formulario.html" class="nav-menu-link">Formulario Web</a></li>
+    <li ><a href="CSSframework.html" class="nav-menu-link">Extendiendo CSS y framework</a></li>
+    <li ><a href="diseñoadaptable.html" class="nav-menu-link">Responsive Web Design</a> </li>
+    <li ><a href="github.html" class="nav-menu-link">GIT/Github. Servidores/hosting/dominio.</a></li>
+    <li ><a href="programacion.html" class="nav-menu-link">Lógica de programación</a></li>
+    <li><a href="javaScript.html" class="nav-menu-link">JavaScript</a></li>
+      
+      
+  </ul>
+  </nav>
+  
+  </header>
+<main class="main">
+
+  <article class="articulos">
+    <img class="imag1" src="imag/growtika-9WnjxT1NCoY-unsplash.jpg" alt="imagen de ilustracion">
+
+<h2> Estructura de un proyecto web </h2>
+
+
+<p>Para dar nuestros primeros pasos vamos a necesitar descargar un editor de texto plano.
+    Para poder trabajar nuestro documento html.
+     Existen actualmente varios programas que nos permiten editar texto en html. <br>En los cuales te voy a sugerir: </p>
+
+     <h2>Visual Studio Code</h2>
+     <p>Para desarrollar nuestras páginas web, lo podéis descargar desde aquí:
+       <a href="https://code.visualstudio.com/">Visual Studio Code</a> </p>
+
+     <img class="imag" src="imag/imag5.png" alt="visual studio code">
+
+ <p>Visual Studio Code es un editor de código fuente ligera pero eficaz que se ejecuta en el escritorio y 
+    está disponible para Windows, macOS y Linux. Incluye compatibilidad integrada con JavaScript, TypeScript y Node.js,
+     y cuenta con un amplio ecosistema de extensiones para otros lenguajes (como C++, C#, Java, Python, Go, .NET).</p>
+
+     <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+ 
+     <h3><u> Estructura básica de un documento HTML</u></h3>
+     
+     <ul id="lista-main">
+      <li>Los documentos HTML, deben acabar con la extensión html.</li>
+
+      <li>Para indicar el documento inicial en HTML existe una buena praxis no escrita que consisten en llamar <b>index.html</b>  
+          a dicho documento para identificarlo lo antes posible.</li>
+
+      <li>Si creamos un proyecto,  el documento <b>index.html</b> y escribimos en él,  html, desde Visual Studio Code  podremos ver
+         que existe una opción que es html:5.</li>
+
+       <li>Esa es una ventaja que tenemos en V.S.C., hay muchas abreviaciones. </li>  
+     </ul>
+
+<img class="imag" src="imag/imag6.jpg" alt="Archivo HTML5">
+
+<p>Si pulsamos sobre ella, nos escribirá la estructura básica de un documento HTML5:</p>
+
+<img class="imag" src="imag/imag7.jpg" alt="Estructura  básica  HTML5">
+<p>Hay que matizar que solamente se escribe en mayúscula la DOCTYPE aunque HTML no distingue entre mayúsculas y
+   minúsculas es buena praxis seguir lo que hace el resto de la comunidad.</p>
+
+<p>Una forma sencilla de crear nuestra carpeta de proyecto y el archivo index.html es, desde el escritorio de la pc, creamos una
+nueva carpeta, abrir la misma y dentro creamos un documento de texto, al cual le cambiaremos el nombre por index.html.
+ Desde VSC nos dirigimos a archivo, y luego abrir carpeta, buscamos el destino y ya tenemos nuestra carpeta 
+ de trabajo con el archivo html, o tambien agarramos la carpeta y ponemos en VSC en el área de trabajo sin nada abierto en el mismo.</p>
+
+
+
+    <h3><u> Anatomía de un documento HTML5</u></h3>
+
+    <h4>Si nos fijamos en el documento principalmente tenemos 4 TAGs:</h4>
+
+    <ol id="lista-main">
+      <li><b style="color: rgb(99, 99, 10);">	DOCTYPE (versión HTML5): </b>nos permite indicarle al navegador que el documento HTML
+         que hemos creado será de la versión HTML5.</li>
+      <li><b style="color: rgb(99, 99, 10);">	HTML (documento HTML): </b>delimita el inicio y el fin del documento HTML</li>
+      <li><b style="color: rgb(99, 99, 10);">HEAD (Encabezado) → es la cabeza del documento contiene metadatos (información importante)
+        que “no serán visibles” cuando carguemos el documento HTML en el navegador. </b>Dentro del TAG de HEAD, 
+        añadiremos información como el título de la página (tag &lt;title&gt;), enlaces a CSS (en el hipotético caso de 
+        que queramos añadir una capa de estilos CSS a nuestro documento HTML), enlaces para personalizar los iconos 
+        (tag favicon), además de otros metadatos (datos sobre el HTML, como quién lo escribió y palabras claves importantes
+        que describen el documento).</li>
+      <li><b style="color: rgb(99, 99, 10);">	BODY (Cuerpo) → es la parte del documento que será visible cuando carguemos
+        el documento HTML en el navegador. </b>Por tanto, las etiquetas que no sean metadatos irán aquí.</li>
+    </ol>
+    
+
+    <img class="imag" src="imag/imag8.JPG" alt="front-end">
+
+    <p>Podemos ver que tenemos un punto junto al nombre del archivo esto es porque no hemos guardado el documento por el momento. 
+      Si lo guardamos, podremos ver que este punto desaparecerá y finalmente podemos abrir nuestro proyecto:</p>
+    
+      <img class="imag" src="imag/imag9.jpg" alt="front-end">
+
+      <p>Y veremos que se nos abre una ventana con el documento index.html, aunque, podemos observar que está en blanco ya que por 
+        el momento es la estructura sin contenido, por eso nos aparece “vacío”.</p>
+
+        <img class="imag" src="imag/imag10.jpg" alt="front-end">
+
+        <p>Si hacemos clic en el botón derecho del mouse y en inspeccionar  (desde Chrome) abriremos el inspector de elementos (DevTools),
+           en el que podremos ver su estructura. En este caso, también podemos apreciar que el propio Live Server al abrir el documento 
+           nos ha añadido un pequeño script.</p>
+            <img class="imag" src="imag/imag11.jpg" alt="front-end">
+
+            <h4><u>Como crear un documento HTML con sencillos pasos</u> .</h4>
+
+            <img class="imag2" src="imag/Imagen30.png" alt="imagen ilustración " >
+
+            <img class="imag2" src="imag/Imagen31.png" alt="imagen ilustración " >
+
+            <img class="imag2" src="imag/Imagen32.png" alt="imagen ilustración " >
+
+            <img class="imag2" src="imag/Imagen33.png" alt="imagen ilustración " >
+
+            <h4><b><u>Vamos a Visual Studio Code y vamos a añadirle algo de contenido a la web:</b></u></h4>
+
+            <ol id="lista-main">
+              <li>Dentro del <b style="color: blue;">&lt;head &gt;</b> vamos a modificar el valor del metadato: <br> 
+                <b>Título (title) de la web por “proyecto mundo”</b></li>
+              <li>Dentro del body vamos a añadir dos instrucciones: <br>
+                 La etiqueta de encabezado principal (h1) con <b style="color: green;"> &lt;h1&gt; Hola mundo  &lt;/h1&gt; </b> 
+                 como contenido <br>
+                 La etiqueta de párrafo (p) con  <b style="color: green;"> &lt;p&gt; Desde mi primera página web  &lt;/p&gt; </b>
+                 como contenido. </li>
+              </ol>
+
+              <div class="ejemplo">
+              
+                <ul >
+                  <li style="font-size: 20px; color: blueviolet; text-align: center;"> Visual Studio Code</li><br>
+                  <li><b style="color: blue;">&lt;!DOCTYPE html&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;html lang="es"&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;head&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;meta</b> http-equiv="X-UA-Compatible" content="IE=edge"<b b style="color: blue;">&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;meta</b> name="viewport" content="width=device-width, initial-scale=1.0"<b b style="color: blue;">&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;title&gt;</b> Proyecto mundo <b style="color: blue;">&lt;title&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;/head&gt;</b></li><br> 
+                  <li><b style="color: blue;">&lt;body&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;h1&gt;</b> Hola mundo <b style="color: blue;">&lt;/h1&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;p&gt;</b> Desde mi primera página web <b style="color: blue;">&lt;/p&gt;</b></li><br>
+                  <li><b style="color: blue;">&lt;/body&gt;</b></li><br><br>
+                  <li>Copia este código y pega en Visual Studio Code</li>
+                </ul>
+              </div>
+
+              <div class="resultado" >
+                <p> Página, Google Chrome</p><br><br>
+                <p style="font-size: 25px; text-align: left;"> Hola mundo </p>
+                <ul>
+                <li style="font-size: 14px;">Desde mi primera página web</li><br>
+                <li> Google Chrome</li>
+                </ul>
+               
+              </div>
+
+
+
+
+              <p><b> <u>El resultado será:</u></b></p>
+
+              <img class="imag" src="imag/imag14.JPG" alt="front-end">
+
+              <p>Si volvemos a entrar en la ventana de inspeccionar del navegador, también lo podemos hacer
+                 (con F12 desde el Google Chrome), podemos ver que su estructura ha cambiado:</p>
+                 
+                 <img class="imag" src="imag/imag15.jpg" alt="front-end">
+
+                 <p style ="color: white ; background-color: gray; text-align: center;" > HTML-CSS-JavaScript </p>
+
+                 <h3>¿Qué son los atributos de un TAG (etiqueta)?</h3>
+
+                 <p>Anteriormente hemos visto las etiquetas, pero hemos saltado la parte de los atributos.
+                   Ya que considero que es más sencillo de aprender, que son los atributos.</p>
+
+                 <p>Si revisamos la etiqueta html de la estructura básica del documento podemos ver que no solo está formada por el nombre 
+                    del elemento (html) sino que además tiene un atributo lang que tiene como valor “en”.</p>
+
+                    <img class="imag" src="imag/Imagen15.png" alt="">
+
+                 <p>Esto es debido a que en algunas ocasiones la etiqueta por sí sola es capaz de 
+                   almacenar la suficiente información y necesita atributos que la complementen.</p>
+
+                 <p>Estos atributos son pares de nombre y valor que van separados por un “=” y escritos
+                   justo detrás del nombre de la etiqueta de apertura un elemento.  El valor debe de ir entre comillas dobles o simples.</p>
+
+                 <p>En este caso en particular, lang nos permite seleccionar el language (el idioma) de nuestra página al ser en español = es.
+                    Si la web fuera en inglés utilizaremos el valor “en” de english para definir el idioma del documento mediante el atributo lang. 
+                    Por lo tanto, lo que debemos modificar es el valor del atributo lang.
+                    Para que los buscadores entiendan mejor que nuestra web es en español.</p>
+
+                       <img class="imag" src="imag/Imagen16.jpg" alt="">
+                       
+                    <p style="text-align: center;">Espero que este artículo te haya ayudado. Gracias. ¡ Feliz Programación !.</p>
+                       
+                      
+                      </article>
+
+                  
+</main>
+
+<footer><p> 2023 <a href="index.html" > Front-End </a> Author: Juan A.Q. [ N/E.R./Arg. ] <a href="#subir">Subir</a></p> </footer>
+
+
+<script src="JS/menu.js">  </script>
+
+</body>
+</html>
