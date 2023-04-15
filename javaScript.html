@@ -47,14 +47,21 @@
 
   <img class="imag1" src="imag/growtika-9WnjxT1NCoY-unsplash.jpg" alt="imagen de ilustracion">
 
-  <h2>Introducción a JavaScript</h2>
+  <h2>¿Qué es JavaScript?</h2>
 
-  <p>JavaScript es un lenguaje de programación que se ejecuta en el ámbito de una página web.
-     Es una herramienta muy importante sobre todo para la realización de una web dinámica. 
-     Estos programas se cargan en el navegador, ya que es un lenguaje de programación del lado del cliente.
-     El lenguaje más utilizado de este tipo es el propio JavaScript.
-     También existe una parte de JavaScript dedicada del lado del servidor (Server-side JavaScript o SSJS),
-     pero en eso no nos vamos a meter, solo veremos su funcionamiento del lado del servidor.</p>
+  <p>JavaScript es un lenguaje de programación de alto nivel que se utiliza principalmente para crear sitios web dinámicos 
+    e interactivos. A menudo se lo conoce como el "lenguaje de la web", ya que es uno de los lenguajes más populares para
+    programar en la web.</p>
+
+  <p>JavaScript se ejecuta en el navegador del usuario y puede interactuar con el HTML y el CSS para crear efectos visuales
+   y dinámicos en una página web. También se utiliza en el desarrollo de aplicaciones web, aplicaciones móviles y juegos en línea.</p>
+
+  <p>JavaScript fue creado en 1995 por Brendan Eich, mientras trabajaba en Netscape Communications Corporation. Desde entonces, 
+  ha evolucionado y se ha convertido en uno de los lenguajes de programación más utilizados en todo el mundo.</p>
+
+ <p>El conocimiento de JavaScript es esencial para cualquier desarrollador web. En esta página, te proporcionaremos una introducción
+   básica a JavaScript, desde las variables y los tipos de datos hasta la manipulación del DOM y los eventos. Aprenderás cómo funciona 
+   JavaScript, cómo se utiliza para crear aplicaciones web y cómo puedes empezar a utilizarlo en tus proyectos. ¡Empecemos!"</p> 
 
 <h3>¿Cómo funciona JavaScript?</h3>
 
@@ -125,21 +132,44 @@
 
 <h3><u>Conceptos básicos</u></h3>
 
-<p>Si no has programado hasta ahora, debes conocer una serie de conceptos básicos que tendrás que trabajar
-   y dominar dentro del campo de la programación.</p>
+<h4>Los conceptos básicos en JavaScript incluyen:</h4>
 
-<h4 style="background-color: lightgrey;">Programa</h4>
+<ul id="lista-main">
+<li><b>Comentarios:</b> son líneas de texto que se ignoran cuando el código se ejecuta, lo que permite a los desarrolladores
+ explicar lo que hace el código. Los comentarios en JavaScript se pueden crear de dos maneras: utilizando el símbolo "//"
+ para comentarios de una sola línea, o utilizando "/*" y "*/" para comentarios de varias líneas.</li>
 
-<p>En programación se suele llamar programa al conjunto total de código que desarrollas. 
-  En JavaScript, quizás el término más utilizado es aplicación web (cuando es un desarrollo con mucha cantidad de JavaScript).
- También se suelen generalizar utilizando términos como «script» o «código JavaScript».</p>
+<li><b>Indentación</b> se refiere a la forma en que se organizan y estructuran los bloques de código. La indentación adecuada
+ ayuda a que el código sea más fácil de leer y entender para los desarrolladores. En JavaScript, se utiliza un espacio en blanco
+ o una tabulación para la indentación.</li>
 
- <h4 style="background-color: lightgrey;">Algoritmo</h4>
+<li><b>Variables:</b> son contenedores que almacenan valores como números, cadenas de texto, objetos y booleanos.
+ Se definen con la palabra clave var, let o const.</li>
 
-<p>Un algoritmo es un conjunto de pasos conocidos, en un determinado orden, para conseguir realizar
-   una tarea satisfactoriamente y lograr un objetivo. Visto en artículo anterior.</p>
+<li><b>Operadores:</b> son símbolos que realizan operaciones matemáticas, de comparación y lógicas. Ejemplos de operadores
+ son <b><code>+, -, *, /, ==, >, <, && y ||</code>.</b></li>
 
-   <h4 style="background-color: lightgrey;">Comentarios</h4>
+<li><b>Estructuras de control:</b> permiten controlar el flujo de ejecución de un programa. Las estructuras de control incluyen
+ if...else, for, while, do...while y switch.</li>
+
+<li><b>Funciones:</b> son bloques de código que realizan una tarea específica. Las funciones se definen con la palabra clave function
+ y se invocan usando su nombre seguido de paréntesis. </li>
+
+<li><b>Los bucles y ciclos</b> son una parte fundamental de la programación en JavaScript. Un bucle permite que una sección de código
+ se ejecute varias veces, mientras que un ciclo permite que una sección de código se ejecute mientras se cumpla una condición específica.
+ Algunos de los bucles y ciclos más comunes en JavaScript son el bucle for, el bucle while, el bucle do-while y el ciclo if-else.</li>
+
+<li><b>Objetos:</b> son entidades que contienen propiedades y métodos. Las propiedades son valores asociados al objeto, mientras que los 
+métodos son funciones que realizan acciones en el objeto.</li>
+
+<li><b>Eventos:</b> son acciones que ocurren en una página web, como hacer clic en un botón o desplazarse por la página. 
+Los eventos se manejan en JavaScript usando funciones de manejo de eventos.</li>
+
+<li><b>DOM:</b> el Document Object Model es una representación jerárquica de una página web. Permite a JavaScript acceder 
+y modificar los elementos de una página web, como cambiar el contenido de un elemento o agregar nuevos elementos.</li>
+</ul>
+
+<h4 style="background-color: lightgrey;">Comentarios</h4>
 
 <p> Los comentarios en nuestro código son fragmentos de texto o anotaciones que el navegador ignora
    y no repercuten en el programa. Sirven para dejar por escrito detalles importantes para el programador. De esta forma
@@ -155,151 +185,160 @@
   
  <p><b>Una serie de consejos a tener presentes a la hora de dejar comentarios en nuestro código:</b></p>
 
- <ul id="lista-main">
- <li><b>*</b> No comentes detalles redundantes. No escribas lo que haces, escribe por qué lo haces.</li>
- <li><b>*</b> Mejor nombres de variables/funciones/clases descriptivas que comentarios descriptivos.</li>
- <li><b>*</b> Sé conciso y concreto. Resume. No escribas párrafos si no es absolutamente necesario.</li>
- <li><b>*</b> Intenta usar siempre el mismo idioma y estilo de comentarios.</li>
- <li><b>*</b> Con el tiempo, los comentarios no se suelen mantener, modificar el código sí.</li>
- </ul>
+ 
+ <p>1- No comentes detalles redundantes. No escribas lo que haces, escribe por qué lo haces.</p>
+ <p>2- Mejor nombres de variables/funciones/clases descriptivas que comentarios descriptivos.</p>
+ <p>3- Sé conciso y concreto. Resume. No escribas párrafos si no es absolutamente necesario.</p>
+ <p>4- Intenta usar siempre el mismo idioma y estilo de comentarios.</p>
+ <p>5- Con el tiempo, los comentarios no se suelen mantener, modificar el código sí.</p>
+ 
 
  <p><b>En JavaScript existen dos tipos de comentarios: los comentarios de una sola línea y los comentarios de múltiples líneas.</b></p>
 
 
-  <p>El primero de ellos se caracteriza porque comienza con <b>//</b> y sólo comenta la linea actual desde donde se escribe.</p>
+<p>El primero de ellos se caracteriza porque comienza con <b style="color: green;"> // </b> y sólo comenta la linea actual
+ desde donde se escribe.</p>
 
-  <img class="imag2" src="imag/ejemplo6.png" alt="JavaScript">
+<pre><code>
+<b style="color: green;">// comentarios de una sola línea. suelen explicar la siguiente linea</b>  
+<b style="color: blue;">nombre</b> = "andre"; <b style="color: green;"> // también se utilizan al final de una linea</b> 
+</code></pre>
+  
 
-  <p>El segundo tipo se utiliza para hacer comentarios extensos que ocuparán varias líneas. Comienza por <b>/*</b> y comentará todo el texto
-     que escribamos hasta que cerremos el comentario con un <b>*/</b>.<p>
+<p>El segundo tipo se utiliza para hacer comentarios extensos que ocuparán varias líneas. Comienza por <b>/*</b>
+ y comentará todo el texto
+  que escribamos hasta que cerremos el comentario con un <b>*/</b>.<p>
 
-  <img class="imag2" src="imag/ej1.png" alt="JavaScript">
+<pre><code>
+<b style="color: blue;">&lt;script&gt;</b> 
+<b style="color: blue;">nombre</b> = "andre"; 
+<b style="color: green;"> /* Por otro lado, existen los comentarios múltiples de varias linea consecutivas, suelen utilizarlos para 
+ explicaciones largas que requieren bastante espacio.</b> 
+<b style="color: blue;">&lt;/script&gt;</b>
+</code></pre>
+
+
   
   <h4 style="background-color: lightgrey;">Indentación</h4>
 
- <p>Se llama indentar a la acción de colocar espacios o tabuladores antes del código, para indicar
-   si nos encontramos dentro de un if, de un bucle, etc... Esta práctica es muy importante y necesaria.</p>
+<p>La indentación es una técnica de formateo del código en la que se utilizan espacios o tabuladores para organizar
+   visualmente el código y resaltar su estructura. En JavaScript, la indentación se utiliza para indicar la estructura 
+   de un programa, especialmente en bloques de código como funciones, condicionales o bucles.</p>
 
- <p>A medida que escribimos líneas de código en nuestro programa, se irá complicando y nos tomará más tiempo leer lo que hemos
-   hecho y comprobar si hay errores o como solucionarlos. Sin embargo, para mejorar la rapidez con la que leemos (y entendemos)
-   nuestro código, una buena práctica es usar la indentación.</p>
+<p>Un ejemplo de código con mala indentación sería el siguiente:</p>
 
- <p>Se llama <b>indentación de código</b> al hecho de utilizar sangrado (mover ligeramente hacia la derecha) en las líneas de código para
-   facilitar la lectura, e indicar visualmente si nos encontramos en el interior de una función, bucle, condicional, etc. 
-   Observemos el siguiente ejemplo:</p>
+<pre><code>
+  <b style="color: blue;">function </b> factorial(n)<b style="color: red;">{</b> 
+  <b style="color: blue;">if </b> (n === 0)<b style="color: red;">{</b> 
+  <b style="color: blue;">return </b>1;
+  <b style="color: blue;"><b style="color: red;">}</b>else<b style="color: red;">{</b></b>
+  <b style="color: blue;">return </b> n * factorial(n - 1);
+  }
+  }
+  </pre></code>
 
-   <img class="imag2" src="imag/ej2.png" alt="JavaScript">
 
- <p>Observemos este otro código (mal indentado):</p>
+<p>En este ejemplo, el código dentro de la función <b>factorial</b> no está correctamente indentado, lo que dificulta la lectura
+ y comprensión del código. Ahora veamos el mismo código pero con buena indentación:</p>
 
- <img class="imag2" src="imag/ej3.png" alt="JavaScript">
+ <pre><code>
+  <b style="color: blue;">function </b> factorial(n)  <b style="color: brown;">{</b>
+  <b style="color: blue;">if </b> (n === 0)  <b style="color: brown;">{</b>
+  <b style="color: blue;">return </b> 1;
+  <b style="color: blue;"> <b style="color: brown;">}</b>  else  <b style="color: brown;">{</b> </b>
+  <b style="color: blue;">return </b> n * factorial(n - 1);
+  }
+  }
+</pre></code>
 
- <p>Una buena práctica de programación es indentar correctamente las líneas de código que escribamos, no obstante, 
-  la mayoría de los editores están configurados para que al pulsar ENTER se indenten automáticamente.</p>
+
+<p>En este ejemplo, cada nivel de bloque de código está indentado con 2 espacios, lo que hace que la estructura del código 
+  sea mucho más clara y fácil de leer.</p>
+
+<p>Es importante tener en cuenta que la indentación no afecta al funcionamiento del código, pero sí puede mejorar la legibilidad y la 
+  facilidad de mantenimiento del mismo.</p>
 
  <h4 style="background-color: lightgrey;">Variables</h4>
 
- <p>En JavaScript es muy sencillo declarar y utilizar variables, pero aunque sea un procedimiento simple, hay
-   que tener una serie de conceptos previos muy claros antes de continuar para evitar futuras confusiones, sobre
-   todo si estamos acostumbrados a otros lenguajes más tradicionales.</p>
+<p>Las variables en JavaScript se utilizan para almacenar valores y datos. Para declarar una variable en JavaScript,
+  se utiliza la palabra clave <b><code>var</code>, <code>let</code> o <code>const</code>.</b>  Por ejemplo:</p>
 
- <p>En programación, las variables son espacios donde se puede guardar información y asociarla a un determinado nombre.
-   De esta forma, cada vez que se consulte ese nombre posteriormente, te devolverá la información que contiene.
-   La primera vez que se realiza este paso se suele llamar inicializar una variable.</p>
+  <ul>
+    
+   <li><b style="color: blue;">var</b> miVariable = <b style="color: brown;"> 42;</b></li> <br>
+   <li><b style="color: blue;">let</b> miOtraVariable = <b style="color: brown;"> "Hola";</b></li> <br>
+   <li><b style="color: blue;">const</b> PI = <b style="color: brown;"> 3.1416;</b></li> <br>
+   
 
- <p>En JavaScript, si una variable no está inicializada, contendrá un valor especial: undefined, que significa que su
-   valor no está definido aún, o lo que es lo mismo, que no contiene información.</p>
+  </ul>
 
-   <img class="imag2" src="imag/ejemplo5.png" alt="JavaScript">
+<pre><code>
+  <b style="color: blue;">&lt;script&gt;</b>
+  <b style="color: green;">// declarando una variable con var</b> 
+  <b style="color: blue;">var</b> miVariable = <b style="color: brown;"> 42;</b>
+  <b style="color: green;">// declarando una variable con let</b> 
+  <b style="color: blue;">let</b> miOtraVariable = <b style="color: brown;"> "Hola";</b>
+  <b style="color: green;">// declarando una variable con const</b> 
+  <b style="color: blue;">const</b> PI = <b style="color: brown;"> 3.1416;</b>
+  <b style="color: blue;">&lt;/script&gt;</b>
+</code></pre>
 
- <p>Como se puede observar, hemos utilizado console.log() para consultar la información que contienen las variables indicadas.</p> 
+<p>Es importante tener en cuenta que JavaScript es un lenguaje de tipado dinámico, lo que significa que no es necesario 
+ especificar el tipo de dato de una variable al declararla. El tipo de dato de una variable se determina automáticamente
+ según el valor que se le asigna.</p>
 
- <p style="background-color: bisque;"><b>Nota:</b> Las mayúsculas y minúsculas en los nombres de las variables de JavaScript importan. No es lo mismo una variable
-  llamada <b>menu</b> que una variable llamada <b>Menu</b>, pueden contener valores diferentes.</p>
+<p style="background-color: bisque;"><b>Nota:</b> Las mayúsculas y minúsculas en los nombres de las variables de JavaScript importan. 
+ No es lo mismo una variable llamada <b>nombre</b> que una variable llamada <b>Nombre</b>, pueden contener valores diferentes.</p> 
+    
+    
+<h4><u> Tipos de datos en JavaScript</u></h4>
+<p>En JavaScript, existen varios tipos de datos que se pueden asignar a una variable. Los principales tipos de datos son:</p>
+    <ul id="lista-main">
+      <li><b>Number:</b> números enteros o decimales.</li>
+      <li><b>String:</b> cadenas de texto.</li>
+      <li><b> Boolean:</b> valores verdadero o falso.</li>
+      <li><b> Null:</b> valor nulo.</li>
+      <li><b> Undefined:</b> valor indefinido.</li>
+      <li><b> Object:</b> objetos, que pueden contener propiedades y métodos.</li>
+      <li><b> Symbol:</b> valores únicos e inmutables utilizados como identificadores de propiedades de objetos.</li>
+    </ul> 
 
- <p>Si tenemos que declarar muchas variables consecutivas, una buena práctica suele ser escribir sólo el primer var y 
-  separar por comas las diferentes variables con sus respectivos contenidos</p>
+    
+
+<h4><u> Variables var y let en JavaScript</u></h4>
+
+<p>En JavaScript, se pueden declarar variables utilizando la palabra clave <b>var</b> o la palabra clave <b>let</b>.
+ La principal diferencia entre ambas es su alcance.</p>
+
+<p><b style="color: blue;">var:</b> Es una palabra clave para declarar una variable en JavaScript. La variable declarada
+ con var tiene un alcance de función, lo que significa que es accesible dentro de la función donde se declaró, incluso si 
+ se declara dentro de un bloque de código. Si se declara una variable con var fuera de una función, esta se convierte en una 
+ variable global y puede ser accesible en cualquier parte del código.</p>
+
+<p><b style="color: blue;">let:</b> Es una palabra clave para declarar una variable en JavaScript. La variable declarada con
+ let tiene un alcance de bloque, lo que significa que solo es accesible dentro del bloque de código donde se declaró. 
+ Si se declara una variable con let fuera de un bloque de código, se convierte en una variable global y puede ser accesible 
+ en cualquier parte del código, al igual que con var.</p> 
 
   <img class="imag2" src="imag/ej4.png" alt="JavaScript">
 
-  <p>Como su propio nombre indica, una variable puede variar su contenido, ya que aunque contenga una cierta información, 
-    se puede volver a cambiar. A esta acción ya no se le llama inicializar una variable, sino declarar una variable
-   (o más concretamente, re declarar). En el código se puede diferenciar porque se omite el var.</p>
+  
+<p>En este ejemplo, se declaran las variables <b>x</b> e <b>y</b> dentro de la función <b>ejemplo()</b>. La variable
+<b>x</b> se declara con <b style="color: blue;">var:</b> y la variable <b>y</b> se declara con <b style="color: blue;">let:</b></p>
 
-   <img class="imag2" src="imag/ej5.png" alt="JavaScript">
+<p>Dentro del bloque de código <b>if (true)</b>, se cambia el valor de la variable <b>x</b> y se declara una nueva variable y con un valor
+ diferente. Debido a que <b style="color: blue;">var:</b> tiene un alcance de función, la variable <b>x</b> se sobrescribe globalmente,
+ mientras que <b style="color: blue;">let:</b> mantiene su valor dentro del bloque de código.</p>
 
-  <p><b>Ámbitos de variables: var</b> cuando inicializamos una variable al principio de nuestro programa y le asignamos un valor,
-  ese valor generalmente está disponible a lo largo de todo el programa. Sin embargo, esto puede variar dependiendo de múltiples
-  factores. Se conoce como ámbito de una variable a la zona donde esa variable sigue existiendo.
-   Por ejemplo, si consultamos el valor de una variable antes de inicializarla, no existe.</p>
-
-   <img class="imag2" src="imag/ej6.png" alt="JavaScript">
-   
-  <p>En el ejemplo anterior, el ámbito de la variable <b>"a"</b> comienza a partir de su inicialización y "vive" hasta el final del programa. 
-    A esto se le llama ámbito global y es el ejemplo más sencillo. Más adelante veremos que se va complicando y a veces no resulta tan 
-    obvio saber en qué ámbito se encuentra.</p>
-
- <p>En el enfoque tradicional de JavaScript, es decir, cuando se utiliza la palabra clave <b>var</b> para declarar variables, existen dos ámbitos
-   principales, <b>ámbito global</b> y <b>ámbito a nivel de función.</b> Observemos el siguiente ejemplo.</p>
-
-   <img class="imag2" src="imag/ej7.png" alt="JavaScript">
-
- <p>En el ejemplo anterior vemos que el valor de <b>"a"</b> dentro de una función no es el <b>"0"</b> inicial, sino que estamos 
-  en otro ámbito diferente donde la variable <b>"a"</b> anterior no existe. En el ámbito a nivel de función, 
-  mientras estemos dentro de una función, las variables inicializadas en ella estarán en el ámbito de la propia función.</p>
-
- <p style="background-color: bisque;"><b>Nota:</b> Podemos utilizar el objeto especial window para acceder directamente al ámbito
-  global independientemente de donde nos encontremos. Esto ocurre así porque las variables globales se almacenan dentro del objeto 
-  window (la pestaña actual del navegador web).</p>
-
-  <img class="imag2" src="imag/ej8.png" alt="JavaScript">
+<p>Fuera del bloque de código <b>if (true)</b>, se muestran los valores de ambas variables. La variable <b>x</b> tiene el valor
+ que se le asignó dentro del bloque de código, mientras que <b>y</b> mantiene su valor original porque tiene un alcance de bloque.</p>
 
 <p>Siempre que sea posible se debería utilizar <b>let y const</b> (ver a continuación), en lugar de <b>var.</b>
-   Declarar variables mediante var se recomienda en fases de aprendizaje o en el caso de que se quiera mantener
-   compatibilidad con navegadores muy antiguos utilizando ECMAScript 5, sin embargo, hay estrategias mejores a 
-   seguir que utilizar var en la actualidad.</p>
-
-<h3>Diferencias entre var y let en JavaScript</h3>
-
-<p>Las palabras clave <b>var y let</b> pueden ser utilizadas para definir variables en JavaScript. Siendo aparentemente intercambiables
-   entre sí. Pero esto no es así ya que el ámbito de definición de ambas es diferente. Lo que tiene diferentes
-   implicaciones a la hora de escribir código. Como se puede ver a continuación <b>let.</b> Tiene múltiples ventajas ya que evita
-   situaciones en las que el código puede ser confuso.</p>
-
-<p><b>Definir múltiples variables con el mismo nombre</b></p>
-
-<p>El uso de var permite redefinir la misma variable en el mismo bloque, algo que no se puede hacer con let. Por ejemplo, el siguiente
-   código funciona sin problemas:</p>
-
-<img class="imag2" src="imag/ej9.png" alt="JavaScript">
+  Declarar variables mediante var se recomienda en fases de aprendizaje o en el caso de que se quiera mantener
+  compatibilidad con navegadores muy antiguos utilizando ECMAScript 5, sin embargo, hay estrategias mejores a 
+  seguir, que utilizar var en la actualidad.</p>
 
 
-<p>Mientras que su versión con let produce un error.</p>
-
-<img class="imag2" src="imag/ej10.png" alt="JavaScript">
-
-<p>Aun así en diferentes bloques sí que es posible definir múltiples variables con el mismo nombre con <b>let.</b> Siendo cada una de ellas
-   una variable diferente. Algo que se puede ver en el siguiente bloque de código.</p>
-
-<img class="imag2" src="imag/ej11.png" alt="JavaScript"> 
-
-<p>En el bloque del <b>if</b> la variable <b>a</b> tiene como valor 11, mientras que fuera tiene el valor 10.
-   Si dentro del bloque no se define la variable está conservará el valor al salir.</p>
-
-<p>En el caso de <b>var</b> siempre se conserva el valor ya que el rango de definición es la función, no el bloque.</p>
-
-<img class="imag2" src="imag/ej12.png" alt="JavaScript">
-
-<p><b><u>La diferencia se puede ver claramente en el uso de un bucle for con var y con let</u></b></p>
-
-<p>En los bucles for es habitual definir una variable sobre la que iterar. Esto se puede hacer tanto con <b>let</b> como con <b>var.</b>
- Aunque en el caso de <b>let</b> el alcance de las variables solamente es dentro del bucle. 
- Lo que permite evitar la aparición de problemas.</p>
-
- <img class="imag2" src="imag/ej13.png" alt="JavaScript">
-
-<p>Vemos que utilizando let la variable <b>a</b> sólo existe dentro del bucle, ámbito local, mientras que utilizando var la 
-  variable <b>a</b> sigue existiendo fuera del bucle, ya que debe tener un ámbito global o a nivel de función.</p>
 
 <h3><u>Constantes</u></h3>
 
@@ -318,65 +357,791 @@
  a un valor específico y que no pueden redeclararse.
  No confundir con valores inmutables, ya que como veremos posteriormente, los objetos si pueden ser modificados aun siendo constantes.</p>
 
-   <p><b>Conclusiones:</b>
-    Hoy se ha visto las palabras reservadas que se pueden utilizar en JavaScript para definir variables: var, let y const.
-    Empleando var y let para la definición de variables y const para la de constantes. Aunque aparentemente var y
-    let parecen ser iguales esto no es así debido a que cada una tiene un alcance diferente.
-    El uso de let tiene grandes ventajas frente a var ya que evita muchos problemas de codificación. 
-    Evitando que se alteren los valores de una variable de forma accidental, algo difícil de depurar. 
-    Por otro lado, cuando el valor asignado es una constante, es aconsejable utilizar const para indicar a 
-    otros programadores el objetivo de la variable, evitar cambios accidentales de la constante e indicar al mismo
-     tiempo al intérprete de JavaScript que puede almacenar los datos de una forma más eficiente.
-    Las ventajas que tiene el uso de let frente a var, hacen que ya no use nunca  más var en mi código.</p>
+<p><b>Conclusiones:</b> Hoy se ha visto las palabras reservadas que se pueden utilizar en JavaScript para definir variables:
+<b style="color: blue;">var</b>, <b style="color: blue;">let</b> y <b style="color: blue;">const</b>.
+ Empleando var y let para la definición de variables y const para la de constantes. Aunque aparentemente var y
+ let parecen ser iguales esto no es así debido a que cada una tiene un alcance diferente.
+ El uso de let tiene grandes ventajas frente a var ya que evita muchos problemas de codificación. 
+ Evitando que se alteren los valores de una variable de forma accidental, algo difícil de depurar. 
+ Por otro lado, cuando el valor asignado es una constante, es aconsejable utilizar const para indicar a 
+ otros programadores el objetivo de la variable, evitar cambios accidentales de la constante e indicar al mismo
+ tiempo al intérprete de JavaScript que puede almacenar los datos de una forma más eficiente.
+ Las ventajas que tiene el uso de let frente a var, hacen que ya no use nunca  más var en mi código.</p>
 
-    <h4 style="background-color: lightgrey;">Funciones</h4>
+<h4 style="background-color: lightgrey;">Los operadores</h4>
 
- <p>Cuando comenzamos a programar, nuestro código se va haciendo cada vez más y más grande,
-   por lo que hay que buscar formas de organizarlo y mantenerlo lo más simple posible. Las funciones son agrupaciones
-   de código que, entre otras cosas, evitan que tengamos que escribir varias veces lo mismo en nuestro código. 
-   Una función contendrá una o más acciones a realizar y cada vez que ejecutemos una función, se realizarán todas ellas.</p>
+<p>En JavaScript se utilizan para realizar operaciones matemáticas, comparaciones y lógicas.
+ Aquí hay algunos ejemplos de operadores en JavaScript:</p>
 
-<p>En programación, cuando nuestro código se va haciendo cada vez más grande, necesitaremos buscar una forma de organizarlo
-   y prepararnos para reutilizarlo y no repetir innecesariamente las mismas tareas. Para ello, un primer recurso muy útil son
-   las funciones.</p>
+<p><b> Operadores matemáticos</b></p>
+<div style="background-color: #f9f9f9; border: 1px solid #ccc; padding: 10px;">
+<p>Para utilizar este código, copia el siguiente código y pégalo en tu archivo HTML: Para ver los resultados y a la vez pueden 
+          manipularlos para ir practicando con los mismos.</p>
+        <pre><code>
+         <b style="color: blue;">&lt;script&gt;</b> 
+         <b style="color: blue;">var</b> x = <b style="color: brown;">5;</b>
+         <b style="color: blue;">var</b> y = <b style="color: brown;">2;</b>
+         <b style="color: blue;">var</b> suma = <b style="color: brown;">x + y;</b>
+         <b style="color: blue;">var</b> resta = <b style="color: brown;">x - y;</b>
+         <b style="color: blue;">var</b> multiplicacion = <b style="color: brown;">x * y;</b>
+         <b style="color: blue;">var</b> division = <b style="color: brown;">x / y;</b>
+         <b style="color: blue;">var</b> modulo = <b style="color: brown;">x % y;</b>
+         <b style="color: brown;">document.write</b>("Suma: " + suma + <b style="color: blue;">"&lt;br&gt;"</b>);
+         <b style="color: brown;">document.write</b>("Resta: " + resta + <b style="color: blue;">"&lt;br&gt;"</b>);
+         <b style="color: brown;">document.write</b>("Multiplicación: " + multiplicacion + <b style="color: blue;">"&lt;br&gt;"</b>);
+         <b style="color: brown;">document.write</b>("División: " + division + <b style="color: blue;">"&lt;br&gt;"</b>);
+         <b style="color: brown;">document.write</b>("Módulo: " + modulo + <b style="color: blue;">"&lt;br&gt;"</b>);
+         <b style="color: blue;">&lt;/script&gt;</b>
+        </code></pre>
+</div>
 
-<p>Las funciones nos permiten agrupar líneas de código en tareas con un nombre, para que, posteriormente, podamos hacer referencia
- a ese nombre para realizar todo lo que se agrupe en dicha tarea. Para usar funciones hay que hacer 2 cosas.</p>
+<p><b> Operadores de comparación</b></p>
+        <pre><code>
+        <b style="color: blue;">&lt;script&gt;</b>
+        <b style="color: blue;">var</b> x = <b style="color: brown;">5;</b> 
+        <b style="color: blue;">var</b> y = <b style="color: brown;">"5";</b>
+        <b style="color: blue;">var</b> z = <b style="color: brown;">10;</b>
+        <b style="color: brown;">document.write</b>("x es igual a y: " + (x == y) + <b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("x es igual a z: " + (x == z) + <b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("x es igual a y (comparación estricta): " + (x === y) + <b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("x es mayor que z: " + (x > z) + <b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("x es menor que z: " + (x < z) + <b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("x es mayor o igual que y: " + (x >= y) + <b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("x es menor o igual que z: " + (x <= z) +<b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: blue;">&lt;/script&gt;</b>
+        </code></pre>
 
- <p><b>Declarar la función: </b> Preparar la función, darle un nombre y decirle las tareas que realizará.</p>
+<p><b>Operadores lógicos</b></p>
+        <pre><code>
+        <b style="color: blue;">&lt;script&gt;</b> 
+        <b style="color: blue;">var</b> x = <b style="color: brown;">5;</b> 
+        <b style="color: blue;">var</b> y = <b style="color: brown;">10;</b>
+        <b style="color: blue;">var</b> z = <b style="color: brown;">15;</b>
+        <b style="color: brown;">document.write</b>("x es mayor que y y menor que z: " + (x > y && x < z) + <b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("x es mayor que y o menor que z: " + (x > y || x < z) +<b style="color: blue;">"&lt;br&gt;"</b>);
+        <b style="color: brown;">document.write</b>("no (x es mayor que y): " + !(x > y) + <b style="color: blue;">"&lt;br&gt;"</b>); 
+        <b style="color: blue;">&lt;/script&gt;</b>
+      </code></pre>
 
- <p><b>Ejecutar la función:</b> Llamar a la función para que realice las tareas de su contenido.</p>
+<p>Explicación del ultimo resultado, primero, se declara la variable <b>x</b> con un valor de 5, y la variable <b>y</b>
+  con un valor de 10. Luego, se utiliza el operador de comparación mayor que <b style="color: blue;">(>)</b>
+  para comparar <b>x</b> con <b>y</b>, y se niega <b style="color: blue;">(!)</b>
+  el resultado utilizando el operador lógico not <b style="color: blue;">(no)</b>. La negación invierte el valor de la comparación,
+  lo que significa que si <b>x</b> es mayor que <b>y</b>, el resultado de la comparación será falso (ya que se está negando),
+  y si <b>x</b> no es mayor que <b>y</b>, el resultado de la comparación será verdadero.</p>
 
- <p><b>Artículo en preparación, sin terminar..................................................... </b></p>
+ <p>Además de los operadores que ya mencionamos, aquí te presento algunos otros operadores que se utilizan en JavaScript:</p>
 
-<!-- 
+<p><b>Operadores de asignación </b></p>
+ <pre><code>
+  <b style="color: blue;">&lt;script&gt;</b> 
+  <b style="color: blue;">var</b> x = <b style="color: brown;">5;</b> 
+  <b style="color: blue;">var</b> y = <b style="color: brown;">10;</b> 
+   x += y; <b style="color: green;"> // Equivalente a x = x + y</b> 
+  <b style="color: brown;">document.write</b>("x es igual a " + x);
+  <b style="color: blue;">&lt;/script&gt;</b> 
+ </code></pre>
+
+<p>En este ejemplo, primero se declaran dos variables: <b>x</b> y <b>y</b>, con los valores 5 y 10, respectivamente. Luego, se utiliza el operador
+ de asignación compuesta <b>+=</b>  para sumar el valor de <b>y</b> a <b>x</b>, y asignar el resultado a <b>x</b>. 
+ Esto es equivalente a escribir <b> x = x + y,</b> lo que significa que el valor de <b>x</b> se incrementa en 10 (el valor de <b>y</b>).
+ Finalmente, se usa la función <b>document.write()</b> para mostrar el resultado en la página web. 
+ En este caso, se muestra el mensaje <b>"x es igual a 15",</b> ya que 5 (valor inicial de <b>x</b>) + 10 (valor de <b>y</b>) = 15.</p>
+
+<p><b>Operadores de incremento y decremento</b></p>
+<pre><code>
+  <b style="color: blue;">&lt;script&gt;</b> 
+<b style="color: blue;">var</b> x = <b style="color: brown;">5;</b>   
+ x++; <b style="color: green;">// Equivalente a x = x + 1</b> 
+ <b style="color: brown;">document.write</b>("x es igual a " + x + <b style="color: blue;">"&lt;br&gt;"</b>); 
+ x--; <b style="color: green;">// Equivalente a x = x - 1</b>  
+ <b style="color: brown;">document.write</b>("x es igual a " + x);
+ <b style="color: blue;">&lt;/script&gt;</b> 
+</code></pre>
+
+
+<p><b>Operadores ternario</b></p>
+<pre><code>
+  <b style="color: blue;">&lt;script&gt;</b> 
+<b style="color: blue;">var</b> edad = <b style="color: brown;">18;</b>   
+<b style="color: blue;">var</b> resultado = <b style="color: brown;"> (edad >= 18) ? "Eres mayor de edad" : "Eres menor de edad";</b>  
+<b style="color: brown;">document.write</b>(resultado);
+<b style="color: blue;">&lt;/script&gt;</b> 
+</code></pre>
+
+<p><b>Operadores de concatenación</b></p>
+<pre><code>
+<b style="color: blue;">&lt;script&gt;</b>  
+<b style="color: blue;">var</b> nombre = <b style="color: brown;">"Juan";</b>
+<b style="color: blue;">var</b> apellido = <b style="color: brown;">"Pérez";</b>  
+<b style="color: blue;">var</b> nombreCompleto = <b style="color: brown;"> nombre + " " + apellido;</b>  
+<b style="color: brown;">document.write</b>(nombreCompleto);
+<b style="color: blue;">&lt;/script&gt;</b> 
+</code></pre>
+
+<p>Estos son solo algunos ejemplos más de operadores en JavaScript. Es importante conocerlos y saber cómo utilizarlos
+ correctamente para poder programar de manera efectiva.</p>
+
+<h4 style="background-color: lightgrey;">Estructuras de control</h4>
+
+<p>Las estructuras de control en JavaScript son herramientas fundamentales para el control del flujo de ejecución de un programa.
+ Las estructuras de control permiten que el programa tome decisiones y realice diferentes acciones según ciertas condiciones.</p>
+
+<p>Hay tres tipos principales de estructuras de control en JavaScript: estructuras condicionales, 
+  bucles y estructuras de control de excepciones.</p>
+
+<p>La estructura condicional básica es el <b>"if",</b> la sintaxis básica del "if" es la siguiente:</p>
+
+  <pre><code>
+   <b style="color: blue;"> if </b> (condición) {
+   <b style="color: green;"> // código a ejecutar si la condición es verdadera</b>  
+    }
+  </code></pre>
+
+<p>Aquí, "condición" es una expresión que se evalúa como verdadera o falsa. Si la condición es verdadera,
+  se ejecuta el código entre llaves. Si la condición es falsa, se salta ese código y se sigue ejecutando el código después del
+ <b>"if"</b>.</p>
+
+<p>También se pueden agregar bloques <b>"else if"</b> y <b>"else"</b> para proporcionar diferentes caminos de ejecución en 
+  función de diferentes condiciones.</p>
+
+<pre><code>
+  <b style="color: blue;"> if </b> (condición1) {
+  <b style="color: green;"> // código a ejecutar si la condición1 es verdadera</b> 
+  <b style="color: blue;"> } else if </b> (condición2) <b style="color: blue;">{</b> 
+  <b style="color: green;"> // código a ejecutar si la condición1 es falsa y la condición2 es verdadera</b> 
+  <b style="color: blue;"> } else { </b> 
+  <b style="color: green;"> // código a ejecutar si todas las condiciones son falsas</b> 
+  }
+</code></pre>
+
+<p>Además del <b>"if",</b>  existen otros operadores de comparación que se pueden utilizar en las condiciones,
+ como <code>"==", "!=", "<", ">", "<=", ">=",</code> etc. También se pueden utilizar operadores lógicos como 
+ <code> "&&" (y), "||" (o) </code>  y <code> "!" (no)</code> para combinar múltiples condiciones.</p>
+
+<p>Un ejemplo simple de uso de estructuras condicionales en JavaScript sería:</p>
+
+ <pre><code>
+  <b style="color: blue;">let </b> edad = <b style="color: brown;">20;</b>
+  <b style="color: blue;"> if </b> (edad >= 18) {
+  <b style="color: brown;">console.log</b> ("Eres mayor de edad");
+  <b style="color: blue;"> } else { </b> 
+  <b style="color: brown;">console.log</b> ("Eres menor de edad");
+  }
+ </code></pre>
+
+<p>En este ejemplo, si la variable <b>"edad"</b> es mayor o igual a 18, se imprimirá <b>"Eres mayor de edad"</b> en la consola.
+ De lo contrario, se imprimirá <b>"Eres menor de edad"</b>.</p>
+
+<p>Las estructuras condicionales, como <b>if-else, switch y ternary</b>, permiten que el programa tome decisiones
+  basadas en ciertas condiciones.</p>
+
+<p>Las estructuras condicionales son muy útiles para tomar decisiones en función de ciertas condiciones. El if-else es la estructura
+  más común y sencilla de utilizar. Pero también podemos utilizar <b>switch</b> cuando tenemos múltiples opciones. El operador ternario 
+ <b>(?)</b> es otra forma compacta de escribir una estructura condicional en una sola línea de código</p>
+
+<p>Por ejemplo, el siguiente código muestra cómo utilizar una estructura <b>switch</b> para mostrar un mensaje 
+  dependiendo del día de la semana:</p>
+
+  <pre><code>
+ <b style="color: blue;">let</b> dia = new <b style="color: yellowgreen;"> Date().getDay()</b>;
+ <b style="color: blue;">let</b> mensaje;
+ <b style="color: yellowgreen;"> switch (dia) </b> {
+ <b style="color: brown;"> case 0: </b>
+    mensaje = "Hoy es domingo";
+ <b style="color: brown;">break;</b> 
+ <b style="color: brown;"> case 1: </b>
+    mensaje = "Hoy es lunes";
+ <b style="color: brown;">break;</b>
+ <b style="color: brown;"> case 2: </b>
+    mensaje = "Hoy es martes";
+ <b style="color: brown;">break;</b>
+ <b style="color: brown;"> case 3: </b>
+    mensaje = "Hoy es miércoles";
+ <b style="color: brown;">break;</b>
+ <b style="color: brown;"> case 4: </b>
+    mensaje = "Hoy es jueves";
+ <b style="color: brown;">break;</b>
+ <b style="color: brown;"> case 5: </b>
+    mensaje = "Hoy es viernes";
+ <b style="color: brown;">break;</b>
+ <b style="color: brown;"> case 6: </b>
+    mensaje = "Hoy es sábado";
+ <b style="color: brown;">break;</b>
+ <b style="color: brown;">  default: </b>
+    mensaje = "Día inválido";
+}
+<b style="color: brown;">console.log</b> (mensaje);
+</code></pre>
+
+
+<p>En este ejemplo, utilizamos la función <b style="color: yellowgreen;">getDay()</b> del objeto
+  <b style="color: yellowgreen;"> Date()</b> para obtener el día de la semana actual. Luego utilizamos 
+  la estructura <b>switch</b> para asignar un mensaje dependiendo del valor de la variable dia.</p>
+
+<p style="text-align: center;"><b>Bucles</b></p>
+
+<p>Los bucles, como <b>for, while y do-while,</b> permiten que el programa repita ciertas acciones mientras se cumpla una condición.
+ Por ejemplo, el siguiente código utiliza un bucle for para imprimir los números del 1 al 5:</p>
+
+<pre><code>
+  <b style="color: blue;">for</b> (let i = 1; i <= 5; i++) {
+  <b style="color: brown;">console.log</b> (i); 
+  }
+</code></pre>
+
+
+<p>Las estructuras de control de excepciones, como try-catch, permiten que el programa maneje errores y excepciones de manera controlada.
+  Por ejemplo, el siguiente código utiliza una estructura try-catch para manejar un error de división por cero:</p>
+ 
+ <pre><code>
+ <b> try </b> {
+ <b style="color: blue;"> let </b> resultado = <b style="color: brown;">10 / 0;</b>
+ <b style="color: brown;"> console.log </b> (resultado); 
+ } <b>catch</b> (error) {
+   <b style="color: brown;"> console.log </b> ("Error:", error.message);
+ }
+</code></pre>
+
+<p>En el ejemplo, el resultado de la división 10/0 es infinito (Infinity en inglés) y por lo tanto,
+   se imprimirá en la consola. Cabe señalar que este resultado se debe a que JavaScript sigue las reglas matemáticas de la división, 
+   y en matemáticas, cualquier número dividido entre 0 se considera infinito.</p>
+   
+<p>En el bloque <b>try</b>, la operación de división se ejecuta sin problemas, y por lo tanto, no se produce ningún error. Por lo tanto, 
+  el código dentro del bloque catch no se ejecuta. Si hubiera ocurrido algún error en la operación, el bloque catch se habría ejecutado 
+  en su lugar y habría impreso un mensaje de error en la consola.</p>
+
+<pre><code>
+ <b> try </b> {
+ <b style="color: blue;"> let </b> resultado = <b style="color: brown;">10 / "tres";</b>
+ <b style="color: brown;"> console.log </b> (resultado); 
+ } <b>catch</b> (error) {
+   <b style="color: brown;"> console.log </b> ("Error:", error.message);
+ }
+</code></pre>
+
+<p>En este ejemplo, el programa intenta dividir 10 por "tres" que es un String, lo cual resulta en un error de división por el string. 
+ La estructura try-catch permite
+ que el programa maneje este error de manera controlada y muestre un mensaje de error en la consola.</p>
+
+<p>Estas son solo algunas de las estructuras de control disponibles en JavaScript. Es importante comprender cómo y cuándo utilizar 
+  cada una de ellas para poder escribir programas eficientes y efectivos.</p>
   
-  <p><b>En el siguiente ejemplo veremos la declaración de una función llamada saludar:</b></p>
 
-  <p><b>Parámetros:</b> Es el nombre que reciben las variables que se le pasan a las funciones.
-   Muchas veces también se les denomina argumentos.</p>
+<h4 style="background-color: lightgrey;">Funciones</h4>
 
- <p><b>Bucles:</b>  Cuando estamos programando, muchas veces necesitaremos realizar tareas repetitivas.
-   Una de las ventajas de la programación es que permite automatizar acciones y no es necesario hacerlas varias veces. 
-   Los bucles permiten indicar el número de veces que se repetirá una acción. De esta forma,
-   sólo la escribimos una vez en nuestro código, y simplemente indicamos el número de veces que queremos que se repita.</p>
+<p>Las funciones son bloques de código que realizan una tarea específica y que pueden ser llamados y reutilizados en diferentes partes
+   de un programa. Las funciones son una parte fundamental de la programación, ya que nos permiten crear código modular, reducir la
+   redundancia de código y facilitar el mantenimiento y la depuración.</p>
 
- <p><b>Iteración:</b> Cuando el programa está en un bucle repitiendo varias veces la misma tarea, cada una de esas
-   repeticiones se denomina iteración.</p>
+<p>En JavaScript, se pueden definir funciones utilizando la palabra clave function, seguida del nombre de la función, los parámetros
+ que recibe (opcional) y el bloque de código que se ejecutará cuando la función sea llamada.</p>
 
- <p><b>Librería:</b> Muchas veces, desarrollamos código que resuelve tareas o problemas que, posteriormente, querremos 
-  reutilizar en otros programas. Cuando eso ocurre, en JavaScript se suele empaquetar el código en lo que se llaman librerías,
-  que no es más que código listo para que otros programadores puedan utilizarlo fácilmente en sus programas y beneficiarse
-  de las tareas que resuelven de forma muy sencilla.</p>
+<p>Por ejemplo, aquí se define una función llamada sumar que toma dos parámetros a y b, suma estos parámetros y retorna el resultado:</p>
 
--->
+<pre><code>
+<b style="color: blue;">function</b> sumar(a, b) {
+<b style="color: blue;">return</b> a + b;
+}
+</code></pre>
+
+<p>Luego, podemos llamar a la función pasando los valores que queremos sumar como argumentos:</p>
+
+<pre><code>
+<b style="color: blue;">let</b> resultado = <b style="color: brown;"> sumar (5, 7); </b>
+<b style="color: brown;"> console.log</b> (resultado); <b style="color: green;">// Output: 12</b>
+
+</code></pre>
+
+<p>Es importante destacar que las funciones pueden recibir parámetros y pueden retornar valores. Los parámetros son valores que la función
+  espera recibir como entrada, mientras que el valor de retorno es el resultado de la tarea que la función realiza. Además, en JavaScript,
+  las funciones son tratadas como objetos, lo que significa que se les puede asignar a variables, pasar como argumentos
+  a otras funciones, y tener propiedades y métodos.</p>
+
+<p>Además, las funciones también pueden ser anónimas, lo que significa que no tienen un nombre asignado.
+   En este caso, se les puede asignar a una variable:</p>
+
+<pre><code>
+<b style="color: blue;">let</b> sumar = <b style="color: yellowgreen;"> function(a, b)</b> {
+<b style="color: blue;">return</b> a + b;
+};  
+</code></pre>
+
+<p>También se pueden crear funciones flecha (arrow functions), que son una forma más compacta de definir funciones. Por ejemplo,
+  la función sumar anterior se puede escribir de esta manera:</p>
+
+<pre><code>
+<b style="color: blue;">let</b> sumar = <b style="color: brown;"> (a, b) => a + b;</b>
+</code></pre>
+
+<p>En resumen, las funciones son una parte fundamental de la programación en JavaScript, y son útiles para crear código modular,
+ reducir la redundancia de código y facilitar el mantenimiento y la depuración. Las funciones pueden recibir parámetros y retornar 
+ valores, y pueden ser anónimas o flecha.</p>
+
+ 
+
+ <p><b><u>Funciones flecha:</u></b></p>
+
+ <p>Las funciones flecha (arrow functions) son una forma abreviada de escribir funciones en JavaScript. Se definen usando la sintaxis
+   (parametros) => expresion, y su uso más común es como funciones de devolución de llamada (callbacks). A diferencia de las funciones
+   tradicionales, las funciones flecha no tienen su propio contexto this, por lo que se comportan de manera más predecible.
+   Por ejemplo:</p>
+
+<pre><code>
+<b style="color: green;">// Función tradicional</b>
+<b style="color: blue;">function</b> suma(a, b) {
+<b style="color: blue;">return</b> a + b;
+}
+
+<b style="color: green;">// Función flecha equivalente</b>
+<b style="color: blue;">const</b> suma = <b style="color: brown;"> (a, b) => a + b;</b>
+</code></pre>
+
+<p><b><u>Cierres:</u></b></p>
+
+<p>Un cierre (closure) es una función que tiene acceso a las variables de su entorno léxico (es decir, las variables definidas en
+   su ámbito exterior), incluso después de que la función haya finalizado su ejecución. Esto se debe a que el cierre mantiene una
+   referencia a su entorno léxico en memoria. Los cierres son útiles para crear funciones que pueden recordar su estado interno.
+   Por ejemplo:</p>
+
+<pre><code>
+<b style="color: blue;">function </b> contador() {
+<b style="color: blue;">let </b> count = <b style="color: brown;"> 0;</b>
+<b style="color: blue;">return </b> <b style="color: yellowgreen;"> function()</b> {
+<b style="color: brown;">count++;</b> 
+<b style="color: brown;"> console.log</b> (count);
+}
+}
+
+<b style="color: blue;">const</b> incrementar = <b style="color: yellowgreen;"> contador();</b> 
+<b style="color: yellowgreen;"> incrementar();</b> <b style="color: green;">// 1</b>
+<b style="color: yellowgreen;"> incrementar();</b> <b style="color: green;">// 2</b>
+<b style="color: yellowgreen;"> incrementar();</b> <b style="color: green;">// 3</b>
+</pre></code>
+
+
+<p><b><u> Funciones recursivas:</u></b></p>
+
+<p>Una función recursiva es aquella que se llama a sí misma dentro de su propia definición. Este tipo de funciones son útiles para
+ realizar operaciones que implican la repetición de un mismo proceso. Por ejemplo, la función factorial es una función recursiva:</p>
+
+<pre><code>
+<b style="color: blue;">function </b> factorial(n) {
+<b style="color: blue;">if </b> (n === 0 || n === 1) {
+<b style="color: blue;">return </b> 1;
+<b style="color: blue;"> } else { </b>
+<b style="color: blue;">return </b> n * factorial(n - 1);
+}
+}
+<b style="color: brown;"> console.log</b> (factorial(5)); <b style="color: green;">// 120</b> 
+</pre></code>
+
+<p>Esta función se llama "factorial" y calcula el factorial de un número. El factorial de un número se define como el producto de todos
+  los enteros positivos desde 1 hasta ese número. Por ejemplo, el factorial de 5 es 5 x 4 x 3 x 2 x 1 = 120.</p>
+<p>La función utiliza un enfoque recursivo para calcular el factorial. En la primera línea, se verifica si el número es 0 o 1.
+   Si es así, se devuelve 1, ya que el factorial de 0 y 1 es 1. Si el número es mayor que 1, se devuelve el producto del número 
+   y el factorial del número menos 1. Esto se repite recursivamente hasta que se llega al caso base de 0 o 1.</p>
+<p>En la línea final, se llama a la función con el argumento 5 y se imprime el resultado en la consola. 
+  Esto dará como resultado la salida de 120, que es el factorial de 5.</p>
+
+<p><b><u>Funciones de orden superior:</u></b></p>
+
+<p>Las funciones de orden superior son aquellas que toman una o más funciones como argumentos y/o devuelven una función como resultado.
+   Estas funciones son muy útiles para la programación funcional y la composición de funciones. Por ejemplo:</p>
+
+<pre><code>
+<b style="color: blue;">function </b> operar(x, y, fn) {
+<b style="color: blue;">return </b> fn(x, y);
+}
+
+<b style="color: blue;">function </b> sumar(a, b) {
+<b style="color: blue;">return </b> a + b;
+}
+  
+<b style="color: blue;">function </b> restar(a, b) {
+<b style="color: blue;">return </b> a - b;
+}
+
+<b style="color: brown;"> console.log</b> (operar(3, 4, sumar)); <b style="color: green;">// 7</b> 
+<b style="color: brown;"> console.log</b> (operar(3, 4, restar)); <b style="color: green;">// -1</b> 
+</pre></code>
+
+<p><b><u>Métodos de función:</u></b></p>
+
+<p>Los métodos de función son funciones que se definen como propiedades de un objeto. Estas funciones pueden acceder a las 
+propiedades y métodos del objeto a través de la palabra clave this. Por ejemplo:</p>
+
+<pre><code>
+<b style="color: blue;">const </b> objeto = {
+ nombre: <b style="color: brown;"> "Juan",</b>
+ edad: <b style="color: brown;"> 30,</b>
+ saludar: <b style="color: yellowgreen;"> function()</b> {
+<b style="color: brown;"> console.log</b> (`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`); 
+}
+};
+
+objeto.saludar(); <b style="color: green;"> // Hola, mi nombre es Juan y tengo 30 años.</b> 
+</pre></code>
+
+<p>Es importante tener en cuenta que los métodos de función también pueden ser definidos utilizando la sintaxis de funciones flecha, 
+  pero en ese caso no tendrán su propio contexto this.</p>
+
+
+  <h4 style="background-color: lightgrey;">ciclos</h4>
+
+<p>Los ciclos o bucles en programación son estructuras que permiten repetir una o varias instrucciones mientras se cumpla una condición
+ determinada. En JavaScript existen tres tipos de ciclos:</p>
 
 
 
+<p><b>1. while:</b> Este ciclo se repite mientras se cumpla una condición. La sintaxis es la siguiente:</p>
+
+<pre><code>
+<b style="color: blue;">while </b> (condición) {
+<b style="color: green;"> // instrucciones a repetir</b>
+}
+
+<b style="color: green;"> //Por ejemplo:</b>
+
+<b style="color: blue;">let </b> contador = <b style="color: brown;"> 1;</b>
+<b style="color: blue;">while </b> (contador <= 10) {
+<b style="color: brown;"> console.log</b>(contador); 
+contador++;
+}
+</code></pre>
+
+<p>Este código imprimirá los números del 1 al 10.</p>
+
+<p><b>2. do-while:</b> Este ciclo es similar al ciclo while, pero se ejecuta al menos una vez antes de verificar la condición. 
+  La sintaxis es la siguiente:</p>
+
+<pre><code>
+<b style="color: blue;">do </b> {
+<b style="color: green;"> // instrucciones a repetir</b> 
+} <b style="color: blue;">while </b> (condición);
+
+<b style="color: green;"> //Por ejemplo:</b>
+
+javascript Copy code
+<b style="color: blue;">let </b> contador = <b style="color: brown;"> 1;</b>
+
+<b style="color: blue;">do </b> { 
+<b style="color: brown;"> console.log</b>(contador);  
+contador++;
+} <b style="color: blue;">while </b> (contador <= 10);
+</code></pre>
+
+<p>Este código también imprimirá los números del 1 al 10.</p>
+
+<p><b>3. for:</b> Este ciclo permite repetir un bloque de código un número determinado de veces. La sintaxis es la siguiente:</p>
+
+<pre><code>
+<b style="color: blue;">for </b> (inicialización; condición; incremento) {
+<b style="color: green;"> // instrucciones a repetir</b> 
+}
+  
+<b style="color: green;"> //Por ejemplo:</b> 
+
+<b style="color: blue;">for </b> (let i = 1; i <= 10; i++) {
+<b style="color: brown;"> console.log</b>(i);  
+}
+</code></pre>
+
+<p>Este código también imprimirá los números del 1 al 10.</p>
+
+<p>Es importante tener cuidado al usar ciclos, ya que pueden generar loops infinitos si no se definen correctamente 
+ las condiciones de salida.</p>
+
+
+
+<h4 style="background-color: lightgrey;">Objetos y Arrays</h4>
+
+<p>Un objeto es una colección de propiedades, y cada propiedad es una asociación entre un nombre (también llamado clave)
+  y un valor. Los objetos en JavaScript se declaran con llaves {}, y cada propiedad se separa con una coma ,.
+  Aquí tienes un ejemplo:</p>
+
+<pre><code>
+<b style="color: blue;">let </b> persona = {
+nombre: <b style="color: brown;"> "Juan",</b>
+edad: <b style="color: brown;"> 25,</b>
+ciudad: <b style="color: yellowgreen;"> "Madrid"</b> 
+  };
+</code></pre>
+
+<p>En este ejemplo, persona es un objeto que tiene tres propiedades: nombre, edad y ciudad. La propiedad nombre tiene un valor
+   de "Juan", la propiedad edad tiene un valor de 25 y la propiedad ciudad tiene un valor de "Madrid".</p>
+
+<p>Para acceder a una propiedad de un objeto, se utiliza la notación de puntos (objeto.propiedad). Por ejemplo, para obtener el valor de
+   la propiedad nombre del objeto persona, se haría así:</p>
+
+<pre><code>
+<b style="color: brown;"> console.log</b>(persona.nombre); <b style="color: green;"> // "Juan"</b> 
+</code></pre>
+
+
+<p>También es posible acceder a una propiedad utilizando la notación de corchetes (objeto["propiedad"]), 
+  lo cual es útil cuando el nombre de la propiedad es una expresión. Por ejemplo:</p>
+
+<pre><code>
+<b style="color: blue;">let </b> propiedad = <b style="color: brown;"> "edad";</b>
+<b style="color: brown;"> console.log</b>(persona[propiedad]); <b style="color: green;"> // 25</b> 
+</code></pre>
+
+<p>Para modificar el valor de una propiedad de un objeto, simplemente se asigna un nuevo valor a esa propiedad:</p>
+
+<pre><code>
+persona.edad = <b style="color: brown;"> 26;</b>
+<b style="color: brown;"> console.log</b>(persona.edad); <b style="color: green;"> // 26</b> 
+</code></pre>
+
+<p style="text-align: center;"><b>Arrays</b></p>
+
+<p>Un array es una colección ordenada de elementos, donde cada elemento puede ser de cualquier tipo de dato. Los arrays
+  en JavaScript se declaran con corchetes [], y cada elemento se separa con una coma ,. Aquí tienes un ejemplo:</p>
+
+<pre><code>
+<b style="color: blue;">let </b> frutas = <b style="color: brown;"> ["manzana", "pera", "plátano"];</b>
+</code></pre>
+
+<p>En este ejemplo, frutas es un array que tiene tres elementos: "manzana", "pera" y "plátano".</p>
+
+<p>Para acceder a un elemento de un array, se utiliza la notación de corchetes (array[indice]). El índice es un número entero
+   que indica la posición del elemento en el array. Es importante recordar que en JavaScript, los índices empiezan en 0, es decir,
+   el primer elemento del array tiene índice 0. Por ejemplo, para obtener el segundo elemento del array frutas, se haría así:</p>
+
+<pre><code>
+<b style="color: brown;"> console.log</b>(frutas[1]); <b style="color: green;"> // "pera"</b> 
+</code></pre>
+
+<p>Para modificar un elemento de un array, simplemente se asigna un nuevo valor a ese elemento:</p>
+
+<pre><code>
+frutas[0] = <b style="color: brown;"> "kiwi";</b>
+<b style="color: brown;"> console.log</b>(frutas); <b style="color: green;"> // ["kiwi", "pera", "plátano"]</b> 
+</code></pre>
+
+<h4 style="background-color: lightgrey;">Eventos y Manipulación del DOM</h4>
+
+<p>Los eventos son una parte fundamental de la programación web y permiten que las páginas web sean interactivas y respondan a la acción
+   del usuario. En JavaScript, los eventos se manejan mediante funciones de manejo de eventos que se ejecutan cuando ocurre un evento.</p>
+
+<p>Para asignar una función de manejo de eventos a un elemento HTML, primero se debe seleccionar el elemento usando JavaScript y luego
+  llamar al método addEventListener(). Este método toma dos argumentos: el nombre del evento (por ejemplo, "click" para un clic del mouse)
+  y la función de manejo de eventos que se debe ejecutar cuando ocurra el evento.</p>
+
+<p>Por ejemplo, si se tiene un botón HTML con el id "myButton", se podría agregar un manejador de eventos de 
+  clic con el siguiente código:</p>
+
+<pre><code>
+<b style="color: blue;">const </b> button = <b style="color: brown;"> document.getElementById("myButton");</b>
+<b style="color: brown;"> button.addEventListener</b>("click", function() {
+<b style="color: brown;"> console.log</b>("El botón fue presionado"); 
+});
+</code></pre>
+
+<p>En este caso, la función de manejo de eventos es una función anónima que simplemente escribe un mensaje en la consola.</p>
+
+<p>Además de los eventos del mouse, hay muchos otros eventos que se pueden manejar en JavaScript, como eventos de teclado, 
+  eventos de carga de página y eventos de cambio de entrada. Los nombres de los eventos son cadenas específicas que se pueden
+ encontrar en la documentación de la API de eventos de JavaScript.</p>
+
+<p>La manipulación del DOM, por otro lado, se refiere a la capacidad de cambiar el contenido y la estructura de una página
+  web mediante el uso de JavaScript. El DOM es una representación de la estructura de una página web que se puede manipular
+  mediante JavaScript para agregar, eliminar o modificar elementos HTML.</p>
+
+<p>Para manipular el DOM en JavaScript, se utiliza la API del DOM, que proporciona métodos y propiedades para seleccionar y 
+  modificar elementos HTML. Por ejemplo, para seleccionar un elemento HTML, se puede usar el método document.getElementById() 
+ y para cambiar el contenido de un elemento HTML, se puede usar la propiedad innerHTML.</p>
+
+<p>Por ejemplo, para cambiar el texto de un elemento HTML con el id "myHeading", se puede usar el siguiente código:</p>
+
+<pre><code>
+<b style="color: blue;">const </b> heading = <b style="color: brown;"> document.getElementById("myHeading");</b>
+<b style="color: brown;"> heading.innerHTML</b> = "Nuevo texto para el encabezado";
+</code></pre>
+
+<p>En este caso, la propiedad innerHTML se usa para establecer el contenido del elemento HTML seleccionado.</p>
+
+<p>En resumen, los eventos y la manipulación del DOM son habilidades clave en la programación web con JavaScript. 
+  Los eventos permiten que las páginas web sean interactivas y respondan a la acción del usuario, mientras que la manipulación
+  del DOM permite que los desarrolladores cambien el contenido y la estructura de una página web para lograr el efecto deseado.</p>
+
+  <h4 style="background-color: lightgrey;">Frameworks y Bibliotecas</h4>
+
+<p><b>frameworks y bibliotecas más populares en JavaScript:</b></p>
+
+<p><b>jQuery:</b> es una biblioteca ligera y rápida que simplifica la manipulación del DOM, el manejo de eventos, la animación y
+   las solicitudes AJAX en JavaScript. Permite escribir menos código para lograr más funcionalidad y es compatible con una amplia 
+   variedad de navegadores.</p>
+
+<p><b>React:</b> es un framework desarrollado por Facebook que permite construir interfaces de usuario interactivas y escalables.
+   Utiliza un modelo de componentes para crear aplicaciones web complejas de forma modular y eficiente. Además, se integra fácilmente
+   con otras bibliotecas y frameworks de JavaScript.</p>
+
+<p><b>Angular:</b> es un framework de desarrollo web de código abierto desarrollado por Google. Se utiliza para construir aplicaciones
+   web de una sola página (SPA) y aplicaciones móviles nativas. Angular utiliza un modelo de componentes y servicios para crear 
+   aplicaciones web escalables y altamente mantenibles.</p>
+
+<p><b>Vue: </b> es un framework progresivo para la construcción de interfaces de usuario. Se enfoca en la capa de vista de una aplicación
+ y permite crear componentes reutilizables y modularizar el código de la aplicación. Vue es altamente adaptable y se puede integrar
+ fácilmente con otras bibliotecas y frameworks.</p>
+  
+<p>Cada framework o biblioteca tiene sus propias características y ventajas, y la elección dependerá de las necesidades del proyecto
+   y de la experiencia del desarrollador. Es importante investigar y familiarizarse con cada uno para tomar la mejor decisión en cuanto
+   a su implementación en un proyecto específico.</p>
+
+<h4><u>Ejemplos de codigo de JavaScript.</u></h4>
+
+<p><b>Para cambiar el color de fondo  de una página al hacer clic en un botón.</b></p>
+<p>En este ejemplo, se agrega un botón a la página HTML y se le asigna un controlador de eventos que llama a la función 
+ 'cambiarColor()' cuando se hace clic en él. La función 'cambiarColor()' cambia el color de fondo de la página asignando 
+ una nueva propiedad 'backgroundColor' al elemento 'body' de la página.</p>
+
+<pre><code>
+  <b style="color: blue;">&lt;body&gt;</b>
+  
+  <b style="color: blue;">&lt;script&gt;</b>
+  <b style="color: blue;">function </b> <b style="color: yellowgreen;">cambiarColor()</b> {
+  document.body.style.backgroundColor = "blue";
+  }
+  <b style="color: blue;">&lt;/script&gt;</b>
+
+  <b style="color: blue;">&lt;button </b>onclick="cambiarColor()"<b style="color: blue;">&gt;</b>Cambiar color<b style="color: blue;">&lt;/button&gt;</b>
+
+  <b style="color: blue;">&lt;/body&gt;</b>
+</code></pre>
+
+<p><b>Mostrar un mensaje de bienvenida al usuario con un prompt:</b></p>
+
+<p>Este código JavaScript muestra una ventana emergente que solicita al usuario que ingrese su nombre utilizando la función prompt(). 
+  Luego, el nombre ingresado se almacena en la variable nombre. Después, se usa la función alert() para mostrar un mensaje de bienvenida
+  que incluye el nombre ingresado.</p>
+<p>La función prompt() permite al usuario ingresar información a través de una ventana emergente en el navegador. La función alert()
+   muestra un mensaje en una ventana emergente en el navegador. Estas funciones son útiles para interactuar con los usuarios y solicitar
+   o mostrar información en la página web.</p>
+<pre><code>
+  <b style="color: blue;">&lt;body&gt;</b>
+  
+  <b style="color: blue;">&lt;script&gt;</b>
+  <b style="color: blue;">var </b> nombre = prompt("Por favor, ingresa tu nombre:");
+  alert("¡Bienvenido, " + nombre + "!");
+  <b style="color: blue;">&lt;/script&gt;</b>
+
+  <b style="color: blue;">&lt;/body&gt;</b>
+</code></pre>
+
+
+<p><b>Aquí te muestro un ejemplo completo en el que puedes escribir un texto y al hacer clic en un botón, 
+  se mostrará en la página web.</b></p>
+<pre><code>
+
+  <b style="color: blue;">&lt;body&gt;</b>
+  <b style="color: blue;">&lt;label </b> for="texto"<b style="color: blue;">&gt;</b>  Escribe un texto: <b style="color: blue;">&lt;/label&gt;</b>
+  <b style="color: blue;">&lt;input </b> type="text" id="texto"<b style="color: blue;">&gt;</b>
+  <b style="color: blue;">&lt;button </b> onclick="mostrarTexto()"<b style="color: blue;">&gt;</b> Mostrar <b style="color: blue;">&lt;/button&gt;</b>
+  <b style="color: blue;">&lt;div </b> id="resultado"<b style="color: blue;">&gt;</b> <b style="color: blue;">&lt;/div&gt;</b>
+  <b style="color: blue;">&lt;script&gt;</b>
+  <b style="color: blue;">function </b> <b style="color: yellowgreen;"> mostrarTexto() </b> {
+  <b style="color: blue;">var </b> texto = document.getElementById("texto").value;
+  document.getElementById("resultado").innerHTML = texto;
+  }
+  <b style="color: blue;">&lt;/script&gt;</b>
+  <b style="color: blue;">&lt;/body&gt;</b>
+
+</code></pre>
+
+<p>En este ejemplo, primero se crea un formulario con un campo de entrada de texto y un botón. Luego, se crea un elemento
+   div con un ID resultado donde se mostrará el texto ingresado por el usuario.</p>
+
+<p>El botón tiene un atributo onclick que llama a una función llamada mostrarTexto(). Esta función obtiene el valor del
+   campo de entrada de texto usando el método getElementById() y lo asigna al elemento div con el ID resultado usando
+   el método innerHTML.</p>
+
+<p>De esta manera, cuando el usuario escribe un texto en el campo de entrada de texto y hace clic en el botón "Mostrar", 
+  el texto se muestra en la página web debajo del botón.</p>
+
+<p style="text-align: center;"><b>Tres ejemplos de JavaScript</b></p>
+<p>Este código incluye tres ejemplos de JavaScript que se ejecutan al presionar los botones correspondientes.
+  Los resultados de cada ejemplo se muestran debajo de cada botón en el elemento p correspondiente.</p>
+
+  <pre><code>
+    <b style="color: blue;">&lt;body&gt;</b>
+    <b style="color: blue;">&lt;button </b> onclick="ejemplo1()"<b style="color: blue;">&gt;</b>Ejemplo 1 <b style="color: blue;">&lt;/button&gt;</b>
+    <b style="color: blue;">&lt;p </b> id="ejemplo1Resultado" <b style="color: blue;">&gt;</b><b style="color: blue;">&lt;/p&gt;</b>
+    
+    <b style="color: blue;">&lt;button </b> onclick="cambiarColor()"<b style="color: blue;">&gt;</b> Cambiar color <b style="color: blue;">&lt;/button&gt;</b>
+    <b style="color: blue;">&lt;p </b> id="mensaje" <b style="color: blue;">&gt;</b><b style="color: blue;">&lt;/p&gt;</b>
+
+    <b style="color: blue;">&lt;button </b> onclick="ejemplo3()"<b style="color: blue;">&gt;</b> Ejemplo 3 <b style="color: blue;">&lt;/button&gt;</b>
+    <b style="color: blue;">&lt;p </b> id="ejemplo3Resultado" <b style="color: blue;">&gt;</b><b style="color: blue;">&lt;/p&gt;</b>
+
+   <b style="color: blue;">&lt;script&gt;</b>
+
+   <b style="color: green;">// Ejemplo 1: mostrar un mensaje en la consola</b>
+   <b style="color: blue;">function </b> ejemplo1() {
+    console.log("Hola, mundo!");
+    document.getElementById("ejemplo1Resultado").innerHTML = "Se ejecutó el ejemplo 1";
+    }
+         
+   <b style="color: green;">// Ejemplo 2: cambiar el color de fondo del documento aleatoriamente</b>
+    var colores = ["red", "green", "blue", "yellow", "purple", "orange"];
+     
+    <b style="color: blue;">function </b> cambiarColor() {
+    var randomColor = colores[Math.floor(Math.random() * colores.length)];
+    document.body.style.backgroundColor = randomColor;
+    document.getElementById("mensaje").innerHTML = "El color de fondo ha cambiado a " + randomColor;
+    }
+         
+    <b style="color: green;">// Ejemplo 3: generar un número aleatorio entre 1 y 10</b>
+    <b style="color: blue;">function </b> ejemplo3() {
+    var numero = Math.floor(Math.random() * 10) + 1;
+    document.getElementById("ejemplo3Resultado").innerHTML = "El número aleatorio generado es: " + numero;
+    }
+    <b style="color: blue;">&lt;/script&gt;</b>
+    <b style="color: blue;">&lt;/body&gt;</b>
+  </code></pre>
+
+
+<p>En el ejemplo 2, la variable colores es una lista de colores disponibles. La función cambiarColor() elige un color aleatorio de la
+  lista utilizando la función Math.random() y lo aplica como el nuevo color de fondo de la página. También se actualiza un mensaje
+  en el párrafo con el ID "mensaje" para indicar el color que se ha aplicado. Cada vez que se hace clic en el botón, el color de 
+  fondo cambiará a uno nuevo y se actualizará el mensaje correspondiente.</p>
+
+<p>La función ejemplo3() genera un número aleatorio entre 1 y 10 utilizando el método Math.random() que devuelve un número aleatorio
+ entre 0 y 1 (exclusivo). Luego, se multiplica por 10 y se utiliza Math.floor() para redondear hacia abajo y obtener un número entero 
+ entre 0 y 9. Finalmente, se le suma 1 para obtener un número entre 1 y 10.</p>
+
+<p>El resultado se muestra en el elemento HTML con el id "ejemplo3Resultado" utilizando document.getElementById("ejemplo3Resultado").
+  innerHTML = "El número aleatorio generado es: " + numero; que asigna el valor de la variable numero a la propiedad innerHTML del 
+  elemento HTML.</p>
+
+<p style="background-color: bisque;"><b>Conclusión,</b> JavaScript es un lenguaje de programación esencial para el desarrollo de 
+ aplicaciones web interactivas y dinámicas.
+ La manipulación del DOM y los eventos son dos de las herramientas más poderosas de JavaScript para crear páginas web más atractivas y 
+ funcionales.</p>
+
+<p style="background-color: bisque;">En esta página, hemos cubierto los conceptos básicos de JavaScript, desde las variables y 
+ los tipos de datos hasta la manipulación
+ del DOM y los eventos. También hemos visto algunos ejemplos de cómo se pueden utilizar los eventos y la manipulación del DOM para crear
+ páginas web más interactivas.</p>
+
+<p style="background-color: bisque;">Esperamos que esta introducción a JavaScript te haya dado una buena base para empezar 
+ a aprender más sobre este lenguaje de programación
+ esencial. Con práctica y dedicación, puedes llegar a dominar JavaScript y crear aplicaciones web impresionantes y 
+ funcionales. ¡Adelante!"</p>
+
+<p style="background-color: lightgray;">Hay muchas referencias y enlaces útiles que se pueden utilizar para aprender
+ más sobre JavaScript y mejorar tus habilidades. Aquí te dejo algunas sugerencias:</p>
+
+<p><b>W3Schools:</b> este sitio web ofrece tutoriales y ejemplos prácticos sobre JavaScript, así como otros lenguajes de programación web. 
+ También tiene una sección de pruebas interactivas que te permiten practicar tus habilidades en tiempo real.</p>
+ <a href="https://www.w3schools.com/js/default.asp" target="_blank" class="button-link">www.w3schools.com</a>
+
+<p><b>La documentación de Mozilla Developer Network (MDN):</b>  esta es una excelente fuente de información sobre JavaScript y la 
+ manipulación del DOM. Incluye una guía detallada del lenguaje, así como una referencia completa de las API del DOM.</p>
+ <a href="https://developer.mozilla.org/es/docs/Learn/JavaScript" target="_blank" class="button-link">developer.mozilla</a>
 
 </article>
-
-
 
 
 
