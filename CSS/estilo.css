@@ -262,7 +262,41 @@ a{
       cursor: col-resize;
       background-color: silver;
     }
-  
+   pre {
+      background-color: black;
+      border: 1px solid #ddd;
+      border-left: 3px solid #f36d33;
+      color: black;
+      page-break-inside: avoid;
+      font-size: 15px;
+      line-height: 1.6;
+      margin-bottom: 1.6em;
+      max-width: 100%;
+      overflow: auto;
+      padding: 1em 1.5em;
+      display: block;
+      word-wrap: break-word;
+    }
+    code {
+      font-size: 15px;
+      color: white;
+      background-color: black;
+      padding: 0.2em 0.4em;
+      border-radius: 3px;
+    }
+    .button-link {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+     }
+
+     .button-link:hover {
+	background-color: #0056b3;
+     }
 
 
 @media only screen and (max-width: 768px) {
