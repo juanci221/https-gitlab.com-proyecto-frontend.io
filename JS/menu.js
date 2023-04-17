@@ -12,7 +12,7 @@ function changeAvatar() {
       avatar.style.backgroundImage = 'url("imagen4.png")';
       text.innerHTML = "Crea experiencias en línea increíbles que tus usuarios no olvidarán";
   } else {
-      avatar.style.backgroundImage = 'url("imag/imagen3.png")';
+      avatar.style.backgroundImage = 'url("imagen3.png")';
       text.innerHTML = "Transforma tus ideas en experiencias digitales únicas";
     
   }
