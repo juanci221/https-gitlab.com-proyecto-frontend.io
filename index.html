@@ -7,6 +7,31 @@
     <title>Front-End</title>
     <link rel="stylesheet" type="text/css" href="CSS/estilo.css" />
     <link rel="icon" type="image/x-icon" href="imag-icono.png">
+    
+   <style>
+.avatar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+  .avatar {
+      width: 150px;
+      height: 150px;
+      background-image: url("imagen.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      cursor: pointer;
+  }
+  .avatar-text {
+      margin-left: 10px;
+      font-size: 18px;
+      color: hsl(131deg 3% 39%);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+  }
+</style>  
 </head>
 <body>
 
@@ -46,6 +71,11 @@
 <article class="articulos">
 <h2>Bienvenido a Front-End</h2>
 
+<div class="avatar-container" id="avatar-container">
+<div class="avatar" id="avatar"></div>
+<div class="avatar-text" id="avatar-text"></div>
+</div>  
+    
 <p style="text-align: center; font-size: 18px; color: mediumslateblue;">Introducción al Desarrollo Web: HTML5-CSS-JavScript </p>
 <p style="text-align: center; font-size: 18px; color: mediumslateblue; ">
   En este blog vas a obtener los conocimientos necesarios para dar tus primeros pasos en el desarrollo front-end.</p>
