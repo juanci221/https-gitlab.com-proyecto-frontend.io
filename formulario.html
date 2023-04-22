@@ -313,73 +313,95 @@
                 </form>
                 </div>
 
-                 <div>
-                  <p><b>Como mencionamos antes, el elemento <b style="color: blue;">&lt;form&gt;</b> 
-                   es simplemente un contenedor para muchos otros elementos,
-                   que en su mayoría representan una amplia gama de controles. Estos controles se listan a continuación:</b></p>
+              <h4><u>Envío de un formulario</u></h4>
+
+              <p>En HTML implica enviar los datos ingresados por el usuario en el formulario a un servidor web 
+                para su procesamiento adicional.</p>
+
+              <p>Para enviar un formulario, el usuario debe hacer clic en el botón de envío, que se define en el formulario 
+                como un elemento <b style="color: blue;">&lt;input&gt;</b> de tipo submit o <b style="color: blue;">&lt;button&gt;</b>
+                de tipo submit. Cuando se hace clic en este botón, se activa un evento de envío en el formulario y se realiza una
+                solicitud POST al servidor web con los datos ingresados por el usuario.</p>
+
+              <p>Los datos enviados al servidor se codifican en formato de URL o en formato de objeto JSON. Luego, el servidor puede procesar 
+                los datos recibidos y enviar una respuesta al usuario.</p>
+
+              <p>Para recibir y procesar los datos enviados por el formulario, el servidor web debe estar configurado para manejar 
+                solicitudes POST y tener un script que procese los datos enviados. Por ejemplo, si el formulario se envía a una página
+                PHP, se puede usar el lenguaje PHP para procesar los datos y almacenarlos en una base de datos o enviar una respuesta
+                al usuario.</p>
+
+              <p>En resumen, enviar un formulario implica enviar los datos ingresados por el usuario al servidor para su procesamiento 
+                adicional, lo que requiere que el servidor web esté configurado para manejar solicitudes POST y tenga un script para
+                procesar los datos enviados.</p>
+
+              <h4><u>Controles</u></h4>
+
+              <p>Como mencionamos antes, el elemento <b style="color: blue;">&lt;form&gt;</b> 
+                es simplemente un contenedor para muchos otros elementos,
+                que en su mayoría representan una amplia gama de controles. Estos controles se listan a continuación:</p>
 
                    
-                   <p><b style="color: blue;">&lt;button&gt;</b>: un botón que, cuando es presionado, puede llevar a cabo 
-                    diferentes acciones dependiendo de su atributo <b>type</b>. <br> <b>Sus variantes son: </b>
-                   </p>
+              <p><b style="color: blue;">&lt;button&gt;</b>: un botón que, cuando es presionado, puede llevar a cabo 
+                diferentes acciones dependiendo de su atributo <b>type</b>.</p>
 
                     <ul id="lista-main">
-                      <li><b><u>submit:</u></b> envía el formulario al agente procesador.</li>
-                      <li><b><u>reset:</u></b> restaura todos los controles
-                        en el formulario a sus valores iniciales.</li>
-                      <li><b><u>menu:</u></b> muestra un menú.</p></li>
+                      <li><b><u>Sus variantes son:</u></b></li>
+                      <li><b>submit:</b> envía el formulario al agente procesador.</li>
+                      <li><b>reset:</b> restaura todos los controles en el formulario a sus valores iniciales.</li>
+                      <li><b>menu:</b> muestra un menú.</p></li>
                     </ul>
                     
-                    <p><b style="color: blue;">&lt;fieldset&gt;</b>: agrupa temáticamente a un conjunto de controles.</p>
+                    <p><b style="color: blue;">&lt;fieldset&gt;:</b> agrupa temáticamente a un conjunto de controles.</p>
 
-                    <p><b style="color: blue;">&lt;keygen:&gt;</b>: un control usado para generar un par de llaves pública/privada.</p>
+                    <p><b style="color: blue;">&lt;keygen:&gt;:</b> un control usado para generar un par de llaves pública/privada.</p>
 
-                    <p><b style="color: blue;">&lt;label&gt;</b>: un elemento utilizado para proveer una etiqueta a los controles del
+                    <p><b style="color: blue;">&lt;label&gt;:</b> un elemento utilizado para proveer una etiqueta a los controles del
                        formulario.</p>
 
-                    <p><b style="color: blue;">&lt;object&gt;</b>: un objeto que representa una imagen, que puede ser usado como un 
+                    <p><b style="color: blue;">&lt;object&gt;:</b> un objeto que representa una imagen, que puede ser usado como un 
                        mapa de imagen del lado cliente.</p>
 
-                    <p><b style="color: blue;">&lt;output&gt;</b>: un elemento usado para mostrar el resultado de un cálculo llevado
+                    <p><b style="color: blue;">&lt;output&gt;:</b> un elemento usado para mostrar el resultado de un cálculo llevado
                        a cabo por la página, o el resultado de la acción de un usuario, basada en los controles del formulario.</p>
 
-                    <p><b style="color: blue;">&lt;select&gt;</b>: un control usado para seleccionar una o más opciones de una lista.</p>
+                    <p><b style="color: blue;">&lt;select&gt;:</b> un control usado para seleccionar una o más opciones de una lista.</p>
 
-                    <p><b style="color: blue;">&lt;textarea&gt;</b>: un control usado para ingresar un trozo de texto que consta de una
+                    <p><b style="color: blue;">&lt;textarea&gt;:</b> un control usado para ingresar un trozo de texto que consta de una
                        o más líneas.</p>
 
-                    <p><b style="color: blue;">&lt;img&gt;</b>: una imagen que puede ser usada como un mapa de imagen del lado cliente.</p>
-                    <p><b style="color: blue;">&lt;input&gt;</b>: uno de muchos controles de acuerdo al valor del atributo type. <br>
-                      <b>Éstos son: type = valor</b></p>
+                    <p><b style="color: blue;">&lt;img&gt;:</b> una imagen que puede ser usada como un mapa de imagen del lado cliente.</p>
+                    <p><b style="color: blue;">&lt;input&gt;:</b> uno de muchos controles de acuerdo al valor del atributo type.</p>
 
                        <ul id="lista-main">
-                        <li><b><u>text:</u></b> un control usado para la entrada de una sola línea de texto.</li>
-                        <li><b><u>hidden:</u></b> un control oculto utilizado para enviar información al servidor,
+                        <li><b><u>Éstos son: type = valor</u></b></li>
+                        <li><b>text:</b> un control usado para la entrada de una sola línea de texto.</li>
+                        <li><b>hidden:</b> un control oculto utilizado para enviar información al servidor,
                            típicamente manejado por programas.</li>
-                        <li><b><u>search:</u></b> igaul a text pero con fines de búsqueda.</li>
-                        <li><b><u>tel:</u></b> un control usado para proveer un número de teléfono.</li>
-                        <li><b><u>url:</u></b> una caja de texto usada para el ingreso de un único URL absoluto.</li>
-                        <li><b><u>email:</u></b> un control diseñado para editar una o más direcciones de e-mail.</li>
-                        <li><b><u>password: </u></b> una caja de texto para la edición de contraseñas, donde los
+                        <li><b>search:</b> igaul a text pero con fines de búsqueda.</li>
+                        <li><b>tel:</b> un control usado para proveer un número de teléfono.</li>
+                        <li><b>url:</b> una caja de texto usada para el ingreso de un único URL absoluto.</li>
+                        <li><b>email:</b> un control diseñado para editar una o más direcciones de e-mail.</li>
+                        <li><b>password:</b> una caja de texto para la edición de contraseñas, donde los
                            caracteres son representados por puntos.</li>
-                        <li><b><u>datetime:</u></b> un control para ingresar una fecha y hora global específica.</li>
-                        <li><b><u>date:</u></b> un control para ingresar una fecha específica.</li>
-                        <li><b><u>month:</u></b> un control para ingresar un mes específico.</li>
-                        <li><b><u>week:</u></b> un control para ingresar una semana específica.</li>
-                        <li><b><u>time</u></b> un control para ingresar una hora específica.</li>
-                        <li><b><u>number:</u></b> un control para ingresar un número.</li>
-                        <li><b><u>range:</u></b> un control para ingresar uno o dos números dentro de un rango.</li>
-                        <li><b><u>color: </u></b> un control para ingresar un color.</li>
-                        <li><b><u>checkbox: </u></b> un control para ingresar un valor booleano (verdadero/falso).</li>
-                        <li><b><u>radio: </u></b> un control para elegir una única opción entre varias.</li>
-                        <li><b><u>file:</u></b> un control usado para subir archivos al servidor.</li>
-                        <li><b><u>submit:</u></b> un botón usado para enviar el formulario.</li>
-                        <li><b><u>image:</u></b> igual a submit pero con la habilidad de verse como una imagen en 
+                        <li><b>datetime:</b> un control para ingresar una fecha y hora global específica.</li>
+                        <li><b>date:</b> un control para ingresar una fecha específica.</li>
+                        <li><b>month:</b> un control para ingresar un mes específico.</li>
+                        <li><b>week:</b> un control para ingresar una semana específica.</li>
+                        <li><b>time</b> un control para ingresar una hora específica.</li>
+                        <li><b>number:</b> un control para ingresar un número.</li>
+                        <li><b>range:</b> un control para ingresar uno o dos números dentro de un rango.</li>
+                        <li><b>color:</b> un control para ingresar un color.</li>
+                        <li><b>checkbox:</b> un control para ingresar un valor booleano (verdadero/falso).</li>
+                        <li><b>radio:</b> un control para elegir una única opción entre varias.</li>
+                        <li><b>file:</b> un control usado para subir archivos al servidor.</li>
+                        <li><b>submit:</b> un botón usado para enviar el formulario.</li>
+                        <li><b>image:</b> igual a submit pero con la habilidad de verse como una imagen en 
                           lugar de usar la apariencia predeterminada de los botone</li>
-                        <li><b><u>reset:</u></b> un botón usado para reiniciar los controles del formulario a sus valores iniciales.</li>
-                        <li><b><u>button: </u></b> un botón sin una acción predeterminada asociada.</li>
+                        <li><b>reset:</b> un botón usado para reiniciar los controles del formulario a sus valores iniciales.</li>
+                        <li><b>button:</b> un botón sin una acción predeterminada asociada.</li>
                     </ul>
-                  </div>
+                  
 
                   <p>Cuando se utilizan apropiadamente, en especial desde que HTML5 comenzó a ser adoptado, los formularios son una herramienta
                      poderosa que permiten a los autores no solamente recolectar información muy valiosa de los usuarios, sino también desarrollar
@@ -418,7 +440,7 @@
                         Visit developer.mozilla.org</a> </div>
 
 
-                      </div>
+                     
 
                
                   </article>
